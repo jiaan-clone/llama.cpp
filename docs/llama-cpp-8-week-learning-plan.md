@@ -213,6 +213,8 @@ ggml_backend_load_all
 
 ### 第 1 周: Transformer 最小模型、项目全貌和最小推理程序
 
+按天执行的详细路线见 [第 1 周每日学习路线](001-llama-cpp-week1-daily-learning-route.md)。
+
 | 项目 | 计划 |
 | --- | --- |
 | 本周主题 | 先建立 Transformer 的可计算心智模型, 再用 `llama-simple` 把 token -> logits -> token 的过程跑起来 |
