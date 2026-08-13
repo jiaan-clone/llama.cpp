@@ -43,7 +43,7 @@ token id -> embedding -> decoder block -> hidden state -> logits
 1. **0-10 分钟, 预热**: 写出 `token`、`token id`、`embedding`、`hidden state`、`logits` 的一句话定义, 不看 [概念桥接](000-transformer-concept-bridge.md)。
 2. **10-35 分钟, 读概念**: 阅读概念桥接第 2 至 4 节, 确认 tokenizer 输出 `[B,T]`, embedding table 为 `[V,D]`, 第一层输入为 `[B,T,D]`。
 3. **35-75 分钟, 做小例子**: 使用 `V=8,D=4,T=3` 画 embedding lookup。任选 3 个 token id, 给每个 id 写一个 4 维向量; 用表格标出 lookup 前后 shape, 不需要模拟真实权重。
-4. **75-105 分钟, 接到输出**: 假设 block 是恒等函数, 画 `hidden [1,3,4] -> output projection [1,3,8] -> last-position logits [8]`。标出生成时为什么只取最后一个位置。
+4. **75-105 分钟, 接到输出**: 假设 block 是恒等函数, 画 `hidden [1,3,4] -> output projection [1,3,8] -> last-position logits [8]`。标出生成时为什么只取最后一个位置？
 5. **105-120 分钟, 闭环**: 不看笔记口述“字符串如何变成 8 个候选 logits”, 并列出 3 个尚未理解的问题。
 
 ### 当天输出与验收
