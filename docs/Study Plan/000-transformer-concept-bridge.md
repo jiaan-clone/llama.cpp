@@ -130,7 +130,7 @@ y = x + sublayer(x)
 在 GGML graph 中, 它通常表现为 `ggml_add()` 或等价的加法 op。看到加法时, 要先判断它是不是 residual, 不要把所有加法都当成 bias。
 
 ## 7. RMSNorm
-
+RMSNorm （Root Mean Square Layer Normalization） 是一种轻量级的归一化方法，由Shen 等人在2019年提出，用于替代经典的 LayerNorm
 RMSNorm 对每个 token 的 hidden vector 做缩放归一化。简化公式为:
 
 ```text
