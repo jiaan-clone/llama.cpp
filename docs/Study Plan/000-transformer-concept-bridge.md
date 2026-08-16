@@ -237,6 +237,44 @@ position 2: [1, 1, 1]
 被屏蔽的位置通常在 score 上加一个极小值, 近似为 `-inf`, 这样 softmax 后权重接近 0。
 
 causal mask 解决的是“能不能看”的问题; RoPE 解决的是“位置信息如何进入 Q/K”的问题。两者不能互相替代。
+因果矩阵每个位置的含义：
+对于两个 token：
+
+```text
+token 1
+token 2
+```
+
+Mask 为：
+
+\[
+M=
+\begin{bmatrix}
+0&-\infty\\
+0&0
+\end{bmatrix}
+\]
+
+矩阵的：
+
+- 行表示“当前正在查询的 token”，即 Query。
+- 列表示“被查询的 token”，即 Key。
+
+| 位置 | 含义 | Mask 值 |
+|---|---|---:|
+| 第 1 行第 1 列 | token 1 查看自己 | `0`，允许 |
+| 第 1 行第 2 列 | token 1 查看未来的 token 2 | \(-\infty\)，禁止 |
+| 第 2 行第 1 列 | token 2 查看过去的 token 1 | `0`，允许 |
+| 第 2 行第 2 列 | token 2 查看自己 | `0`，允许 |
+
+加上 Mask 后，第一行第二列变成 \(-\infty\)。经过 softmax：
+
+\[
+e^{-\infty}=0
+\]
+
+所以 token 1 对 token 2 的 attention 权重为 `0`。这保证了生成 token 1 时不会提前看到未来的 token 2。
+
 
 ## 11. Multi-Head Attention
 
