@@ -101,7 +101,7 @@ token id -> embedding -> decoder block -> hidden state -> logits
 ### 学习路线
 
 1. **0-10 分钟**: 复述 Day 3 的 Q/K/V、KV cache 和 prefill/decode 区别。
-2. **10-45 分钟, 源码阅读**: 阅读 [`examples/simple/simple.cpp`](../examples/simple/simple.cpp), 按以下顺序在 Day 1 图上标注调用:
+2. **10-45 分钟, 源码阅读**: 阅读 [`examples/simple/simple.cpp`](../../examples/simple/simple.cpp), 按以下顺序在 Day 1 图上标注调用:
 
    ```text
    ggml_backend_load_all
@@ -115,7 +115,7 @@ token id -> embedding -> decoder block -> hidden state -> logits
    -> llama_decode(one token)
    ```
 
-3. **45-70 分钟, API 对照**: 在 [`include/llama.h`](../include/llama.h) 中定位 model/context/batch/sampler 的默认参数和释放函数。记录 `n_ctx`、`n_batch` 的含义; 暂不深入内部 graph。
+3. **45-70 分钟, API 对照**: 在 [`include/llama.h`](../../include/llama.h) 中定位 model/context/batch/sampler 的默认参数和释放函数。记录 `n_ctx`、`n_batch` 的含义; 暂不深入内部 graph。
 4. **70-100 分钟, 运行**: 若已有 Debug 构建, 执行:
 
    ```bash
@@ -140,7 +140,7 @@ token id -> embedding -> decoder block -> hidden state -> logits
 ### 学习路线
 
 1. **0-10 分钟**: 闭卷写出 Day 4 的 API 调用链和释放顺序。
-2. **10-45 分钟, 目录导览**: 阅读 [`CMakeLists.txt`](../CMakeLists.txt)、[`src/CMakeLists.txt`](../src/CMakeLists.txt)、[`common/CMakeLists.txt`](../common/CMakeLists.txt)、[`app/CMakeLists.txt`](../app/CMakeLists.txt)。将应用层、`llama-common`、`libllama`、GGML、backend 的职责写成 5 行说明。
+2. **10-45 分钟, 目录导览**: 阅读 [`CMakeLists.txt`](../../CMakeLists.txt)、[`src/CMakeLists.txt`](../../src/CMakeLists.txt)、[`common/CMakeLists.txt`](../../common/CMakeLists.txt)、[`app/CMakeLists.txt`](../../app/CMakeLists.txt)。将应用层、`llama-common`、`libllama`、GGML、backend 的职责写成 5 行说明。
 3. **45-70 分钟, target 验证**: 在已有构建目录执行:
 
    ```bash

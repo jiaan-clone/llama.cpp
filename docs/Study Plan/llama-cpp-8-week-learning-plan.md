@@ -26,7 +26,7 @@ V   = vocabulary size
 
 遇到源码中的 tensor, 先回答“它代表什么、shape 是什么、处于哪一步”, 再追具体函数。不会推导的公式先记输入、输出和不变量, 推导放到需要时补充。
 
-学习期间遵守 [AGENTS.md](../AGENTS.md) 和 [CONTRIBUTING.md](../CONTRIBUTING.md)。理解性修改放在个人学习分支或仓外实验目录, 不直接提交上游。任何准备长期保留的代码都要做到可以独立解释、调试和维护。
+学习期间遵守 [AGENTS.md](../../AGENTS.md) 和 [CONTRIBUTING.md](../../CONTRIBUTING.md)。理解性修改放在个人学习分支或仓外实验目录, 不直接提交上游。任何准备长期保留的代码都要做到可以独立解释、调试和维护。
 
 建议建立个人学习目录, 但不要在开始本计划时修改核心源码:
 
@@ -82,7 +82,7 @@ export MODEL="$PWD/Llama-3.2-3B-Instruct-f16.gguf"
 | 领域 | 要求 | 自检任务 |
 | --- | --- | --- |
 | C/C++ | 指针、内存布局、RAII、虚函数、模板、函数指针、`std::unique_ptr`、线程同步 | 能解释 `llama_model *` 的 C API 与内部 C++ 对象如何衔接 |
-| C++17 | `auto`、lambda、结构化绑定、move semantics、智能指针和容器 | 能读懂 [`src/llama-context.h`](../src/llama-context.h) 中的所有权关系 |
+| C++17 | `auto`、lambda、结构化绑定、move semantics、智能指针和容器 | 能读懂 [`src/llama-context.h`](../../src/llama-context.h) 中的所有权关系 |
 | CMake | target、option、`add_subdirectory`、link interface、Debug/Release | 能画出 `llama-simple -> llama -> ggml -> backend` 的链接关系 |
 | Transformer | 暂不要求预先掌握; 按第 1 周的概念桥接路线学习 embedding、RMSNorm、Q/K/V、RoPE、causal mask、GQA、FFN 和 logits | 能用 `B/T/D/H/Dh/V` 标注一层 decoder block 的输入输出 shape, 并解释每个步骤的目的 |
 | 线性代数最低要求 | 向量/矩阵乘法、转置、广播、逐元素运算、softmax 的输入输出含义; 不要求手算大矩阵 | 能用 2 x 3 和 3 x 2 的小矩阵算出一次投影结果, 能解释 softmax 输出为何是概率分布 |
@@ -148,28 +148,28 @@ flowchart TD
     E --> F3[Metal/Vulkan/SYCL 等 backend]
 ```
 
-一个重要例外是 [`examples/simple/simple.cpp`](../examples/simple/simple.cpp): 它直接使用 `libllama` 公共 API, 基本跳过 `llama-common`, 因而是第一周最好的主线。完整 CLI 和 Server 则大量复用 [`common/`](../common/)。
+一个重要例外是 [`examples/simple/simple.cpp`](../../examples/simple/simple.cpp): 它直接使用 `libllama` 公共 API, 基本跳过 `llama-common`, 因而是第一周最好的主线。完整 CLI 和 Server 则大量复用 [`common/`](../../common/)。
 
 ### 3.2 目录职责
 
 | 目录 | 主要职责 | 首要入口 |
 | --- | --- | --- |
-| [`include/`](../include/) | `libllama` 和 GGML 公开 C API | [`include/llama.h`](../include/llama.h) |
-| [`src/`](../src/) | 模型加载、context、graph、memory、tokenizer、sampler、quantize | [`src/CMakeLists.txt`](../src/CMakeLists.txt) |
-| [`src/models/`](../src/models/) | 各模型架构的超参数、tensor 和 graph 实现 | [`src/models/llama.cpp`](../src/models/llama.cpp) |
-| [`ggml/`](../ggml/) | tensor/op、GGUF、量化、内存分配、设备注册和图调度 | [`ggml/include/ggml.h`](../ggml/include/ggml.h), [`ggml/include/ggml-backend.h`](../ggml/include/ggml-backend.h) |
-| [`common/`](../common/) | 工具共享层, 包含参数、chat/Jinja、sampling、speculative 等 | [`common/common.cpp`](../common/common.cpp), [`common/chat.cpp`](../common/chat.cpp) |
-| [`tools/`](../tools/) | CLI、Server、benchmark、quantize、imatrix、tokenize 等产品工具 | [`tools/CMakeLists.txt`](../tools/CMakeLists.txt) |
-| [`examples/`](../examples/) | 最小 API 用法、batch、parallel、embedding 等样例 | [`examples/simple/simple.cpp`](../examples/simple/simple.cpp), [`examples/parallel/parallel.cpp`](../examples/parallel/parallel.cpp) |
-| [`tests/`](../tests/) | tokenizer、sampling、batch、state、backend、quantization 测试 | [`tests/CMakeLists.txt`](../tests/CMakeLists.txt) |
-| [`app/`](../app/) | 统一 `llama` 可执行程序, 聚合多个工具实现 | [`app/llama.cpp`](../app/llama.cpp) |
+| [`include/`](../../include/) | `libllama` 和 GGML 公开 C API | [`include/llama.h`](../../include/llama.h) |
+| [`src/`](../../src/) | 模型加载、context、graph、memory、tokenizer、sampler、quantize | [`src/CMakeLists.txt`](../../src/CMakeLists.txt) |
+| [`src/models/`](../../src/models/) | 各模型架构的超参数、tensor 和 graph 实现 | [`src/models/llama.cpp`](../../src/models/llama.cpp) |
+| [`ggml/`](../../ggml/) | tensor/op、GGUF、量化、内存分配、设备注册和图调度 | [`ggml/include/ggml.h`](../../ggml/include/ggml.h), [`ggml/include/ggml-backend.h`](../../ggml/include/ggml-backend.h) |
+| [`common/`](../../common/) | 工具共享层, 包含参数、chat/Jinja、sampling、speculative 等 | [`common/common.cpp`](../../common/common.cpp), [`common/chat.cpp`](../../common/chat.cpp) |
+| [`tools/`](../../tools/) | CLI、Server、benchmark、quantize、imatrix、tokenize 等产品工具 | [`tools/CMakeLists.txt`](../../tools/CMakeLists.txt) |
+| [`examples/`](../../examples/) | 最小 API 用法、batch、parallel、embedding 等样例 | [`examples/simple/simple.cpp`](../../examples/simple/simple.cpp), [`examples/parallel/parallel.cpp`](../../examples/parallel/parallel.cpp) |
+| [`tests/`](../../tests/) | tokenizer、sampling、batch、state、backend、quantization 测试 | [`tests/CMakeLists.txt`](../../tests/CMakeLists.txt) |
+| [`app/`](../../app/) | 统一 `llama` 可执行程序, 聚合多个工具实现 | [`app/llama.cpp`](../../app/llama.cpp) |
 
 ### 3.3 核心对象与生命周期
 
 | 对象 | 职责 | 生命周期与所有权 |
 | --- | --- | --- |
-| `llama_model` | 保存模型架构、超参数、词表、权重 tensor、mmap 和设备放置 | 最先创建、最后释放; 可供多个 context 使用; 见 [`src/llama-model.h`](../src/llama-model.h) |
-| `llama_context` | 一次或多序列推理运行时, 保存 backend scheduler、计算 buffer、输出和模型 memory | 依赖 `llama_model`; 每个会话状态或调度域独立; 见 [`src/llama-context.h`](../src/llama-context.h) |
+| `llama_model` | 保存模型架构、超参数、词表、权重 tensor、mmap 和设备放置 | 最先创建、最后释放; 可供多个 context 使用; 见 [`src/llama-model.h`](../../src/llama-model.h) |
+| `llama_context` | 一次或多序列推理运行时, 保存 backend scheduler、计算 buffer、输出和模型 memory | 依赖 `llama_model`; 每个会话状态或调度域独立; 见 [`src/llama-context.h`](../../src/llama-context.h) |
 | `llama_batch` | 公共输入描述, 包含 token/embedding、position、sequence id 和 logits 标记 | 调用者提供; `llama_decode()` 内部转换并切分为 `llama_ubatch` |
 | `llama_memory_i` | 模型状态抽象, 支持 batch slot、sequence 操作和 state 序列化 | 由具体模型通过 `create_memory()` 创建并归 context 所有; KV Cache 只是一个实现 |
 | `llama_sampler` | 对 logits/candidates 应用过滤、概率变换和随机选择 | 独立于 model/context; sampler chain 组合多个策略; 生成结束后释放 |
@@ -219,7 +219,7 @@ ggml_backend_load_all
 | --- | --- |
 | 本周主题 | 先建立 Transformer 的可计算心智模型, 再用 `llama-simple` 把 token -> logits -> token 的过程跑起来 |
 | 学习目标 | 能解释 decoder-only Transformer 一层的主要数据流和 shape; 能解释 CMake target 依赖; 能独立复写公开 API 的最小生成流程; 理解 model/context/sampler 的释放顺序 |
-| 必读源码 | [`CMakeLists.txt`](../CMakeLists.txt), [`src/CMakeLists.txt`](../src/CMakeLists.txt), [`common/CMakeLists.txt`](../common/CMakeLists.txt), [`app/CMakeLists.txt`](../app/CMakeLists.txt), [`include/llama.h`](../include/llama.h), [`examples/simple/simple.cpp`](../examples/simple/simple.cpp) |
+| 必读源码 | [`CMakeLists.txt`](../../CMakeLists.txt), [`src/CMakeLists.txt`](../../src/CMakeLists.txt), [`common/CMakeLists.txt`](../../common/CMakeLists.txt), [`app/CMakeLists.txt`](../../app/CMakeLists.txt), [`include/llama.h`](../../include/llama.h), [`examples/simple/simple.cpp`](../../examples/simple/simple.cpp) |
 | 重点类和函数 | `ggml_backend_load_all()`, `llama_model_default_params()`, `llama_model_load_from_file()`, `llama_context_default_params()`, `llama_init_from_model()`, `llama_batch_get_one()`, `llama_decode()`, `llama_sampler_sample()` |
 | 必答问题 | token、embedding、hidden state 和 logits 如何连接? 一层 Attention + FFN 的输入输出 shape 是什么? 为什么 model 和 context 分离? `n_ctx`、`n_batch`、`n_ubatch` 分别限制什么? 哪些对象拥有内存? |
 | 动手实验 | 先用 `B=1,T=3,D=4,H=2,V=8` 画一层 decoder block 并手算一次简化 attention; 再复制 `llama-simple` 到仓外, 删掉参数解析和 encoder 分支, 保留固定 prompt 的最小程序 |
@@ -235,7 +235,7 @@ ggml_backend_load_all
 | --- | --- |
 | 本周主题 | 用真实 Llama 配置把第 1 周的概念落到权重和模型文件, 跟踪一个 GGUF 从文件到 CPU/GPU tensor buffer 的全过程 |
 | 学习目标 | 能从 `n_embd`、`n_head`、`n_head_kv`、`n_layer`、`n_vocab` 还原主要 shape; 理解 metadata、tensor info、split GGUF、mmap、mlock、buffer type 和 layer placement |
-| 必读源码 | [`src/llama.cpp`](../src/llama.cpp), [`src/llama-model-loader.h`](../src/llama-model-loader.h), [`src/llama-model-loader.cpp`](../src/llama-model-loader.cpp), [`src/llama-model.cpp`](../src/llama-model.cpp), [`src/llama-mmap.cpp`](../src/llama-mmap.cpp), [`src/llama-arch.cpp`](../src/llama-arch.cpp), [`ggml/src/gguf.cpp`](../ggml/src/gguf.cpp) |
+| 必读源码 | [`src/llama.cpp`](../../src/llama.cpp), [`src/llama-model-loader.h`](../../src/llama-model-loader.h), [`src/llama-model-loader.cpp`](../../src/llama-model-loader.cpp), [`src/llama-model.cpp`](../../src/llama-model.cpp), [`src/llama-mmap.cpp`](../../src/llama-mmap.cpp), [`src/llama-arch.cpp`](../../src/llama-arch.cpp), [`ggml/src/gguf.cpp`](../../ggml/src/gguf.cpp) |
 | 重点类和函数 | `llama_model_load_from_file_impl()`, `llama_model_load()`, `llama_model_loader::llama_model_loader()`, `llama_model_create()`, `llama_model_base::load_hparams()`, `load_tensors()`, `select_weight_buft()`, `init_mappings()`, `load_all_data()` |
 | 必答问题 | `n_embd`、`n_head` 和 `n_head_kv` 如何影响 Q/K/V 和 KV cache shape? GGUF metadata 如何决定模型子类? tensor metadata 和 tensor data 何时加载? mmap 为什么不等于立即读入 RAM? `n_gpu_layers` 如何影响权重放置? |
 | 动手实验 | 先从 `llama-gguf` 输出填写一张模型配置 -> tensor shape 表; 再对比 mmap 开关的加载时间和 RSS, 以及 `-ngl 0` 与 GPU offload 日志 |
@@ -251,8 +251,8 @@ ggml_backend_load_all
 | --- | --- |
 | 本周主题 | 把第 1-2 周的 token、shape 和 block 结构映射到 Llama 的权重声明和 GGML graph; 本周不真正适配新模型 |
 | 学习目标 | 能先用 Transformer 公式解释一层 graph, 再看懂 architecture 枚举/名称映射、模型工厂、模型子类、tensor 声明和 graph builder |
-| 必读源码 | [`src/llama-arch.h`](../src/llama-arch.h), [`src/llama-arch.cpp`](../src/llama-arch.cpp), [`src/llama-model.h`](../src/llama-model.h), [`src/llama-model.cpp`](../src/llama-model.cpp), [`src/models/models.h`](../src/models/models.h), [`src/models/llama.cpp`](../src/models/llama.cpp), [`src/llama-graph.h`](../src/llama-graph.h), [`src/llama-graph.cpp`](../src/llama-graph.cpp), [新增模型指南](development/HOWTO-add-model.md) |
-| 选读源码 | [`src/models/qwen2.cpp`](../src/models/qwen2.cpp); 只有 Llama 单层 graph 已能独立解释时才比较第二种架构 |
+| 必读源码 | [`src/llama-arch.h`](../../src/llama-arch.h), [`src/llama-arch.cpp`](../../src/llama-arch.cpp), [`src/llama-model.h`](../../src/llama-model.h), [`src/llama-model.cpp`](../../src/llama-model.cpp), [`src/models/models.h`](../../src/models/models.h), [`src/models/llama.cpp`](../../src/models/llama.cpp), [`src/llama-graph.h`](../../src/llama-graph.h), [`src/llama-graph.cpp`](../../src/llama-graph.cpp), [新增模型指南](development/HOWTO-add-model.md) |
+| 选读源码 | [`src/models/qwen2.cpp`](../../src/models/qwen2.cpp); 只有 Llama 单层 graph 已能独立解释时才比较第二种架构 |
 | 重点类和函数 | `llama_model_mapping()`, `llama_model_create()`, `llama_model_base`, `load_arch_hparams()`, `load_arch_tensors()`, `build_arch_graph()`, `llama_model::build_graph()`, `LLM_TN` |
 | 必答问题 | 一层 graph 中每个 op 对应哪条 Transformer 公式? 通用模型逻辑与架构特有逻辑如何分界? tensor 名称如何由 GGUF 规范映射到 `ggml_tensor *`? 为什么 graph 构建只声明计算而不立即执行? Llama 与 Qwen2 的变化点在哪里? |
 | 动手实验 | 先用纸面 shape 表预测 Llama 一层 graph 的中间结果, 再用 eval callback 或 GDB 统计节点名/类型; 选做 Llama 与 Qwen2 的 hparams/tensor/graph 差异 |
@@ -268,7 +268,7 @@ ggml_backend_load_all
 | --- | --- |
 | 本周主题 | 彻底拆解 prefill 和逐 token decode, 理解图复用、micro-batch 和 backend scheduler |
 | 学习目标 | 能从公开 `llama_decode()` 跟踪到 ubatch、graph、scheduler compute 和 logits 拷回 |
-| 必读源码 | [`src/llama-context.h`](../src/llama-context.h), [`src/llama-context.cpp`](../src/llama-context.cpp), [`src/llama-cparams.h`](../src/llama-cparams.h), [`src/llama-batch.h`](../src/llama-batch.h), [`src/llama-batch.cpp`](../src/llama-batch.cpp), [`src/llama-graph.cpp`](../src/llama-graph.cpp), [`ggml/include/ggml-backend.h`](../ggml/include/ggml-backend.h), [`tests/test-batch-alloc.cpp`](../tests/test-batch-alloc.cpp) |
+| 必读源码 | [`src/llama-context.h`](../../src/llama-context.h), [`src/llama-context.cpp`](../../src/llama-context.cpp), [`src/llama-cparams.h`](../../src/llama-cparams.h), [`src/llama-batch.h`](../../src/llama-batch.h), [`src/llama-batch.cpp`](../../src/llama-batch.cpp), [`src/llama-graph.cpp`](../../src/llama-graph.cpp), [`ggml/include/ggml-backend.h`](../../ggml/include/ggml-backend.h), [`tests/test-batch-alloc.cpp`](../../tests/test-batch-alloc.cpp) |
 | 重点类和函数 | `llama_init_from_model()`, `llama_context::llama_context()`, `llama_batch_allocr::init()`, `split_simple()`, `split_equal()`, `split_seq()`, `llama_context::encode()`, `decode()`, `process_ubatch()`, `graph_compute()` |
 | 必答问题 | batch 与 ubatch 为什么分离? causal/non-causal 为什么影响切分? graph 在什么条件下可以复用? scheduler 如何决定节点 backend? logits 为什么只为指定 token 输出? |
 | 动手实验 | 理解性实验: 改变 prompt 长度、`n_batch`、`n_ubatch` 和 sequence 数量, 记录 ubatch 次数、graph reuse 次数和输出位置 |
@@ -284,7 +284,7 @@ ggml_backend_load_all
 | --- | --- |
 | 本周主题 | 从 KV Cache 扩展到通用 model memory, 掌握多序列状态和持久化 |
 | 学习目标 | 理解 KV cell/slot、sequence id、shift/copy/remove、state save/load 和 recurrent/hybrid memory |
-| 必读源码 | [`src/llama-memory.h`](../src/llama-memory.h), [`src/llama-memory.cpp`](../src/llama-memory.cpp), [`src/llama-kv-cache.h`](../src/llama-kv-cache.h), [`src/llama-kv-cache.cpp`](../src/llama-kv-cache.cpp), [`src/llama-kv-cells.h`](../src/llama-kv-cells.h), [`src/llama-memory-recurrent.cpp`](../src/llama-memory-recurrent.cpp), [`src/llama-memory-hybrid.cpp`](../src/llama-memory-hybrid.cpp), [`tests/test-save-load-state.cpp`](../tests/test-save-load-state.cpp), [`examples/parallel/parallel.cpp`](../examples/parallel/parallel.cpp) |
+| 必读源码 | [`src/llama-memory.h`](../../src/llama-memory.h), [`src/llama-memory.cpp`](../../src/llama-memory.cpp), [`src/llama-kv-cache.h`](../../src/llama-kv-cache.h), [`src/llama-kv-cache.cpp`](../../src/llama-kv-cache.cpp), [`src/llama-kv-cells.h`](../../src/llama-kv-cells.h), [`src/llama-memory-recurrent.cpp`](../../src/llama-memory-recurrent.cpp), [`src/llama-memory-hybrid.cpp`](../../src/llama-memory-hybrid.cpp), [`tests/test-save-load-state.cpp`](../../tests/test-save-load-state.cpp), [`examples/parallel/parallel.cpp`](../../examples/parallel/parallel.cpp) |/..
 | 重点类和函数 | `llama_memory_i`, `llama_memory_context_i`, `llama_kv_cache::init_batch()`, `find_slot()` 相关逻辑, `llama_get_memory()`, `llama_memory_seq_rm/cp/keep/add/div()`, `llama_state_seq_*()` |
 | 必答问题 | 为什么 memory 负责 ubatch 切分所需的 slot 信息? sequence id 与 KV cell 如何关联? prompt sharing 如何实现? context shift 会改变什么? state 文件保存了哪些数据? recurrent 模型为什么不能只用 K/V? |
 | 动手实验 | 理解性实验: 两个 sequence 共享前缀, 使用 `llama_memory_seq_cp()` 分叉后分别生成; 再做单 sequence state 保存、清空、恢复和结果一致性检查 |
@@ -300,7 +300,7 @@ ggml_backend_load_all
 | --- | --- |
 | 本周主题 | 理解 logits 之后的整个生成控制层和 chat prompt 构造 |
 | 学习目标 | 掌握 tokenize/detokenize、特殊 token、sampler chain、grammar、JSON Schema 和 Jinja chat template |
-| 必读源码 | [`src/llama-vocab.h`](../src/llama-vocab.h), [`src/llama-vocab.cpp`](../src/llama-vocab.cpp), [`src/llama-sampler.h`](../src/llama-sampler.h), [`src/llama-sampler.cpp`](../src/llama-sampler.cpp), [`src/llama-grammar.cpp`](../src/llama-grammar.cpp), [`common/sampling.cpp`](../common/sampling.cpp), [`common/chat.h`](../common/chat.h), [`common/chat.cpp`](../common/chat.cpp), [`common/json-schema-to-grammar.cpp`](../common/json-schema-to-grammar.cpp), [`common/jinja/README.md`](../common/jinja/README.md) |
+| 必读源码 | [`src/llama-vocab.h`](../../src/llama-vocab.h), [`src/llama-vocab.cpp`](../../src/llama-vocab.cpp), [`src/llama-sampler.h`](../../src/llama-sampler.h), [`src/llama-sampler.cpp`](../../src/llama-sampler.cpp), [`src/llama-grammar.cpp`](../../src/llama-grammar.cpp), [`common/sampling.cpp`](../../common/sampling.cpp), [`common/chat.h`](../../common/chat.h), [`common/chat.cpp`](../../common/chat.cpp), [`common/json-schema-to-grammar.cpp`](../../common/json-schema-to-grammar.cpp), [`common/jinja/README.md`](../../common/jinja/README.md) |
 | 重点类和函数 | `llama_tokenize()`, `llama_token_to_piece()`, `llama_sampler_chain_init/add()`, `llama_sampler_apply()`, `llama_sampler_sample()`, `llama_sampler_accept()`, `llama_sampler_init_grammar()`, `common_chat_templates_init/apply()`, `json_schema_to_grammar()` |
 | 必答问题 | tokenizer 类型如何从 GGUF 加载? sampler 顺序为什么会影响结果? `apply` 与 `accept` 分别做什么? grammar 在概率归一化前还是后限制候选? chat template 为什么属于 common 而不是核心 graph? |
 | 动手实验 | 可保留代码: 实现一个简单自定义 sampler 或 sampler wrapper, 输出候选数量、entropy 和选中 token; 理解性实验: 用 JSON Schema 约束 Planner 输出固定 JSON |
@@ -316,7 +316,7 @@ ggml_backend_load_all
 | --- | --- |
 | 本周主题 | 把模型图与具体硬件执行连接起来, 建立可重复的性能分析方法 |
 | 学习目标 | 理解 tensor/op/cgraph、buffer/backend/device/registry/scheduler; 理解常用量化的内存与速度取舍; 会区分 PP/TG 指标 |
-| 必读源码 | [`ggml/include/ggml.h`](../ggml/include/ggml.h), [`ggml/include/ggml-backend.h`](../ggml/include/ggml-backend.h), [`ggml/src/ggml-backend.cpp`](../ggml/src/ggml-backend.cpp), [`ggml/src/ggml-backend-reg.cpp`](../ggml/src/ggml-backend-reg.cpp), [`ggml/src/ggml-cpu/ggml-cpu.cpp`](../ggml/src/ggml-cpu/ggml-cpu.cpp), [`ggml/src/ggml-quants.c`](../ggml/src/ggml-quants.c), [`src/llama-quant.cpp`](../src/llama-quant.cpp), [`tools/llama-bench/README.md`](../tools/llama-bench/README.md), [`tools/quantize/quantize.cpp`](../tools/quantize/quantize.cpp), [`tools/imatrix/imatrix.cpp`](../tools/imatrix/imatrix.cpp) |
+| 必读源码 | [`ggml/include/ggml.h`](../../ggml/include/ggml.h), [`ggml/include/ggml-backend.h`](../../ggml/include/ggml-backend.h), [`ggml/src/ggml-backend.cpp`](../../ggml/src/ggml-backend.cpp), [`ggml/src/ggml-backend-reg.cpp`](../../ggml/src/ggml-backend-reg.cpp), [`ggml/src/ggml-cpu/ggml-cpu.cpp`](../../ggml/src/ggml-cpu/ggml-cpu.cpp), [`ggml/src/ggml-quants.c`](../../ggml/src/ggml-quants.c), [`src/llama-quant.cpp`](../../src/llama-quant.cpp), [`tools/llama-bench/README.md`](../../tools/llama-bench/README.md), [`tools/quantize/quantize.cpp`](../../tools/quantize/quantize.cpp), [`tools/imatrix/imatrix.cpp`](../../tools/imatrix/imatrix.cpp) |
 | 重点类和函数 | `ggml_tensor`, `ggml_cgraph`, `ggml_backend_load_all()`, `ggml_backend_dev_*`, `ggml_backend_sched_split_graph()`, `ggml_backend_sched_alloc_graph()`, `ggml_backend_sched_graph_compute_async()`, `llama_model_quantize()` |
 | 必答问题 | tensor data、tensor metadata 和 backend buffer 的关系是什么? scheduler 怎样跨 backend 插入 copy? PP 为什么更偏计算吞吐, TG 为什么更受内存带宽影响? block quantization 如何降低占用? imatrix 影响哪些 tensor 的量化决策? |
 | 动手实验 | 理解性实验: CPU 上比较 F16 与 Q4_K_M, 或先用 `--dry-run` 查看量化决策; 可选 CUDA 对比 `-ngl 0` 与 `-ngl 99`; 采集 PP、TG、RSS、模型大小和输出一致性 |
@@ -332,7 +332,7 @@ ggml_backend_load_all
 | --- | --- |
 | 本周主题 | 学习产品层调度, 完成基于 llama.cpp 的本地 Planner/Worker/Reviewer 多 Agent 示例 |
 | 学习目标 | 理解 common 参数和 chat 模板复用; 跟踪 Server route/task/queue/slot/decode/stream; 独立设计多 Agent session 和调度器 |
-| 必读源码 | [`tools/cli/cli.cpp`](../tools/cli/cli.cpp), [`common/common.cpp`](../common/common.cpp), [`tools/server/server.cpp`](../tools/server/server.cpp), [`tools/server/server-context.h`](../tools/server/server-context.h), [`tools/server/server-context.cpp`](../tools/server/server-context.cpp), [`tools/server/server-task.h`](../tools/server/server-task.h), [`tools/server/server-queue.h`](../tools/server/server-queue.h), [`tools/server/server-queue.cpp`](../tools/server/server-queue.cpp), [`tools/server/README-dev.md`](../tools/server/README-dev.md), [`examples/parallel/parallel.cpp`](../examples/parallel/parallel.cpp) |
+| 必读源码 | [`tools/cli/cli.cpp`](../../tools/cli/cli.cpp), [`common/common.cpp`](../../common/common.cpp), [`tools/server/server.cpp`](../../tools/server/server.cpp), [`tools/server/server-context.h`](../../tools/server/server-context.h), [`tools/server/server-context.cpp`](../../tools/server/server-context.cpp), [`tools/server/server-task.h`](../../tools/server/server-task.h), [`tools/server/server-queue.h`](../../tools/server/server-queue.h), [`tools/server/server-queue.cpp`](../../tools/server/server-queue.cpp), [`tools/server/README-dev.md`](../../tools/server/README-dev.md), [`examples/parallel/parallel.cpp`](../../examples/parallel/parallel.cpp) |
 | 重点类和函数 | `common_init_from_params()`, `server_routes::init_routes()`, `handle_completions_impl()`, `server_response_reader`, `server_queue::post/start_loop()`, `server_context_impl::process_single_task()`, `update_slots()`, `server_slot` |
 | 必答问题 | HTTP thread 与 inference loop 如何解耦? task、slot、sequence id 如何对应? continuous batching 如何合并多个请求? 取消和流式响应如何回传? 多 Agent 应复用一个 model、一个 context 的多 sequence, 还是多个 context? |
 | 动手实验 | 可保留代码: 独立 `llama-multi-agent-demo`, 复用一个 model, 先按顺序运行 Planner -> Worker -> Reviewer, 再选做一个 context 多 sequence 和 batching; Planner 使用 grammar 输出结构化计划 |
@@ -560,7 +560,7 @@ sequenceDiagram
     HTTP-->>Client: SSE/JSON
 ```
 
-关键文件是 [`tools/server/server.cpp`](../tools/server/server.cpp)、[`server-context.cpp`](../tools/server/server-context.cpp)、[`server-queue.cpp`](../tools/server/server-queue.cpp) 和 [`server-task.h`](../tools/server/server-task.h)。
+关键文件是 [`tools/server/server.cpp`](../../tools/server/server.cpp)、[`server-context.cpp`](../../tools/server/server-context.cpp)、[`server-queue.cpp`](../../tools/server/server-queue.cpp) 和 [`server-task.h`](../../tools/server/server-task.h)。
 
 ## 7. 动手实验与阶段项目
 
@@ -589,7 +589,7 @@ sequenceDiagram
 4. 若未通过, Worker 根据反馈修改, 最多运行 2 轮。
 5. Coordinator 输出最终结果和每个 Agent 的 token/耗时数据。
 
-推荐从 [`examples/parallel/parallel.cpp`](../examples/parallel/parallel.cpp) 学习一个 context 多 sequence 的做法, 但第一版先顺序调度, 不要把“多 Agent”错误等同于“多线程”。
+推荐从 [`examples/parallel/parallel.cpp`](../../examples/parallel/parallel.cpp) 学习一个 context 多 sequence 的做法, 但第一版先顺序调度, 不要把“多 Agent”错误等同于“多线程”。
 
 #### 模块划分
 
@@ -607,7 +607,7 @@ sequenceDiagram
 1. 单 Agent: 固定 prompt, greedy 生成, 完整 RAII。
 2. 三角色顺序调用: 每个 Agent 独立 history 和 sampler, 共用一个 model。
 3. 结构化协议: Planner 和 Reviewer 输出受 grammar 约束的 JSON。
-4. 状态管理: 明确每个 Agent 使用独立 context 还是一个 context 的不同 sequence。推荐先独立 context 保证正确性, 再以 [`examples/parallel`](../examples/parallel/) 为参考实现单 context 多 sequence 的优化版。
+4. 状态管理: 明确每个 Agent 使用独立 context 还是一个 context 的不同 sequence。推荐先独立 context 保证正确性, 再以 [`examples/parallel`](../../examples/parallel/) 为参考实现单 context 多 sequence 的优化版。
 5. 可观测性: 输出 tokens、PP/TG 时间、轮数、停止原因和内存估算。
 6. 测试: protocol 单元测试、固定 seed 回归、history 隔离、EOG、context overflow 和异常 JSON。
 
@@ -624,7 +624,7 @@ sequenceDiagram
 #### 风险点
 
 - 多个 context 会重复分配 KV/compute buffer, 但实现简单; 单 context 多 sequence 更节省, 但 batch 和 sequence 管理复杂。
-- 不要在多个线程中无保护地修改 LoRA、sampler 或共享业务状态。并发前先读 [`tests/test-thread-safety.cpp`](../tests/test-thread-safety.cpp)。
+- 不要在多个线程中无保护地修改 LoRA、sampler 或共享业务状态。并发前先读 [`tests/test-thread-safety.cpp`](../../tests/test-thread-safety.cpp)。
 - Agent 输出不能只依赖自然语言约定, 控制字段要用 grammar/schema 约束并做解析校验。
 - 多轮 history 容易超过 context; 必须设置预算、截断策略和最大迭代次数。
 - Chat template 来自模型 GGUF; 不要手写一个对所有模型都通用的模板。
@@ -809,7 +809,7 @@ CPU 与可选 GPU offload 对比:
 | 新模型适配 | [HOWTO-add-model](development/HOWTO-add-model.md) -> 选一个结构接近的已有模型 -> converter/GGUF metadata -> tensor -> graph -> reference logits | 一个可解释的模型适配设计和逐层数值对齐报告 |
 | 新硬件 backend | backend registry/device/buffer/op capability -> scheduler -> 选 3 个基础 op -> correctness/perf test | 最小 backend 原型或 AI 编译器 backend 接口对照设计 |
 | 量化 | `ggml-quants` -> type traits -> quantize tool -> imatrix -> kernel | 一个量化类型的误差、大小和性能实验报告 |
-| 多模态 | [`tools/mtmd/`](../tools/mtmd/) -> image/audio preprocessing -> embedding 注入 -> language decode | 本地多模态调用链图和独立 demo |
+| 多模态 | [`tools/mtmd/`](../../tools/mtmd/) -> image/audio preprocessing -> embedding 注入 -> language decode | 本地多模态调用链图和独立 demo |
 | Server 并发 | slot 生命周期、continuous batching、prompt cache、取消、SSE、metrics | 压测脚本、排队/吞吐/延迟分析, 不直接增加业务 route |
 | 性能优化 | graph reuse、batch/ubatch、KV 类型、Flash Attention、offload、kernel profiling | 一个有基线、假设、profile 和回归测试的优化案例 |
 | Agent 工程化 | 从顺序角色升级到 event-driven DAG、tool calling、持久化 state 和可观测性 | 多 Agent demo v2, 但 orchestration 保持在 libllama 之外 |
