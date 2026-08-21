@@ -259,6 +259,8 @@ int main(int argc, char ** argv) {
          * 因此，ctx 是完整的推理状态容器，KV缓存是其中用于加速注意力计算的数据；n_ctx 决定 KV 缓存最多能保存多长的上下文；
          * llama_free(ctx) 会释放上下文及其管理的 KV 缓存
          */ 
+        // 第一次 batch 包含整个提示词，模型一次处理所有提示词 token。
+        // 之后每个 batch 通常只包含上一步生成的一个 token。
         if (llama_decode(ctx, batch)) {
             // 解码失败时向标准错误输出错误信息和返回码。
             fprintf(stderr, "%s : failed to eval, return code %d\n", __func__, 1);
