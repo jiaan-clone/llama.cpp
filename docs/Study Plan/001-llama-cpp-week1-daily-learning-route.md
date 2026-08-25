@@ -125,7 +125,7 @@ token id -> embedding -> decoder block -> hidden state -> logits
    ```
 
    保存 stdout/stderr、commit id、模型路径和运行参数到 `llama-study/results/week1/day4/`。
-5. **100-120 分钟, 复盘**: 在输出中区分 prompt 回显、生成 token、结束 token 和性能统计; 写下从 `llama_sampler_sample` 回到下一次 `llama_decode` 的循环条件。
+5. **100-120 分钟, 复盘**: 在输出中区分 prompt 回显（prompt 回显是指程序把用户输入的提示词（prompt）原样输出到屏幕上。）、生成 token、结束 token 和性能统计; 写下从 `llama_sampler_sample` 回到下一次 `llama_decode` 的循环条件。
 
 ### 当天输出与验收
 
