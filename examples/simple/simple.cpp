@@ -218,6 +218,11 @@ int main(int argc, char ** argv) {
 
     // 判断当前模型是否具有编码器，以兼容编码器-解码器模型。
     if (llama_model_has_encoder(model)) {
+        /**
+         * 编码器-解码器模型：prompt 由 llama_encode 处理，decoder 从 1 个起始 token 开始；
+         * decoder-only 模型：prompt 直接作为一个 batch 传给 llama_decode 完成 prefill；
+         * 后续生成阶段：通常每次只传入 1 个新 token。
+         */
         // 对提示词批次执行编码；非零返回值表示失败。
         if (llama_encode(ctx, batch)) {
             // 向标准错误输出编码失败信息。
