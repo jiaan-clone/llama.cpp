@@ -1,0 +1,2102 @@
+gguf_ex_read_0: version:      3
+gguf_ex_read_0: alignment:   32
+gguf_ex_read_0: data offset: 5950336
+gguf_ex_read_0: n_kv: 28
+gguf_ex_read_0: kv[0]: key = general.architecture
+gguf_ex_read_0: kv[1]: key = general.type
+gguf_ex_read_0: kv[2]: key = general.sampling.top_p
+gguf_ex_read_0: kv[3]: key = general.sampling.temp
+gguf_ex_read_0: kv[4]: key = general.name
+gguf_ex_read_0: kv[5]: key = general.size_label
+gguf_ex_read_0: kv[6]: key = general.license
+gguf_ex_read_0: kv[7]: key = qwen2.block_count
+gguf_ex_read_0: kv[8]: key = qwen2.context_length
+gguf_ex_read_0: kv[9]: key = qwen2.embedding_length
+gguf_ex_read_0: kv[10]: key = qwen2.feed_forward_length
+gguf_ex_read_0: kv[11]: key = qwen2.attention.head_count
+gguf_ex_read_0: kv[12]: key = qwen2.attention.head_count_kv
+gguf_ex_read_0: kv[13]: key = qwen2.rope.freq_base
+gguf_ex_read_0: kv[14]: key = qwen2.attention.layer_norm_rms_epsilon
+gguf_ex_read_0: kv[15]: key = general.file_type
+gguf_ex_read_0: kv[16]: key = general.quantization_version
+gguf_ex_read_0: kv[17]: key = tokenizer.ggml.model
+gguf_ex_read_0: kv[18]: key = tokenizer.ggml.pre
+gguf_ex_read_0: kv[19]: key = tokenizer.ggml.tokens
+gguf_ex_read_0: kv[20]: key = tokenizer.ggml.token_type
+gguf_ex_read_0: kv[21]: key = tokenizer.ggml.merges
+gguf_ex_read_0: kv[22]: key = tokenizer.ggml.bos_token_id
+gguf_ex_read_0: kv[23]: key = tokenizer.ggml.eos_token_id
+gguf_ex_read_0: kv[24]: key = tokenizer.ggml.padding_token_id
+gguf_ex_read_0: kv[25]: key = tokenizer.ggml.add_bos_token
+gguf_ex_read_0: kv[26]: key = tokenizer.ggml.add_eos_token
+gguf_ex_read_0: kv[27]: key = tokenizer.chat_template
+gguf_ex_read_0: find key: some.parameter.string not found.
+gguf_ex_read_0: n_tensors: 339
+gguf_ex_read_0: tensor[0]: name = output.weight, size = 466747392, offset = 0
+gguf_ex_read_0: tensor[1]: name = token_embd.weight, size = 466747392, offset = 466747392
+gguf_ex_read_0: tensor[2]: name = blk.0.attn_norm.weight, size = 6144, offset = 933494784
+gguf_ex_read_0: tensor[3]: name = blk.0.ffn_down.weight, size = 27525120, offset = 933500928
+gguf_ex_read_0: tensor[4]: name = blk.0.ffn_gate.weight, size = 27525120, offset = 961026048
+gguf_ex_read_0: tensor[5]: name = blk.0.ffn_up.weight, size = 27525120, offset = 988551168
+gguf_ex_read_0: tensor[6]: name = blk.0.ffn_norm.weight, size = 6144, offset = 1016076288
+gguf_ex_read_0: tensor[7]: name = blk.0.attn_k.bias, size = 1024, offset = 1016082432
+gguf_ex_read_0: tensor[8]: name = blk.0.attn_k.weight, size = 786432, offset = 1016083456
+gguf_ex_read_0: tensor[9]: name = blk.0.attn_output.weight, size = 4718592, offset = 1016869888
+gguf_ex_read_0: tensor[10]: name = blk.0.attn_q.bias, size = 6144, offset = 1021588480
+gguf_ex_read_0: tensor[11]: name = blk.0.attn_q.weight, size = 4718592, offset = 1021594624
+gguf_ex_read_0: tensor[12]: name = blk.0.attn_v.bias, size = 1024, offset = 1026313216
+gguf_ex_read_0: tensor[13]: name = blk.0.attn_v.weight, size = 786432, offset = 1026314240
+gguf_ex_read_0: tensor[14]: name = blk.1.attn_norm.weight, size = 6144, offset = 1027100672
+gguf_ex_read_0: tensor[15]: name = blk.1.ffn_down.weight, size = 27525120, offset = 1027106816
+gguf_ex_read_0: tensor[16]: name = blk.1.ffn_gate.weight, size = 27525120, offset = 1054631936
+gguf_ex_read_0: tensor[17]: name = blk.1.ffn_up.weight, size = 27525120, offset = 1082157056
+gguf_ex_read_0: tensor[18]: name = blk.1.ffn_norm.weight, size = 6144, offset = 1109682176
+gguf_ex_read_0: tensor[19]: name = blk.1.attn_k.bias, size = 1024, offset = 1109688320
+gguf_ex_read_0: tensor[20]: name = blk.1.attn_k.weight, size = 786432, offset = 1109689344
+gguf_ex_read_0: tensor[21]: name = blk.1.attn_output.weight, size = 4718592, offset = 1110475776
+gguf_ex_read_0: tensor[22]: name = blk.1.attn_q.bias, size = 6144, offset = 1115194368
+gguf_ex_read_0: tensor[23]: name = blk.1.attn_q.weight, size = 4718592, offset = 1115200512
+gguf_ex_read_0: tensor[24]: name = blk.1.attn_v.bias, size = 1024, offset = 1119919104
+gguf_ex_read_0: tensor[25]: name = blk.1.attn_v.weight, size = 786432, offset = 1119920128
+gguf_ex_read_0: tensor[26]: name = blk.10.attn_norm.weight, size = 6144, offset = 1120706560
+gguf_ex_read_0: tensor[27]: name = blk.10.ffn_down.weight, size = 27525120, offset = 1120712704
+gguf_ex_read_0: tensor[28]: name = blk.10.ffn_gate.weight, size = 27525120, offset = 1148237824
+gguf_ex_read_0: tensor[29]: name = blk.10.ffn_up.weight, size = 27525120, offset = 1175762944
+gguf_ex_read_0: tensor[30]: name = blk.10.ffn_norm.weight, size = 6144, offset = 1203288064
+gguf_ex_read_0: tensor[31]: name = blk.10.attn_k.bias, size = 1024, offset = 1203294208
+gguf_ex_read_0: tensor[32]: name = blk.10.attn_k.weight, size = 786432, offset = 1203295232
+gguf_ex_read_0: tensor[33]: name = blk.10.attn_output.weight, size = 4718592, offset = 1204081664
+gguf_ex_read_0: tensor[34]: name = blk.10.attn_q.bias, size = 6144, offset = 1208800256
+gguf_ex_read_0: tensor[35]: name = blk.10.attn_q.weight, size = 4718592, offset = 1208806400
+gguf_ex_read_0: tensor[36]: name = blk.10.attn_v.bias, size = 1024, offset = 1213524992
+gguf_ex_read_0: tensor[37]: name = blk.10.attn_v.weight, size = 786432, offset = 1213526016
+gguf_ex_read_0: tensor[38]: name = blk.11.attn_norm.weight, size = 6144, offset = 1214312448
+gguf_ex_read_0: tensor[39]: name = blk.11.ffn_down.weight, size = 27525120, offset = 1214318592
+gguf_ex_read_0: tensor[40]: name = blk.11.ffn_gate.weight, size = 27525120, offset = 1241843712
+gguf_ex_read_0: tensor[41]: name = blk.11.ffn_up.weight, size = 27525120, offset = 1269368832
+gguf_ex_read_0: tensor[42]: name = blk.11.ffn_norm.weight, size = 6144, offset = 1296893952
+gguf_ex_read_0: tensor[43]: name = blk.11.attn_k.bias, size = 1024, offset = 1296900096
+gguf_ex_read_0: tensor[44]: name = blk.11.attn_k.weight, size = 786432, offset = 1296901120
+gguf_ex_read_0: tensor[45]: name = blk.11.attn_output.weight, size = 4718592, offset = 1297687552
+gguf_ex_read_0: tensor[46]: name = blk.11.attn_q.bias, size = 6144, offset = 1302406144
+gguf_ex_read_0: tensor[47]: name = blk.11.attn_q.weight, size = 4718592, offset = 1302412288
+gguf_ex_read_0: tensor[48]: name = blk.11.attn_v.bias, size = 1024, offset = 1307130880
+gguf_ex_read_0: tensor[49]: name = blk.11.attn_v.weight, size = 786432, offset = 1307131904
+gguf_ex_read_0: tensor[50]: name = blk.12.attn_norm.weight, size = 6144, offset = 1307918336
+gguf_ex_read_0: tensor[51]: name = blk.12.ffn_down.weight, size = 27525120, offset = 1307924480
+gguf_ex_read_0: tensor[52]: name = blk.12.ffn_gate.weight, size = 27525120, offset = 1335449600
+gguf_ex_read_0: tensor[53]: name = blk.12.ffn_up.weight, size = 27525120, offset = 1362974720
+gguf_ex_read_0: tensor[54]: name = blk.12.ffn_norm.weight, size = 6144, offset = 1390499840
+gguf_ex_read_0: tensor[55]: name = blk.12.attn_k.bias, size = 1024, offset = 1390505984
+gguf_ex_read_0: tensor[56]: name = blk.12.attn_k.weight, size = 786432, offset = 1390507008
+gguf_ex_read_0: tensor[57]: name = blk.12.attn_output.weight, size = 4718592, offset = 1391293440
+gguf_ex_read_0: tensor[58]: name = blk.12.attn_q.bias, size = 6144, offset = 1396012032
+gguf_ex_read_0: tensor[59]: name = blk.12.attn_q.weight, size = 4718592, offset = 1396018176
+gguf_ex_read_0: tensor[60]: name = blk.12.attn_v.bias, size = 1024, offset = 1400736768
+gguf_ex_read_0: tensor[61]: name = blk.12.attn_v.weight, size = 786432, offset = 1400737792
+gguf_ex_read_0: tensor[62]: name = blk.13.attn_norm.weight, size = 6144, offset = 1401524224
+gguf_ex_read_0: tensor[63]: name = blk.13.ffn_down.weight, size = 27525120, offset = 1401530368
+gguf_ex_read_0: tensor[64]: name = blk.13.ffn_gate.weight, size = 27525120, offset = 1429055488
+gguf_ex_read_0: tensor[65]: name = blk.13.ffn_up.weight, size = 27525120, offset = 1456580608
+gguf_ex_read_0: tensor[66]: name = blk.13.ffn_norm.weight, size = 6144, offset = 1484105728
+gguf_ex_read_0: tensor[67]: name = blk.13.attn_k.bias, size = 1024, offset = 1484111872
+gguf_ex_read_0: tensor[68]: name = blk.13.attn_k.weight, size = 786432, offset = 1484112896
+gguf_ex_read_0: tensor[69]: name = blk.13.attn_output.weight, size = 4718592, offset = 1484899328
+gguf_ex_read_0: tensor[70]: name = blk.13.attn_q.bias, size = 6144, offset = 1489617920
+gguf_ex_read_0: tensor[71]: name = blk.13.attn_q.weight, size = 4718592, offset = 1489624064
+gguf_ex_read_0: tensor[72]: name = blk.13.attn_v.bias, size = 1024, offset = 1494342656
+gguf_ex_read_0: tensor[73]: name = blk.13.attn_v.weight, size = 786432, offset = 1494343680
+gguf_ex_read_0: tensor[74]: name = blk.14.attn_norm.weight, size = 6144, offset = 1495130112
+gguf_ex_read_0: tensor[75]: name = blk.14.ffn_down.weight, size = 27525120, offset = 1495136256
+gguf_ex_read_0: tensor[76]: name = blk.14.ffn_gate.weight, size = 27525120, offset = 1522661376
+gguf_ex_read_0: tensor[77]: name = blk.14.ffn_up.weight, size = 27525120, offset = 1550186496
+gguf_ex_read_0: tensor[78]: name = blk.14.ffn_norm.weight, size = 6144, offset = 1577711616
+gguf_ex_read_0: tensor[79]: name = blk.14.attn_k.bias, size = 1024, offset = 1577717760
+gguf_ex_read_0: tensor[80]: name = blk.14.attn_k.weight, size = 786432, offset = 1577718784
+gguf_ex_read_0: tensor[81]: name = blk.14.attn_output.weight, size = 4718592, offset = 1578505216
+gguf_ex_read_0: tensor[82]: name = blk.14.attn_q.bias, size = 6144, offset = 1583223808
+gguf_ex_read_0: tensor[83]: name = blk.14.attn_q.weight, size = 4718592, offset = 1583229952
+gguf_ex_read_0: tensor[84]: name = blk.14.attn_v.bias, size = 1024, offset = 1587948544
+gguf_ex_read_0: tensor[85]: name = blk.14.attn_v.weight, size = 786432, offset = 1587949568
+gguf_ex_read_0: tensor[86]: name = blk.15.attn_norm.weight, size = 6144, offset = 1588736000
+gguf_ex_read_0: tensor[87]: name = blk.15.ffn_down.weight, size = 27525120, offset = 1588742144
+gguf_ex_read_0: tensor[88]: name = blk.15.ffn_gate.weight, size = 27525120, offset = 1616267264
+gguf_ex_read_0: tensor[89]: name = blk.15.ffn_up.weight, size = 27525120, offset = 1643792384
+gguf_ex_read_0: tensor[90]: name = blk.15.ffn_norm.weight, size = 6144, offset = 1671317504
+gguf_ex_read_0: tensor[91]: name = blk.15.attn_k.bias, size = 1024, offset = 1671323648
+gguf_ex_read_0: tensor[92]: name = blk.15.attn_k.weight, size = 786432, offset = 1671324672
+gguf_ex_read_0: tensor[93]: name = blk.15.attn_output.weight, size = 4718592, offset = 1672111104
+gguf_ex_read_0: tensor[94]: name = blk.15.attn_q.bias, size = 6144, offset = 1676829696
+gguf_ex_read_0: tensor[95]: name = blk.15.attn_q.weight, size = 4718592, offset = 1676835840
+gguf_ex_read_0: tensor[96]: name = blk.15.attn_v.bias, size = 1024, offset = 1681554432
+gguf_ex_read_0: tensor[97]: name = blk.15.attn_v.weight, size = 786432, offset = 1681555456
+gguf_ex_read_0: tensor[98]: name = blk.16.attn_norm.weight, size = 6144, offset = 1682341888
+gguf_ex_read_0: tensor[99]: name = blk.16.ffn_down.weight, size = 27525120, offset = 1682348032
+gguf_ex_read_0: tensor[100]: name = blk.16.ffn_gate.weight, size = 27525120, offset = 1709873152
+gguf_ex_read_0: tensor[101]: name = blk.16.ffn_up.weight, size = 27525120, offset = 1737398272
+gguf_ex_read_0: tensor[102]: name = blk.16.ffn_norm.weight, size = 6144, offset = 1764923392
+gguf_ex_read_0: tensor[103]: name = blk.16.attn_k.bias, size = 1024, offset = 1764929536
+gguf_ex_read_0: tensor[104]: name = blk.16.attn_k.weight, size = 786432, offset = 1764930560
+gguf_ex_read_0: tensor[105]: name = blk.16.attn_output.weight, size = 4718592, offset = 1765716992
+gguf_ex_read_0: tensor[106]: name = blk.16.attn_q.bias, size = 6144, offset = 1770435584
+gguf_ex_read_0: tensor[107]: name = blk.16.attn_q.weight, size = 4718592, offset = 1770441728
+gguf_ex_read_0: tensor[108]: name = blk.16.attn_v.bias, size = 1024, offset = 1775160320
+gguf_ex_read_0: tensor[109]: name = blk.16.attn_v.weight, size = 786432, offset = 1775161344
+gguf_ex_read_0: tensor[110]: name = blk.17.attn_norm.weight, size = 6144, offset = 1775947776
+gguf_ex_read_0: tensor[111]: name = blk.17.ffn_down.weight, size = 27525120, offset = 1775953920
+gguf_ex_read_0: tensor[112]: name = blk.17.ffn_gate.weight, size = 27525120, offset = 1803479040
+gguf_ex_read_0: tensor[113]: name = blk.17.ffn_up.weight, size = 27525120, offset = 1831004160
+gguf_ex_read_0: tensor[114]: name = blk.17.ffn_norm.weight, size = 6144, offset = 1858529280
+gguf_ex_read_0: tensor[115]: name = blk.17.attn_k.bias, size = 1024, offset = 1858535424
+gguf_ex_read_0: tensor[116]: name = blk.17.attn_k.weight, size = 786432, offset = 1858536448
+gguf_ex_read_0: tensor[117]: name = blk.17.attn_output.weight, size = 4718592, offset = 1859322880
+gguf_ex_read_0: tensor[118]: name = blk.17.attn_q.bias, size = 6144, offset = 1864041472
+gguf_ex_read_0: tensor[119]: name = blk.17.attn_q.weight, size = 4718592, offset = 1864047616
+gguf_ex_read_0: tensor[120]: name = blk.17.attn_v.bias, size = 1024, offset = 1868766208
+gguf_ex_read_0: tensor[121]: name = blk.17.attn_v.weight, size = 786432, offset = 1868767232
+gguf_ex_read_0: tensor[122]: name = blk.18.attn_norm.weight, size = 6144, offset = 1869553664
+gguf_ex_read_0: tensor[123]: name = blk.18.ffn_down.weight, size = 27525120, offset = 1869559808
+gguf_ex_read_0: tensor[124]: name = blk.18.ffn_gate.weight, size = 27525120, offset = 1897084928
+gguf_ex_read_0: tensor[125]: name = blk.18.ffn_up.weight, size = 27525120, offset = 1924610048
+gguf_ex_read_0: tensor[126]: name = blk.18.ffn_norm.weight, size = 6144, offset = 1952135168
+gguf_ex_read_0: tensor[127]: name = blk.18.attn_k.bias, size = 1024, offset = 1952141312
+gguf_ex_read_0: tensor[128]: name = blk.18.attn_k.weight, size = 786432, offset = 1952142336
+gguf_ex_read_0: tensor[129]: name = blk.18.attn_output.weight, size = 4718592, offset = 1952928768
+gguf_ex_read_0: tensor[130]: name = blk.18.attn_q.bias, size = 6144, offset = 1957647360
+gguf_ex_read_0: tensor[131]: name = blk.18.attn_q.weight, size = 4718592, offset = 1957653504
+gguf_ex_read_0: tensor[132]: name = blk.18.attn_v.bias, size = 1024, offset = 1962372096
+gguf_ex_read_0: tensor[133]: name = blk.18.attn_v.weight, size = 786432, offset = 1962373120
+gguf_ex_read_0: tensor[134]: name = blk.19.attn_norm.weight, size = 6144, offset = 1963159552
+gguf_ex_read_0: tensor[135]: name = blk.19.ffn_down.weight, size = 27525120, offset = 1963165696
+gguf_ex_read_0: tensor[136]: name = blk.19.ffn_gate.weight, size = 27525120, offset = 1990690816
+gguf_ex_read_0: tensor[137]: name = blk.19.ffn_up.weight, size = 27525120, offset = 2018215936
+gguf_ex_read_0: tensor[138]: name = blk.19.ffn_norm.weight, size = 6144, offset = 2045741056
+gguf_ex_read_0: tensor[139]: name = blk.19.attn_k.bias, size = 1024, offset = 2045747200
+gguf_ex_read_0: tensor[140]: name = blk.19.attn_k.weight, size = 786432, offset = 2045748224
+gguf_ex_read_0: tensor[141]: name = blk.19.attn_output.weight, size = 4718592, offset = 2046534656
+gguf_ex_read_0: tensor[142]: name = blk.19.attn_q.bias, size = 6144, offset = 2051253248
+gguf_ex_read_0: tensor[143]: name = blk.19.attn_q.weight, size = 4718592, offset = 2051259392
+gguf_ex_read_0: tensor[144]: name = blk.19.attn_v.bias, size = 1024, offset = 2055977984
+gguf_ex_read_0: tensor[145]: name = blk.19.attn_v.weight, size = 786432, offset = 2055979008
+gguf_ex_read_0: tensor[146]: name = blk.2.attn_norm.weight, size = 6144, offset = 2056765440
+gguf_ex_read_0: tensor[147]: name = blk.2.ffn_down.weight, size = 27525120, offset = 2056771584
+gguf_ex_read_0: tensor[148]: name = blk.2.ffn_gate.weight, size = 27525120, offset = 2084296704
+gguf_ex_read_0: tensor[149]: name = blk.2.ffn_up.weight, size = 27525120, offset = 2111821824
+gguf_ex_read_0: tensor[150]: name = blk.2.ffn_norm.weight, size = 6144, offset = 2139346944
+gguf_ex_read_0: tensor[151]: name = blk.2.attn_k.bias, size = 1024, offset = 2139353088
+gguf_ex_read_0: tensor[152]: name = blk.2.attn_k.weight, size = 786432, offset = 2139354112
+gguf_ex_read_0: tensor[153]: name = blk.2.attn_output.weight, size = 4718592, offset = 2140140544
+gguf_ex_read_0: tensor[154]: name = blk.2.attn_q.bias, size = 6144, offset = 2144859136
+gguf_ex_read_0: tensor[155]: name = blk.2.attn_q.weight, size = 4718592, offset = 2144865280
+gguf_ex_read_0: tensor[156]: name = blk.2.attn_v.bias, size = 1024, offset = 2149583872
+gguf_ex_read_0: tensor[157]: name = blk.2.attn_v.weight, size = 786432, offset = 2149584896
+gguf_ex_read_0: tensor[158]: name = blk.20.attn_norm.weight, size = 6144, offset = 2150371328
+gguf_ex_read_0: tensor[159]: name = blk.20.ffn_down.weight, size = 27525120, offset = 2150377472
+gguf_ex_read_0: tensor[160]: name = blk.20.ffn_gate.weight, size = 27525120, offset = 2177902592
+gguf_ex_read_0: tensor[161]: name = blk.20.ffn_up.weight, size = 27525120, offset = 2205427712
+gguf_ex_read_0: tensor[162]: name = blk.20.ffn_norm.weight, size = 6144, offset = 2232952832
+gguf_ex_read_0: tensor[163]: name = blk.20.attn_k.bias, size = 1024, offset = 2232958976
+gguf_ex_read_0: tensor[164]: name = blk.20.attn_k.weight, size = 786432, offset = 2232960000
+gguf_ex_read_0: tensor[165]: name = blk.20.attn_output.weight, size = 4718592, offset = 2233746432
+gguf_ex_read_0: tensor[166]: name = blk.20.attn_q.bias, size = 6144, offset = 2238465024
+gguf_ex_read_0: tensor[167]: name = blk.20.attn_q.weight, size = 4718592, offset = 2238471168
+gguf_ex_read_0: tensor[168]: name = blk.20.attn_v.bias, size = 1024, offset = 2243189760
+gguf_ex_read_0: tensor[169]: name = blk.20.attn_v.weight, size = 786432, offset = 2243190784
+gguf_ex_read_0: tensor[170]: name = blk.21.attn_norm.weight, size = 6144, offset = 2243977216
+gguf_ex_read_0: tensor[171]: name = blk.21.ffn_down.weight, size = 27525120, offset = 2243983360
+gguf_ex_read_0: tensor[172]: name = blk.21.ffn_gate.weight, size = 27525120, offset = 2271508480
+gguf_ex_read_0: tensor[173]: name = blk.21.ffn_up.weight, size = 27525120, offset = 2299033600
+gguf_ex_read_0: tensor[174]: name = blk.21.ffn_norm.weight, size = 6144, offset = 2326558720
+gguf_ex_read_0: tensor[175]: name = blk.21.attn_k.bias, size = 1024, offset = 2326564864
+gguf_ex_read_0: tensor[176]: name = blk.21.attn_k.weight, size = 786432, offset = 2326565888
+gguf_ex_read_0: tensor[177]: name = blk.21.attn_output.weight, size = 4718592, offset = 2327352320
+gguf_ex_read_0: tensor[178]: name = blk.21.attn_q.bias, size = 6144, offset = 2332070912
+gguf_ex_read_0: tensor[179]: name = blk.21.attn_q.weight, size = 4718592, offset = 2332077056
+gguf_ex_read_0: tensor[180]: name = blk.21.attn_v.bias, size = 1024, offset = 2336795648
+gguf_ex_read_0: tensor[181]: name = blk.21.attn_v.weight, size = 786432, offset = 2336796672
+gguf_ex_read_0: tensor[182]: name = blk.22.attn_norm.weight, size = 6144, offset = 2337583104
+gguf_ex_read_0: tensor[183]: name = blk.22.ffn_down.weight, size = 27525120, offset = 2337589248
+gguf_ex_read_0: tensor[184]: name = blk.22.ffn_gate.weight, size = 27525120, offset = 2365114368
+gguf_ex_read_0: tensor[185]: name = blk.22.ffn_up.weight, size = 27525120, offset = 2392639488
+gguf_ex_read_0: tensor[186]: name = blk.22.ffn_norm.weight, size = 6144, offset = 2420164608
+gguf_ex_read_0: tensor[187]: name = blk.22.attn_k.bias, size = 1024, offset = 2420170752
+gguf_ex_read_0: tensor[188]: name = blk.22.attn_k.weight, size = 786432, offset = 2420171776
+gguf_ex_read_0: tensor[189]: name = blk.22.attn_output.weight, size = 4718592, offset = 2420958208
+gguf_ex_read_0: tensor[190]: name = blk.22.attn_q.bias, size = 6144, offset = 2425676800
+gguf_ex_read_0: tensor[191]: name = blk.22.attn_q.weight, size = 4718592, offset = 2425682944
+gguf_ex_read_0: tensor[192]: name = blk.22.attn_v.bias, size = 1024, offset = 2430401536
+gguf_ex_read_0: tensor[193]: name = blk.22.attn_v.weight, size = 786432, offset = 2430402560
+gguf_ex_read_0: tensor[194]: name = blk.23.attn_norm.weight, size = 6144, offset = 2431188992
+gguf_ex_read_0: tensor[195]: name = blk.23.ffn_down.weight, size = 27525120, offset = 2431195136
+gguf_ex_read_0: tensor[196]: name = blk.23.ffn_gate.weight, size = 27525120, offset = 2458720256
+gguf_ex_read_0: tensor[197]: name = blk.23.ffn_up.weight, size = 27525120, offset = 2486245376
+gguf_ex_read_0: tensor[198]: name = blk.23.ffn_norm.weight, size = 6144, offset = 2513770496
+gguf_ex_read_0: tensor[199]: name = blk.23.attn_k.bias, size = 1024, offset = 2513776640
+gguf_ex_read_0: tensor[200]: name = blk.23.attn_k.weight, size = 786432, offset = 2513777664
+gguf_ex_read_0: tensor[201]: name = blk.23.attn_output.weight, size = 4718592, offset = 2514564096
+gguf_ex_read_0: tensor[202]: name = blk.23.attn_q.bias, size = 6144, offset = 2519282688
+gguf_ex_read_0: tensor[203]: name = blk.23.attn_q.weight, size = 4718592, offset = 2519288832
+gguf_ex_read_0: tensor[204]: name = blk.23.attn_v.bias, size = 1024, offset = 2524007424
+gguf_ex_read_0: tensor[205]: name = blk.23.attn_v.weight, size = 786432, offset = 2524008448
+gguf_ex_read_0: tensor[206]: name = blk.24.attn_norm.weight, size = 6144, offset = 2524794880
+gguf_ex_read_0: tensor[207]: name = blk.24.ffn_down.weight, size = 27525120, offset = 2524801024
+gguf_ex_read_0: tensor[208]: name = blk.24.ffn_gate.weight, size = 27525120, offset = 2552326144
+gguf_ex_read_0: tensor[209]: name = blk.24.ffn_up.weight, size = 27525120, offset = 2579851264
+gguf_ex_read_0: tensor[210]: name = blk.24.ffn_norm.weight, size = 6144, offset = 2607376384
+gguf_ex_read_0: tensor[211]: name = blk.24.attn_k.bias, size = 1024, offset = 2607382528
+gguf_ex_read_0: tensor[212]: name = blk.24.attn_k.weight, size = 786432, offset = 2607383552
+gguf_ex_read_0: tensor[213]: name = blk.24.attn_output.weight, size = 4718592, offset = 2608169984
+gguf_ex_read_0: tensor[214]: name = blk.24.attn_q.bias, size = 6144, offset = 2612888576
+gguf_ex_read_0: tensor[215]: name = blk.24.attn_q.weight, size = 4718592, offset = 2612894720
+gguf_ex_read_0: tensor[216]: name = blk.24.attn_v.bias, size = 1024, offset = 2617613312
+gguf_ex_read_0: tensor[217]: name = blk.24.attn_v.weight, size = 786432, offset = 2617614336
+gguf_ex_read_0: tensor[218]: name = blk.25.attn_norm.weight, size = 6144, offset = 2618400768
+gguf_ex_read_0: tensor[219]: name = blk.25.ffn_down.weight, size = 27525120, offset = 2618406912
+gguf_ex_read_0: tensor[220]: name = blk.25.ffn_gate.weight, size = 27525120, offset = 2645932032
+gguf_ex_read_0: tensor[221]: name = blk.25.ffn_up.weight, size = 27525120, offset = 2673457152
+gguf_ex_read_0: tensor[222]: name = blk.25.ffn_norm.weight, size = 6144, offset = 2700982272
+gguf_ex_read_0: tensor[223]: name = blk.25.attn_k.bias, size = 1024, offset = 2700988416
+gguf_ex_read_0: tensor[224]: name = blk.25.attn_k.weight, size = 786432, offset = 2700989440
+gguf_ex_read_0: tensor[225]: name = blk.25.attn_output.weight, size = 4718592, offset = 2701775872
+gguf_ex_read_0: tensor[226]: name = blk.25.attn_q.bias, size = 6144, offset = 2706494464
+gguf_ex_read_0: tensor[227]: name = blk.25.attn_q.weight, size = 4718592, offset = 2706500608
+gguf_ex_read_0: tensor[228]: name = blk.25.attn_v.bias, size = 1024, offset = 2711219200
+gguf_ex_read_0: tensor[229]: name = blk.25.attn_v.weight, size = 786432, offset = 2711220224
+gguf_ex_read_0: tensor[230]: name = blk.26.attn_norm.weight, size = 6144, offset = 2712006656
+gguf_ex_read_0: tensor[231]: name = blk.26.ffn_down.weight, size = 27525120, offset = 2712012800
+gguf_ex_read_0: tensor[232]: name = blk.26.ffn_gate.weight, size = 27525120, offset = 2739537920
+gguf_ex_read_0: tensor[233]: name = blk.26.ffn_up.weight, size = 27525120, offset = 2767063040
+gguf_ex_read_0: tensor[234]: name = blk.26.ffn_norm.weight, size = 6144, offset = 2794588160
+gguf_ex_read_0: tensor[235]: name = blk.26.attn_k.bias, size = 1024, offset = 2794594304
+gguf_ex_read_0: tensor[236]: name = blk.26.attn_k.weight, size = 786432, offset = 2794595328
+gguf_ex_read_0: tensor[237]: name = blk.26.attn_output.weight, size = 4718592, offset = 2795381760
+gguf_ex_read_0: tensor[238]: name = blk.26.attn_q.bias, size = 6144, offset = 2800100352
+gguf_ex_read_0: tensor[239]: name = blk.26.attn_q.weight, size = 4718592, offset = 2800106496
+gguf_ex_read_0: tensor[240]: name = blk.26.attn_v.bias, size = 1024, offset = 2804825088
+gguf_ex_read_0: tensor[241]: name = blk.26.attn_v.weight, size = 786432, offset = 2804826112
+gguf_ex_read_0: tensor[242]: name = blk.27.attn_norm.weight, size = 6144, offset = 2805612544
+gguf_ex_read_0: tensor[243]: name = blk.27.ffn_down.weight, size = 27525120, offset = 2805618688
+gguf_ex_read_0: tensor[244]: name = blk.27.ffn_gate.weight, size = 27525120, offset = 2833143808
+gguf_ex_read_0: tensor[245]: name = blk.27.ffn_up.weight, size = 27525120, offset = 2860668928
+gguf_ex_read_0: tensor[246]: name = blk.27.ffn_norm.weight, size = 6144, offset = 2888194048
+gguf_ex_read_0: tensor[247]: name = blk.27.attn_k.bias, size = 1024, offset = 2888200192
+gguf_ex_read_0: tensor[248]: name = blk.27.attn_k.weight, size = 786432, offset = 2888201216
+gguf_ex_read_0: tensor[249]: name = blk.27.attn_output.weight, size = 4718592, offset = 2888987648
+gguf_ex_read_0: tensor[250]: name = blk.27.attn_q.bias, size = 6144, offset = 2893706240
+gguf_ex_read_0: tensor[251]: name = blk.27.attn_q.weight, size = 4718592, offset = 2893712384
+gguf_ex_read_0: tensor[252]: name = blk.27.attn_v.bias, size = 1024, offset = 2898430976
+gguf_ex_read_0: tensor[253]: name = blk.27.attn_v.weight, size = 786432, offset = 2898432000
+gguf_ex_read_0: tensor[254]: name = blk.3.attn_norm.weight, size = 6144, offset = 2899218432
+gguf_ex_read_0: tensor[255]: name = blk.3.ffn_down.weight, size = 27525120, offset = 2899224576
+gguf_ex_read_0: tensor[256]: name = blk.3.ffn_gate.weight, size = 27525120, offset = 2926749696
+gguf_ex_read_0: tensor[257]: name = blk.3.ffn_up.weight, size = 27525120, offset = 2954274816
+gguf_ex_read_0: tensor[258]: name = blk.3.ffn_norm.weight, size = 6144, offset = 2981799936
+gguf_ex_read_0: tensor[259]: name = blk.3.attn_k.bias, size = 1024, offset = 2981806080
+gguf_ex_read_0: tensor[260]: name = blk.3.attn_k.weight, size = 786432, offset = 2981807104
+gguf_ex_read_0: tensor[261]: name = blk.3.attn_output.weight, size = 4718592, offset = 2982593536
+gguf_ex_read_0: tensor[262]: name = blk.3.attn_q.bias, size = 6144, offset = 2987312128
+gguf_ex_read_0: tensor[263]: name = blk.3.attn_q.weight, size = 4718592, offset = 2987318272
+gguf_ex_read_0: tensor[264]: name = blk.3.attn_v.bias, size = 1024, offset = 2992036864
+gguf_ex_read_0: tensor[265]: name = blk.3.attn_v.weight, size = 786432, offset = 2992037888
+gguf_ex_read_0: tensor[266]: name = blk.4.attn_norm.weight, size = 6144, offset = 2992824320
+gguf_ex_read_0: tensor[267]: name = blk.4.ffn_down.weight, size = 27525120, offset = 2992830464
+gguf_ex_read_0: tensor[268]: name = blk.4.ffn_gate.weight, size = 27525120, offset = 3020355584
+gguf_ex_read_0: tensor[269]: name = blk.4.ffn_up.weight, size = 27525120, offset = 3047880704
+gguf_ex_read_0: tensor[270]: name = blk.4.ffn_norm.weight, size = 6144, offset = 3075405824
+gguf_ex_read_0: tensor[271]: name = blk.4.attn_k.bias, size = 1024, offset = 3075411968
+gguf_ex_read_0: tensor[272]: name = blk.4.attn_k.weight, size = 786432, offset = 3075412992
+gguf_ex_read_0: tensor[273]: name = blk.4.attn_output.weight, size = 4718592, offset = 3076199424
+gguf_ex_read_0: tensor[274]: name = blk.4.attn_q.bias, size = 6144, offset = 3080918016
+gguf_ex_read_0: tensor[275]: name = blk.4.attn_q.weight, size = 4718592, offset = 3080924160
+gguf_ex_read_0: tensor[276]: name = blk.4.attn_v.bias, size = 1024, offset = 3085642752
+gguf_ex_read_0: tensor[277]: name = blk.4.attn_v.weight, size = 786432, offset = 3085643776
+gguf_ex_read_0: tensor[278]: name = blk.5.attn_norm.weight, size = 6144, offset = 3086430208
+gguf_ex_read_0: tensor[279]: name = blk.5.ffn_down.weight, size = 27525120, offset = 3086436352
+gguf_ex_read_0: tensor[280]: name = blk.5.ffn_gate.weight, size = 27525120, offset = 3113961472
+gguf_ex_read_0: tensor[281]: name = blk.5.ffn_up.weight, size = 27525120, offset = 3141486592
+gguf_ex_read_0: tensor[282]: name = blk.5.ffn_norm.weight, size = 6144, offset = 3169011712
+gguf_ex_read_0: tensor[283]: name = blk.5.attn_k.bias, size = 1024, offset = 3169017856
+gguf_ex_read_0: tensor[284]: name = blk.5.attn_k.weight, size = 786432, offset = 3169018880
+gguf_ex_read_0: tensor[285]: name = blk.5.attn_output.weight, size = 4718592, offset = 3169805312
+gguf_ex_read_0: tensor[286]: name = blk.5.attn_q.bias, size = 6144, offset = 3174523904
+gguf_ex_read_0: tensor[287]: name = blk.5.attn_q.weight, size = 4718592, offset = 3174530048
+gguf_ex_read_0: tensor[288]: name = blk.5.attn_v.bias, size = 1024, offset = 3179248640
+gguf_ex_read_0: tensor[289]: name = blk.5.attn_v.weight, size = 786432, offset = 3179249664
+gguf_ex_read_0: tensor[290]: name = blk.6.attn_norm.weight, size = 6144, offset = 3180036096
+gguf_ex_read_0: tensor[291]: name = blk.6.ffn_down.weight, size = 27525120, offset = 3180042240
+gguf_ex_read_0: tensor[292]: name = blk.6.ffn_gate.weight, size = 27525120, offset = 3207567360
+gguf_ex_read_0: tensor[293]: name = blk.6.ffn_up.weight, size = 27525120, offset = 3235092480
+gguf_ex_read_0: tensor[294]: name = blk.6.ffn_norm.weight, size = 6144, offset = 3262617600
+gguf_ex_read_0: tensor[295]: name = blk.6.attn_k.bias, size = 1024, offset = 3262623744
+gguf_ex_read_0: tensor[296]: name = blk.6.attn_k.weight, size = 786432, offset = 3262624768
+gguf_ex_read_0: tensor[297]: name = blk.6.attn_output.weight, size = 4718592, offset = 3263411200
+gguf_ex_read_0: tensor[298]: name = blk.6.attn_q.bias, size = 6144, offset = 3268129792
+gguf_ex_read_0: tensor[299]: name = blk.6.attn_q.weight, size = 4718592, offset = 3268135936
+gguf_ex_read_0: tensor[300]: name = blk.6.attn_v.bias, size = 1024, offset = 3272854528
+gguf_ex_read_0: tensor[301]: name = blk.6.attn_v.weight, size = 786432, offset = 3272855552
+gguf_ex_read_0: tensor[302]: name = blk.7.attn_norm.weight, size = 6144, offset = 3273641984
+gguf_ex_read_0: tensor[303]: name = blk.7.ffn_down.weight, size = 27525120, offset = 3273648128
+gguf_ex_read_0: tensor[304]: name = blk.7.ffn_gate.weight, size = 27525120, offset = 3301173248
+gguf_ex_read_0: tensor[305]: name = blk.7.ffn_up.weight, size = 27525120, offset = 3328698368
+gguf_ex_read_0: tensor[306]: name = blk.7.ffn_norm.weight, size = 6144, offset = 3356223488
+gguf_ex_read_0: tensor[307]: name = blk.7.attn_k.bias, size = 1024, offset = 3356229632
+gguf_ex_read_0: tensor[308]: name = blk.7.attn_k.weight, size = 786432, offset = 3356230656
+gguf_ex_read_0: tensor[309]: name = blk.7.attn_output.weight, size = 4718592, offset = 3357017088
+gguf_ex_read_0: tensor[310]: name = blk.7.attn_q.bias, size = 6144, offset = 3361735680
+gguf_ex_read_0: tensor[311]: name = blk.7.attn_q.weight, size = 4718592, offset = 3361741824
+gguf_ex_read_0: tensor[312]: name = blk.7.attn_v.bias, size = 1024, offset = 3366460416
+gguf_ex_read_0: tensor[313]: name = blk.7.attn_v.weight, size = 786432, offset = 3366461440
+gguf_ex_read_0: tensor[314]: name = blk.8.attn_norm.weight, size = 6144, offset = 3367247872
+gguf_ex_read_0: tensor[315]: name = blk.8.ffn_down.weight, size = 27525120, offset = 3367254016
+gguf_ex_read_0: tensor[316]: name = blk.8.ffn_gate.weight, size = 27525120, offset = 3394779136
+gguf_ex_read_0: tensor[317]: name = blk.8.ffn_up.weight, size = 27525120, offset = 3422304256
+gguf_ex_read_0: tensor[318]: name = blk.8.ffn_norm.weight, size = 6144, offset = 3449829376
+gguf_ex_read_0: tensor[319]: name = blk.8.attn_k.bias, size = 1024, offset = 3449835520
+gguf_ex_read_0: tensor[320]: name = blk.8.attn_k.weight, size = 786432, offset = 3449836544
+gguf_ex_read_0: tensor[321]: name = blk.8.attn_output.weight, size = 4718592, offset = 3450622976
+gguf_ex_read_0: tensor[322]: name = blk.8.attn_q.bias, size = 6144, offset = 3455341568
+gguf_ex_read_0: tensor[323]: name = blk.8.attn_q.weight, size = 4718592, offset = 3455347712
+gguf_ex_read_0: tensor[324]: name = blk.8.attn_v.bias, size = 1024, offset = 3460066304
+gguf_ex_read_0: tensor[325]: name = blk.8.attn_v.weight, size = 786432, offset = 3460067328
+gguf_ex_read_0: tensor[326]: name = blk.9.attn_norm.weight, size = 6144, offset = 3460853760
+gguf_ex_read_0: tensor[327]: name = blk.9.ffn_down.weight, size = 27525120, offset = 3460859904
+gguf_ex_read_0: tensor[328]: name = blk.9.ffn_gate.weight, size = 27525120, offset = 3488385024
+gguf_ex_read_0: tensor[329]: name = blk.9.ffn_up.weight, size = 27525120, offset = 3515910144
+gguf_ex_read_0: tensor[330]: name = blk.9.ffn_norm.weight, size = 6144, offset = 3543435264
+gguf_ex_read_0: tensor[331]: name = blk.9.attn_k.bias, size = 1024, offset = 3543441408
+gguf_ex_read_0: tensor[332]: name = blk.9.attn_k.weight, size = 786432, offset = 3543442432
+gguf_ex_read_0: tensor[333]: name = blk.9.attn_output.weight, size = 4718592, offset = 3544228864
+gguf_ex_read_0: tensor[334]: name = blk.9.attn_q.bias, size = 6144, offset = 3548947456
+gguf_ex_read_0: tensor[335]: name = blk.9.attn_q.weight, size = 4718592, offset = 3548953600
+gguf_ex_read_0: tensor[336]: name = blk.9.attn_v.bias, size = 1024, offset = 3553672192
+gguf_ex_read_0: tensor[337]: name = blk.9.attn_v.weight, size = 786432, offset = 3553673216
+gguf_ex_read_0: tensor[338]: name = output_norm.weight, size = 6144, offset = 3554459648
+gguf_ex_read_1: version:      3
+gguf_ex_read_1: alignment:   32
+gguf_ex_read_1: data offset: 5950336
+gguf_ex_read_1: n_kv: 28
+gguf_ex_read_1: kv[0]: key = general.architecture
+gguf_ex_read_1: kv[1]: key = general.type
+gguf_ex_read_1: kv[2]: key = general.sampling.top_p
+gguf_ex_read_1: kv[3]: key = general.sampling.temp
+gguf_ex_read_1: kv[4]: key = general.name
+gguf_ex_read_1: kv[5]: key = general.size_label
+gguf_ex_read_1: kv[6]: key = general.license
+gguf_ex_read_1: kv[7]: key = qwen2.block_count
+gguf_ex_read_1: kv[8]: key = qwen2.context_length
+gguf_ex_read_1: kv[9]: key = qwen2.embedding_length
+gguf_ex_read_1: kv[10]: key = qwen2.feed_forward_length
+gguf_ex_read_1: kv[11]: key = qwen2.attention.head_count
+gguf_ex_read_1: kv[12]: key = qwen2.attention.head_count_kv
+gguf_ex_read_1: kv[13]: key = qwen2.rope.freq_base
+gguf_ex_read_1: kv[14]: key = qwen2.attention.layer_norm_rms_epsilon
+gguf_ex_read_1: kv[15]: key = general.file_type
+gguf_ex_read_1: kv[16]: key = general.quantization_version
+gguf_ex_read_1: kv[17]: key = tokenizer.ggml.model
+gguf_ex_read_1: kv[18]: key = tokenizer.ggml.pre
+gguf_ex_read_1: kv[19]: key = tokenizer.ggml.tokens
+gguf_ex_read_1: kv[20]: key = tokenizer.ggml.token_type
+gguf_ex_read_1: kv[21]: key = tokenizer.ggml.merges
+gguf_ex_read_1: kv[22]: key = tokenizer.ggml.bos_token_id
+gguf_ex_read_1: kv[23]: key = tokenizer.ggml.eos_token_id
+gguf_ex_read_1: kv[24]: key = tokenizer.ggml.padding_token_id
+gguf_ex_read_1: kv[25]: key = tokenizer.ggml.add_bos_token
+gguf_ex_read_1: kv[26]: key = tokenizer.ggml.add_eos_token
+gguf_ex_read_1: kv[27]: key = tokenizer.chat_template
+gguf_ex_read_1: n_tensors: 339
+gguf_ex_read_1: tensor[0]: name = output.weight, size = 466747392, offset = 0, type = f16, n_elts = 233373696
+gguf_ex_read_1: tensor[1]: name = token_embd.weight, size = 466747392, offset = 466747392, type = f16, n_elts = 233373696
+gguf_ex_read_1: tensor[2]: name = blk.0.attn_norm.weight, size = 6144, offset = 933494784, type = f32, n_elts = 1536
+gguf_ex_read_1: tensor[3]: name = blk.0.ffn_down.weight, size = 27525120, offset = 933500928, type = f16, n_elts = 13762560
+gguf_ex_read_1: tensor[4]: name = blk.0.ffn_gate.weight, size = 27525120, offset = 961026048, type = f16, n_elts = 13762560
+gguf_ex_read_1: tensor[5]: name = blk.0.ffn_up.weight, size = 27525120, offset = 988551168, type = f16, n_elts = 13762560
+gguf_ex_read_1: tensor[6]: name = blk.0.ffn_norm.weight, size = 6144, offset = 1016076288, type = f32, n_elts = 1536
+gguf_ex_read_1: tensor[7]: name = blk.0.attn_k.bias, size = 1024, offset = 1016082432, type = f32, n_elts = 256
+gguf_ex_read_1: tensor[8]: name = blk.0.attn_k.weight, size = 786432, offset = 1016083456, type = f16, n_elts = 393216
+gguf_ex_read_1: tensor[9]: name = blk.0.attn_output.weight, size = 4718592, offset = 1016869888, type = f16, n_elts = 2359296
+gguf_ex_read_1: tensor[10]: name = blk.0.attn_q.bias, size = 6144, offset = 1021588480, type = f32, n_elts = 1536
+gguf_ex_read_1: tensor[11]: name = blk.0.attn_q.weight, size = 4718592, offset = 1021594624, type = f16, n_elts = 2359296
+gguf_ex_read_1: tensor[12]: name = blk.0.attn_v.bias, size = 1024, offset = 1026313216, type = f32, n_elts = 256
+gguf_ex_read_1: tensor[13]: name = blk.0.attn_v.weight, size = 786432, offset = 1026314240, type = f16, n_elts = 393216
+gguf_ex_read_1: tensor[14]: name = blk.1.attn_norm.weight, size = 6144, offset = 1027100672, type = f32, n_elts = 1536
+gguf_ex_read_1: tensor[15]: name = blk.1.ffn_down.weight, size = 27525120, offset = 1027106816, type = f16, n_elts = 13762560
+gguf_ex_read_1: tensor[16]: name = blk.1.ffn_gate.weight, size = 27525120, offset = 1054631936, type = f16, n_elts = 13762560
+gguf_ex_read_1: tensor[17]: name = blk.1.ffn_up.weight, size = 27525120, offset = 1082157056, type = f16, n_elts = 13762560
+gguf_ex_read_1: tensor[18]: name = blk.1.ffn_norm.weight, size = 6144, offset = 1109682176, type = f32, n_elts = 1536
+gguf_ex_read_1: tensor[19]: name = blk.1.attn_k.bias, size = 1024, offset = 1109688320, type = f32, n_elts = 256
+gguf_ex_read_1: tensor[20]: name = blk.1.attn_k.weight, size = 786432, offset = 1109689344, type = f16, n_elts = 393216
+gguf_ex_read_1: tensor[21]: name = blk.1.attn_output.weight, size = 4718592, offset = 1110475776, type = f16, n_elts = 2359296
+gguf_ex_read_1: tensor[22]: name = blk.1.attn_q.bias, size = 6144, offset = 1115194368, type = f32, n_elts = 1536
+gguf_ex_read_1: tensor[23]: name = blk.1.attn_q.weight, size = 4718592, offset = 1115200512, type = f16, n_elts = 2359296
+gguf_ex_read_1: tensor[24]: name = blk.1.attn_v.bias, size = 1024, offset = 1119919104, type = f32, n_elts = 256
+gguf_ex_read_1: tensor[25]: name = blk.1.attn_v.weight, size = 786432, offset = 1119920128, type = f16, n_elts = 393216
+gguf_ex_read_1: tensor[26]: name = blk.10.attn_norm.weight, size = 6144, offset = 1120706560, type = f32, n_elts = 1536
+gguf_ex_read_1: tensor[27]: name = blk.10.ffn_down.weight, size = 27525120, offset = 1120712704, type = f16, n_elts = 13762560
+gguf_ex_read_1: tensor[28]: name = blk.10.ffn_gate.weight, size = 27525120, offset = 1148237824, type = f16, n_elts = 13762560
+gguf_ex_read_1: tensor[29]: name = blk.10.ffn_up.weight, size = 27525120, offset = 1175762944, type = f16, n_elts = 13762560
+gguf_ex_read_1: tensor[30]: name = blk.10.ffn_norm.weight, size = 6144, offset = 1203288064, type = f32, n_elts = 1536
+gguf_ex_read_1: tensor[31]: name = blk.10.attn_k.bias, size = 1024, offset = 1203294208, type = f32, n_elts = 256
+gguf_ex_read_1: tensor[32]: name = blk.10.attn_k.weight, size = 786432, offset = 1203295232, type = f16, n_elts = 393216
+gguf_ex_read_1: tensor[33]: name = blk.10.attn_output.weight, size = 4718592, offset = 1204081664, type = f16, n_elts = 2359296
+gguf_ex_read_1: tensor[34]: name = blk.10.attn_q.bias, size = 6144, offset = 1208800256, type = f32, n_elts = 1536
+gguf_ex_read_1: tensor[35]: name = blk.10.attn_q.weight, size = 4718592, offset = 1208806400, type = f16, n_elts = 2359296
+gguf_ex_read_1: tensor[36]: name = blk.10.attn_v.bias, size = 1024, offset = 1213524992, type = f32, n_elts = 256
+gguf_ex_read_1: tensor[37]: name = blk.10.attn_v.weight, size = 786432, offset = 1213526016, type = f16, n_elts = 393216
+gguf_ex_read_1: tensor[38]: name = blk.11.attn_norm.weight, size = 6144, offset = 1214312448, type = f32, n_elts = 1536
+gguf_ex_read_1: tensor[39]: name = blk.11.ffn_down.weight, size = 27525120, offset = 1214318592, type = f16, n_elts = 13762560
+gguf_ex_read_1: tensor[40]: name = blk.11.ffn_gate.weight, size = 27525120, offset = 1241843712, type = f16, n_elts = 13762560
+gguf_ex_read_1: tensor[41]: name = blk.11.ffn_up.weight, size = 27525120, offset = 1269368832, type = f16, n_elts = 13762560
+gguf_ex_read_1: tensor[42]: name = blk.11.ffn_norm.weight, size = 6144, offset = 1296893952, type = f32, n_elts = 1536
+gguf_ex_read_1: tensor[43]: name = blk.11.attn_k.bias, size = 1024, offset = 1296900096, type = f32, n_elts = 256
+gguf_ex_read_1: tensor[44]: name = blk.11.attn_k.weight, size = 786432, offset = 1296901120, type = f16, n_elts = 393216
+gguf_ex_read_1: tensor[45]: name = blk.11.attn_output.weight, size = 4718592, offset = 1297687552, type = f16, n_elts = 2359296
+gguf_ex_read_1: tensor[46]: name = blk.11.attn_q.bias, size = 6144, offset = 1302406144, type = f32, n_elts = 1536
+gguf_ex_read_1: tensor[47]: name = blk.11.attn_q.weight, size = 4718592, offset = 1302412288, type = f16, n_elts = 2359296
+gguf_ex_read_1: tensor[48]: name = blk.11.attn_v.bias, size = 1024, offset = 1307130880, type = f32, n_elts = 256
+gguf_ex_read_1: tensor[49]: name = blk.11.attn_v.weight, size = 786432, offset = 1307131904, type = f16, n_elts = 393216
+gguf_ex_read_1: tensor[50]: name = blk.12.attn_norm.weight, size = 6144, offset = 1307918336, type = f32, n_elts = 1536
+gguf_ex_read_1: tensor[51]: name = blk.12.ffn_down.weight, size = 27525120, offset = 1307924480, type = f16, n_elts = 13762560
+gguf_ex_read_1: tensor[52]: name = blk.12.ffn_gate.weight, size = 27525120, offset = 1335449600, type = f16, n_elts = 13762560
+gguf_ex_read_1: tensor[53]: name = blk.12.ffn_up.weight, size = 27525120, offset = 1362974720, type = f16, n_elts = 13762560
+gguf_ex_read_1: tensor[54]: name = blk.12.ffn_norm.weight, size = 6144, offset = 1390499840, type = f32, n_elts = 1536
+gguf_ex_read_1: tensor[55]: name = blk.12.attn_k.bias, size = 1024, offset = 1390505984, type = f32, n_elts = 256
+gguf_ex_read_1: tensor[56]: name = blk.12.attn_k.weight, size = 786432, offset = 1390507008, type = f16, n_elts = 393216
+gguf_ex_read_1: tensor[57]: name = blk.12.attn_output.weight, size = 4718592, offset = 1391293440, type = f16, n_elts = 2359296
+gguf_ex_read_1: tensor[58]: name = blk.12.attn_q.bias, size = 6144, offset = 1396012032, type = f32, n_elts = 1536
+gguf_ex_read_1: tensor[59]: name = blk.12.attn_q.weight, size = 4718592, offset = 1396018176, type = f16, n_elts = 2359296
+gguf_ex_read_1: tensor[60]: name = blk.12.attn_v.bias, size = 1024, offset = 1400736768, type = f32, n_elts = 256
+gguf_ex_read_1: tensor[61]: name = blk.12.attn_v.weight, size = 786432, offset = 1400737792, type = f16, n_elts = 393216
+gguf_ex_read_1: tensor[62]: name = blk.13.attn_norm.weight, size = 6144, offset = 1401524224, type = f32, n_elts = 1536
+gguf_ex_read_1: tensor[63]: name = blk.13.ffn_down.weight, size = 27525120, offset = 1401530368, type = f16, n_elts = 13762560
+gguf_ex_read_1: tensor[64]: name = blk.13.ffn_gate.weight, size = 27525120, offset = 1429055488, type = f16, n_elts = 13762560
+gguf_ex_read_1: tensor[65]: name = blk.13.ffn_up.weight, size = 27525120, offset = 1456580608, type = f16, n_elts = 13762560
+gguf_ex_read_1: tensor[66]: name = blk.13.ffn_norm.weight, size = 6144, offset = 1484105728, type = f32, n_elts = 1536
+gguf_ex_read_1: tensor[67]: name = blk.13.attn_k.bias, size = 1024, offset = 1484111872, type = f32, n_elts = 256
+gguf_ex_read_1: tensor[68]: name = blk.13.attn_k.weight, size = 786432, offset = 1484112896, type = f16, n_elts = 393216
+gguf_ex_read_1: tensor[69]: name = blk.13.attn_output.weight, size = 4718592, offset = 1484899328, type = f16, n_elts = 2359296
+gguf_ex_read_1: tensor[70]: name = blk.13.attn_q.bias, size = 6144, offset = 1489617920, type = f32, n_elts = 1536
+gguf_ex_read_1: tensor[71]: name = blk.13.attn_q.weight, size = 4718592, offset = 1489624064, type = f16, n_elts = 2359296
+gguf_ex_read_1: tensor[72]: name = blk.13.attn_v.bias, size = 1024, offset = 1494342656, type = f32, n_elts = 256
+gguf_ex_read_1: tensor[73]: name = blk.13.attn_v.weight, size = 786432, offset = 1494343680, type = f16, n_elts = 393216
+gguf_ex_read_1: tensor[74]: name = blk.14.attn_norm.weight, size = 6144, offset = 1495130112, type = f32, n_elts = 1536
+gguf_ex_read_1: tensor[75]: name = blk.14.ffn_down.weight, size = 27525120, offset = 1495136256, type = f16, n_elts = 13762560
+gguf_ex_read_1: tensor[76]: name = blk.14.ffn_gate.weight, size = 27525120, offset = 1522661376, type = f16, n_elts = 13762560
+gguf_ex_read_1: tensor[77]: name = blk.14.ffn_up.weight, size = 27525120, offset = 1550186496, type = f16, n_elts = 13762560
+gguf_ex_read_1: tensor[78]: name = blk.14.ffn_norm.weight, size = 6144, offset = 1577711616, type = f32, n_elts = 1536
+gguf_ex_read_1: tensor[79]: name = blk.14.attn_k.bias, size = 1024, offset = 1577717760, type = f32, n_elts = 256
+gguf_ex_read_1: tensor[80]: name = blk.14.attn_k.weight, size = 786432, offset = 1577718784, type = f16, n_elts = 393216
+gguf_ex_read_1: tensor[81]: name = blk.14.attn_output.weight, size = 4718592, offset = 1578505216, type = f16, n_elts = 2359296
+gguf_ex_read_1: tensor[82]: name = blk.14.attn_q.bias, size = 6144, offset = 1583223808, type = f32, n_elts = 1536
+gguf_ex_read_1: tensor[83]: name = blk.14.attn_q.weight, size = 4718592, offset = 1583229952, type = f16, n_elts = 2359296
+gguf_ex_read_1: tensor[84]: name = blk.14.attn_v.bias, size = 1024, offset = 1587948544, type = f32, n_elts = 256
+gguf_ex_read_1: tensor[85]: name = blk.14.attn_v.weight, size = 786432, offset = 1587949568, type = f16, n_elts = 393216
+gguf_ex_read_1: tensor[86]: name = blk.15.attn_norm.weight, size = 6144, offset = 1588736000, type = f32, n_elts = 1536
+gguf_ex_read_1: tensor[87]: name = blk.15.ffn_down.weight, size = 27525120, offset = 1588742144, type = f16, n_elts = 13762560
+gguf_ex_read_1: tensor[88]: name = blk.15.ffn_gate.weight, size = 27525120, offset = 1616267264, type = f16, n_elts = 13762560
+gguf_ex_read_1: tensor[89]: name = blk.15.ffn_up.weight, size = 27525120, offset = 1643792384, type = f16, n_elts = 13762560
+gguf_ex_read_1: tensor[90]: name = blk.15.ffn_norm.weight, size = 6144, offset = 1671317504, type = f32, n_elts = 1536
+gguf_ex_read_1: tensor[91]: name = blk.15.attn_k.bias, size = 1024, offset = 1671323648, type = f32, n_elts = 256
+gguf_ex_read_1: tensor[92]: name = blk.15.attn_k.weight, size = 786432, offset = 1671324672, type = f16, n_elts = 393216
+gguf_ex_read_1: tensor[93]: name = blk.15.attn_output.weight, size = 4718592, offset = 1672111104, type = f16, n_elts = 2359296
+gguf_ex_read_1: tensor[94]: name = blk.15.attn_q.bias, size = 6144, offset = 1676829696, type = f32, n_elts = 1536
+gguf_ex_read_1: tensor[95]: name = blk.15.attn_q.weight, size = 4718592, offset = 1676835840, type = f16, n_elts = 2359296
+gguf_ex_read_1: tensor[96]: name = blk.15.attn_v.bias, size = 1024, offset = 1681554432, type = f32, n_elts = 256
+gguf_ex_read_1: tensor[97]: name = blk.15.attn_v.weight, size = 786432, offset = 1681555456, type = f16, n_elts = 393216
+gguf_ex_read_1: tensor[98]: name = blk.16.attn_norm.weight, size = 6144, offset = 1682341888, type = f32, n_elts = 1536
+gguf_ex_read_1: tensor[99]: name = blk.16.ffn_down.weight, size = 27525120, offset = 1682348032, type = f16, n_elts = 13762560
+gguf_ex_read_1: tensor[100]: name = blk.16.ffn_gate.weight, size = 27525120, offset = 1709873152, type = f16, n_elts = 13762560
+gguf_ex_read_1: tensor[101]: name = blk.16.ffn_up.weight, size = 27525120, offset = 1737398272, type = f16, n_elts = 13762560
+gguf_ex_read_1: tensor[102]: name = blk.16.ffn_norm.weight, size = 6144, offset = 1764923392, type = f32, n_elts = 1536
+gguf_ex_read_1: tensor[103]: name = blk.16.attn_k.bias, size = 1024, offset = 1764929536, type = f32, n_elts = 256
+gguf_ex_read_1: tensor[104]: name = blk.16.attn_k.weight, size = 786432, offset = 1764930560, type = f16, n_elts = 393216
+gguf_ex_read_1: tensor[105]: name = blk.16.attn_output.weight, size = 4718592, offset = 1765716992, type = f16, n_elts = 2359296
+gguf_ex_read_1: tensor[106]: name = blk.16.attn_q.bias, size = 6144, offset = 1770435584, type = f32, n_elts = 1536
+gguf_ex_read_1: tensor[107]: name = blk.16.attn_q.weight, size = 4718592, offset = 1770441728, type = f16, n_elts = 2359296
+gguf_ex_read_1: tensor[108]: name = blk.16.attn_v.bias, size = 1024, offset = 1775160320, type = f32, n_elts = 256
+gguf_ex_read_1: tensor[109]: name = blk.16.attn_v.weight, size = 786432, offset = 1775161344, type = f16, n_elts = 393216
+gguf_ex_read_1: tensor[110]: name = blk.17.attn_norm.weight, size = 6144, offset = 1775947776, type = f32, n_elts = 1536
+gguf_ex_read_1: tensor[111]: name = blk.17.ffn_down.weight, size = 27525120, offset = 1775953920, type = f16, n_elts = 13762560
+gguf_ex_read_1: tensor[112]: name = blk.17.ffn_gate.weight, size = 27525120, offset = 1803479040, type = f16, n_elts = 13762560
+gguf_ex_read_1: tensor[113]: name = blk.17.ffn_up.weight, size = 27525120, offset = 1831004160, type = f16, n_elts = 13762560
+gguf_ex_read_1: tensor[114]: name = blk.17.ffn_norm.weight, size = 6144, offset = 1858529280, type = f32, n_elts = 1536
+gguf_ex_read_1: tensor[115]: name = blk.17.attn_k.bias, size = 1024, offset = 1858535424, type = f32, n_elts = 256
+gguf_ex_read_1: tensor[116]: name = blk.17.attn_k.weight, size = 786432, offset = 1858536448, type = f16, n_elts = 393216
+gguf_ex_read_1: tensor[117]: name = blk.17.attn_output.weight, size = 4718592, offset = 1859322880, type = f16, n_elts = 2359296
+gguf_ex_read_1: tensor[118]: name = blk.17.attn_q.bias, size = 6144, offset = 1864041472, type = f32, n_elts = 1536
+gguf_ex_read_1: tensor[119]: name = blk.17.attn_q.weight, size = 4718592, offset = 1864047616, type = f16, n_elts = 2359296
+gguf_ex_read_1: tensor[120]: name = blk.17.attn_v.bias, size = 1024, offset = 1868766208, type = f32, n_elts = 256
+gguf_ex_read_1: tensor[121]: name = blk.17.attn_v.weight, size = 786432, offset = 1868767232, type = f16, n_elts = 393216
+gguf_ex_read_1: tensor[122]: name = blk.18.attn_norm.weight, size = 6144, offset = 1869553664, type = f32, n_elts = 1536
+gguf_ex_read_1: tensor[123]: name = blk.18.ffn_down.weight, size = 27525120, offset = 1869559808, type = f16, n_elts = 13762560
+gguf_ex_read_1: tensor[124]: name = blk.18.ffn_gate.weight, size = 27525120, offset = 1897084928, type = f16, n_elts = 13762560
+gguf_ex_read_1: tensor[125]: name = blk.18.ffn_up.weight, size = 27525120, offset = 1924610048, type = f16, n_elts = 13762560
+gguf_ex_read_1: tensor[126]: name = blk.18.ffn_norm.weight, size = 6144, offset = 1952135168, type = f32, n_elts = 1536
+gguf_ex_read_1: tensor[127]: name = blk.18.attn_k.bias, size = 1024, offset = 1952141312, type = f32, n_elts = 256
+gguf_ex_read_1: tensor[128]: name = blk.18.attn_k.weight, size = 786432, offset = 1952142336, type = f16, n_elts = 393216
+gguf_ex_read_1: tensor[129]: name = blk.18.attn_output.weight, size = 4718592, offset = 1952928768, type = f16, n_elts = 2359296
+gguf_ex_read_1: tensor[130]: name = blk.18.attn_q.bias, size = 6144, offset = 1957647360, type = f32, n_elts = 1536
+gguf_ex_read_1: tensor[131]: name = blk.18.attn_q.weight, size = 4718592, offset = 1957653504, type = f16, n_elts = 2359296
+gguf_ex_read_1: tensor[132]: name = blk.18.attn_v.bias, size = 1024, offset = 1962372096, type = f32, n_elts = 256
+gguf_ex_read_1: tensor[133]: name = blk.18.attn_v.weight, size = 786432, offset = 1962373120, type = f16, n_elts = 393216
+gguf_ex_read_1: tensor[134]: name = blk.19.attn_norm.weight, size = 6144, offset = 1963159552, type = f32, n_elts = 1536
+gguf_ex_read_1: tensor[135]: name = blk.19.ffn_down.weight, size = 27525120, offset = 1963165696, type = f16, n_elts = 13762560
+gguf_ex_read_1: tensor[136]: name = blk.19.ffn_gate.weight, size = 27525120, offset = 1990690816, type = f16, n_elts = 13762560
+gguf_ex_read_1: tensor[137]: name = blk.19.ffn_up.weight, size = 27525120, offset = 2018215936, type = f16, n_elts = 13762560
+gguf_ex_read_1: tensor[138]: name = blk.19.ffn_norm.weight, size = 6144, offset = 2045741056, type = f32, n_elts = 1536
+gguf_ex_read_1: tensor[139]: name = blk.19.attn_k.bias, size = 1024, offset = 2045747200, type = f32, n_elts = 256
+gguf_ex_read_1: tensor[140]: name = blk.19.attn_k.weight, size = 786432, offset = 2045748224, type = f16, n_elts = 393216
+gguf_ex_read_1: tensor[141]: name = blk.19.attn_output.weight, size = 4718592, offset = 2046534656, type = f16, n_elts = 2359296
+gguf_ex_read_1: tensor[142]: name = blk.19.attn_q.bias, size = 6144, offset = 2051253248, type = f32, n_elts = 1536
+gguf_ex_read_1: tensor[143]: name = blk.19.attn_q.weight, size = 4718592, offset = 2051259392, type = f16, n_elts = 2359296
+gguf_ex_read_1: tensor[144]: name = blk.19.attn_v.bias, size = 1024, offset = 2055977984, type = f32, n_elts = 256
+gguf_ex_read_1: tensor[145]: name = blk.19.attn_v.weight, size = 786432, offset = 2055979008, type = f16, n_elts = 393216
+gguf_ex_read_1: tensor[146]: name = blk.2.attn_norm.weight, size = 6144, offset = 2056765440, type = f32, n_elts = 1536
+gguf_ex_read_1: tensor[147]: name = blk.2.ffn_down.weight, size = 27525120, offset = 2056771584, type = f16, n_elts = 13762560
+gguf_ex_read_1: tensor[148]: name = blk.2.ffn_gate.weight, size = 27525120, offset = 2084296704, type = f16, n_elts = 13762560
+gguf_ex_read_1: tensor[149]: name = blk.2.ffn_up.weight, size = 27525120, offset = 2111821824, type = f16, n_elts = 13762560
+gguf_ex_read_1: tensor[150]: name = blk.2.ffn_norm.weight, size = 6144, offset = 2139346944, type = f32, n_elts = 1536
+gguf_ex_read_1: tensor[151]: name = blk.2.attn_k.bias, size = 1024, offset = 2139353088, type = f32, n_elts = 256
+gguf_ex_read_1: tensor[152]: name = blk.2.attn_k.weight, size = 786432, offset = 2139354112, type = f16, n_elts = 393216
+gguf_ex_read_1: tensor[153]: name = blk.2.attn_output.weight, size = 4718592, offset = 2140140544, type = f16, n_elts = 2359296
+gguf_ex_read_1: tensor[154]: name = blk.2.attn_q.bias, size = 6144, offset = 2144859136, type = f32, n_elts = 1536
+gguf_ex_read_1: tensor[155]: name = blk.2.attn_q.weight, size = 4718592, offset = 2144865280, type = f16, n_elts = 2359296
+gguf_ex_read_1: tensor[156]: name = blk.2.attn_v.bias, size = 1024, offset = 2149583872, type = f32, n_elts = 256
+gguf_ex_read_1: tensor[157]: name = blk.2.attn_v.weight, size = 786432, offset = 2149584896, type = f16, n_elts = 393216
+gguf_ex_read_1: tensor[158]: name = blk.20.attn_norm.weight, size = 6144, offset = 2150371328, type = f32, n_elts = 1536
+gguf_ex_read_1: tensor[159]: name = blk.20.ffn_down.weight, size = 27525120, offset = 2150377472, type = f16, n_elts = 13762560
+gguf_ex_read_1: tensor[160]: name = blk.20.ffn_gate.weight, size = 27525120, offset = 2177902592, type = f16, n_elts = 13762560
+gguf_ex_read_1: tensor[161]: name = blk.20.ffn_up.weight, size = 27525120, offset = 2205427712, type = f16, n_elts = 13762560
+gguf_ex_read_1: tensor[162]: name = blk.20.ffn_norm.weight, size = 6144, offset = 2232952832, type = f32, n_elts = 1536
+gguf_ex_read_1: tensor[163]: name = blk.20.attn_k.bias, size = 1024, offset = 2232958976, type = f32, n_elts = 256
+gguf_ex_read_1: tensor[164]: name = blk.20.attn_k.weight, size = 786432, offset = 2232960000, type = f16, n_elts = 393216
+gguf_ex_read_1: tensor[165]: name = blk.20.attn_output.weight, size = 4718592, offset = 2233746432, type = f16, n_elts = 2359296
+gguf_ex_read_1: tensor[166]: name = blk.20.attn_q.bias, size = 6144, offset = 2238465024, type = f32, n_elts = 1536
+gguf_ex_read_1: tensor[167]: name = blk.20.attn_q.weight, size = 4718592, offset = 2238471168, type = f16, n_elts = 2359296
+gguf_ex_read_1: tensor[168]: name = blk.20.attn_v.bias, size = 1024, offset = 2243189760, type = f32, n_elts = 256
+gguf_ex_read_1: tensor[169]: name = blk.20.attn_v.weight, size = 786432, offset = 2243190784, type = f16, n_elts = 393216
+gguf_ex_read_1: tensor[170]: name = blk.21.attn_norm.weight, size = 6144, offset = 2243977216, type = f32, n_elts = 1536
+gguf_ex_read_1: tensor[171]: name = blk.21.ffn_down.weight, size = 27525120, offset = 2243983360, type = f16, n_elts = 13762560
+gguf_ex_read_1: tensor[172]: name = blk.21.ffn_gate.weight, size = 27525120, offset = 2271508480, type = f16, n_elts = 13762560
+gguf_ex_read_1: tensor[173]: name = blk.21.ffn_up.weight, size = 27525120, offset = 2299033600, type = f16, n_elts = 13762560
+gguf_ex_read_1: tensor[174]: name = blk.21.ffn_norm.weight, size = 6144, offset = 2326558720, type = f32, n_elts = 1536
+gguf_ex_read_1: tensor[175]: name = blk.21.attn_k.bias, size = 1024, offset = 2326564864, type = f32, n_elts = 256
+gguf_ex_read_1: tensor[176]: name = blk.21.attn_k.weight, size = 786432, offset = 2326565888, type = f16, n_elts = 393216
+gguf_ex_read_1: tensor[177]: name = blk.21.attn_output.weight, size = 4718592, offset = 2327352320, type = f16, n_elts = 2359296
+gguf_ex_read_1: tensor[178]: name = blk.21.attn_q.bias, size = 6144, offset = 2332070912, type = f32, n_elts = 1536
+gguf_ex_read_1: tensor[179]: name = blk.21.attn_q.weight, size = 4718592, offset = 2332077056, type = f16, n_elts = 2359296
+gguf_ex_read_1: tensor[180]: name = blk.21.attn_v.bias, size = 1024, offset = 2336795648, type = f32, n_elts = 256
+gguf_ex_read_1: tensor[181]: name = blk.21.attn_v.weight, size = 786432, offset = 2336796672, type = f16, n_elts = 393216
+gguf_ex_read_1: tensor[182]: name = blk.22.attn_norm.weight, size = 6144, offset = 2337583104, type = f32, n_elts = 1536
+gguf_ex_read_1: tensor[183]: name = blk.22.ffn_down.weight, size = 27525120, offset = 2337589248, type = f16, n_elts = 13762560
+gguf_ex_read_1: tensor[184]: name = blk.22.ffn_gate.weight, size = 27525120, offset = 2365114368, type = f16, n_elts = 13762560
+gguf_ex_read_1: tensor[185]: name = blk.22.ffn_up.weight, size = 27525120, offset = 2392639488, type = f16, n_elts = 13762560
+gguf_ex_read_1: tensor[186]: name = blk.22.ffn_norm.weight, size = 6144, offset = 2420164608, type = f32, n_elts = 1536
+gguf_ex_read_1: tensor[187]: name = blk.22.attn_k.bias, size = 1024, offset = 2420170752, type = f32, n_elts = 256
+gguf_ex_read_1: tensor[188]: name = blk.22.attn_k.weight, size = 786432, offset = 2420171776, type = f16, n_elts = 393216
+gguf_ex_read_1: tensor[189]: name = blk.22.attn_output.weight, size = 4718592, offset = 2420958208, type = f16, n_elts = 2359296
+gguf_ex_read_1: tensor[190]: name = blk.22.attn_q.bias, size = 6144, offset = 2425676800, type = f32, n_elts = 1536
+gguf_ex_read_1: tensor[191]: name = blk.22.attn_q.weight, size = 4718592, offset = 2425682944, type = f16, n_elts = 2359296
+gguf_ex_read_1: tensor[192]: name = blk.22.attn_v.bias, size = 1024, offset = 2430401536, type = f32, n_elts = 256
+gguf_ex_read_1: tensor[193]: name = blk.22.attn_v.weight, size = 786432, offset = 2430402560, type = f16, n_elts = 393216
+gguf_ex_read_1: tensor[194]: name = blk.23.attn_norm.weight, size = 6144, offset = 2431188992, type = f32, n_elts = 1536
+gguf_ex_read_1: tensor[195]: name = blk.23.ffn_down.weight, size = 27525120, offset = 2431195136, type = f16, n_elts = 13762560
+gguf_ex_read_1: tensor[196]: name = blk.23.ffn_gate.weight, size = 27525120, offset = 2458720256, type = f16, n_elts = 13762560
+gguf_ex_read_1: tensor[197]: name = blk.23.ffn_up.weight, size = 27525120, offset = 2486245376, type = f16, n_elts = 13762560
+gguf_ex_read_1: tensor[198]: name = blk.23.ffn_norm.weight, size = 6144, offset = 2513770496, type = f32, n_elts = 1536
+gguf_ex_read_1: tensor[199]: name = blk.23.attn_k.bias, size = 1024, offset = 2513776640, type = f32, n_elts = 256
+gguf_ex_read_1: tensor[200]: name = blk.23.attn_k.weight, size = 786432, offset = 2513777664, type = f16, n_elts = 393216
+gguf_ex_read_1: tensor[201]: name = blk.23.attn_output.weight, size = 4718592, offset = 2514564096, type = f16, n_elts = 2359296
+gguf_ex_read_1: tensor[202]: name = blk.23.attn_q.bias, size = 6144, offset = 2519282688, type = f32, n_elts = 1536
+gguf_ex_read_1: tensor[203]: name = blk.23.attn_q.weight, size = 4718592, offset = 2519288832, type = f16, n_elts = 2359296
+gguf_ex_read_1: tensor[204]: name = blk.23.attn_v.bias, size = 1024, offset = 2524007424, type = f32, n_elts = 256
+gguf_ex_read_1: tensor[205]: name = blk.23.attn_v.weight, size = 786432, offset = 2524008448, type = f16, n_elts = 393216
+gguf_ex_read_1: tensor[206]: name = blk.24.attn_norm.weight, size = 6144, offset = 2524794880, type = f32, n_elts = 1536
+gguf_ex_read_1: tensor[207]: name = blk.24.ffn_down.weight, size = 27525120, offset = 2524801024, type = f16, n_elts = 13762560
+gguf_ex_read_1: tensor[208]: name = blk.24.ffn_gate.weight, size = 27525120, offset = 2552326144, type = f16, n_elts = 13762560
+gguf_ex_read_1: tensor[209]: name = blk.24.ffn_up.weight, size = 27525120, offset = 2579851264, type = f16, n_elts = 13762560
+gguf_ex_read_1: tensor[210]: name = blk.24.ffn_norm.weight, size = 6144, offset = 2607376384, type = f32, n_elts = 1536
+gguf_ex_read_1: tensor[211]: name = blk.24.attn_k.bias, size = 1024, offset = 2607382528, type = f32, n_elts = 256
+gguf_ex_read_1: tensor[212]: name = blk.24.attn_k.weight, size = 786432, offset = 2607383552, type = f16, n_elts = 393216
+gguf_ex_read_1: tensor[213]: name = blk.24.attn_output.weight, size = 4718592, offset = 2608169984, type = f16, n_elts = 2359296
+gguf_ex_read_1: tensor[214]: name = blk.24.attn_q.bias, size = 6144, offset = 2612888576, type = f32, n_elts = 1536
+gguf_ex_read_1: tensor[215]: name = blk.24.attn_q.weight, size = 4718592, offset = 2612894720, type = f16, n_elts = 2359296
+gguf_ex_read_1: tensor[216]: name = blk.24.attn_v.bias, size = 1024, offset = 2617613312, type = f32, n_elts = 256
+gguf_ex_read_1: tensor[217]: name = blk.24.attn_v.weight, size = 786432, offset = 2617614336, type = f16, n_elts = 393216
+gguf_ex_read_1: tensor[218]: name = blk.25.attn_norm.weight, size = 6144, offset = 2618400768, type = f32, n_elts = 1536
+gguf_ex_read_1: tensor[219]: name = blk.25.ffn_down.weight, size = 27525120, offset = 2618406912, type = f16, n_elts = 13762560
+gguf_ex_read_1: tensor[220]: name = blk.25.ffn_gate.weight, size = 27525120, offset = 2645932032, type = f16, n_elts = 13762560
+gguf_ex_read_1: tensor[221]: name = blk.25.ffn_up.weight, size = 27525120, offset = 2673457152, type = f16, n_elts = 13762560
+gguf_ex_read_1: tensor[222]: name = blk.25.ffn_norm.weight, size = 6144, offset = 2700982272, type = f32, n_elts = 1536
+gguf_ex_read_1: tensor[223]: name = blk.25.attn_k.bias, size = 1024, offset = 2700988416, type = f32, n_elts = 256
+gguf_ex_read_1: tensor[224]: name = blk.25.attn_k.weight, size = 786432, offset = 2700989440, type = f16, n_elts = 393216
+gguf_ex_read_1: tensor[225]: name = blk.25.attn_output.weight, size = 4718592, offset = 2701775872, type = f16, n_elts = 2359296
+gguf_ex_read_1: tensor[226]: name = blk.25.attn_q.bias, size = 6144, offset = 2706494464, type = f32, n_elts = 1536
+gguf_ex_read_1: tensor[227]: name = blk.25.attn_q.weight, size = 4718592, offset = 2706500608, type = f16, n_elts = 2359296
+gguf_ex_read_1: tensor[228]: name = blk.25.attn_v.bias, size = 1024, offset = 2711219200, type = f32, n_elts = 256
+gguf_ex_read_1: tensor[229]: name = blk.25.attn_v.weight, size = 786432, offset = 2711220224, type = f16, n_elts = 393216
+gguf_ex_read_1: tensor[230]: name = blk.26.attn_norm.weight, size = 6144, offset = 2712006656, type = f32, n_elts = 1536
+gguf_ex_read_1: tensor[231]: name = blk.26.ffn_down.weight, size = 27525120, offset = 2712012800, type = f16, n_elts = 13762560
+gguf_ex_read_1: tensor[232]: name = blk.26.ffn_gate.weight, size = 27525120, offset = 2739537920, type = f16, n_elts = 13762560
+gguf_ex_read_1: tensor[233]: name = blk.26.ffn_up.weight, size = 27525120, offset = 2767063040, type = f16, n_elts = 13762560
+gguf_ex_read_1: tensor[234]: name = blk.26.ffn_norm.weight, size = 6144, offset = 2794588160, type = f32, n_elts = 1536
+gguf_ex_read_1: tensor[235]: name = blk.26.attn_k.bias, size = 1024, offset = 2794594304, type = f32, n_elts = 256
+gguf_ex_read_1: tensor[236]: name = blk.26.attn_k.weight, size = 786432, offset = 2794595328, type = f16, n_elts = 393216
+gguf_ex_read_1: tensor[237]: name = blk.26.attn_output.weight, size = 4718592, offset = 2795381760, type = f16, n_elts = 2359296
+gguf_ex_read_1: tensor[238]: name = blk.26.attn_q.bias, size = 6144, offset = 2800100352, type = f32, n_elts = 1536
+gguf_ex_read_1: tensor[239]: name = blk.26.attn_q.weight, size = 4718592, offset = 2800106496, type = f16, n_elts = 2359296
+gguf_ex_read_1: tensor[240]: name = blk.26.attn_v.bias, size = 1024, offset = 2804825088, type = f32, n_elts = 256
+gguf_ex_read_1: tensor[241]: name = blk.26.attn_v.weight, size = 786432, offset = 2804826112, type = f16, n_elts = 393216
+gguf_ex_read_1: tensor[242]: name = blk.27.attn_norm.weight, size = 6144, offset = 2805612544, type = f32, n_elts = 1536
+gguf_ex_read_1: tensor[243]: name = blk.27.ffn_down.weight, size = 27525120, offset = 2805618688, type = f16, n_elts = 13762560
+gguf_ex_read_1: tensor[244]: name = blk.27.ffn_gate.weight, size = 27525120, offset = 2833143808, type = f16, n_elts = 13762560
+gguf_ex_read_1: tensor[245]: name = blk.27.ffn_up.weight, size = 27525120, offset = 2860668928, type = f16, n_elts = 13762560
+gguf_ex_read_1: tensor[246]: name = blk.27.ffn_norm.weight, size = 6144, offset = 2888194048, type = f32, n_elts = 1536
+gguf_ex_read_1: tensor[247]: name = blk.27.attn_k.bias, size = 1024, offset = 2888200192, type = f32, n_elts = 256
+gguf_ex_read_1: tensor[248]: name = blk.27.attn_k.weight, size = 786432, offset = 2888201216, type = f16, n_elts = 393216
+gguf_ex_read_1: tensor[249]: name = blk.27.attn_output.weight, size = 4718592, offset = 2888987648, type = f16, n_elts = 2359296
+gguf_ex_read_1: tensor[250]: name = blk.27.attn_q.bias, size = 6144, offset = 2893706240, type = f32, n_elts = 1536
+gguf_ex_read_1: tensor[251]: name = blk.27.attn_q.weight, size = 4718592, offset = 2893712384, type = f16, n_elts = 2359296
+gguf_ex_read_1: tensor[252]: name = blk.27.attn_v.bias, size = 1024, offset = 2898430976, type = f32, n_elts = 256
+gguf_ex_read_1: tensor[253]: name = blk.27.attn_v.weight, size = 786432, offset = 2898432000, type = f16, n_elts = 393216
+gguf_ex_read_1: tensor[254]: name = blk.3.attn_norm.weight, size = 6144, offset = 2899218432, type = f32, n_elts = 1536
+gguf_ex_read_1: tensor[255]: name = blk.3.ffn_down.weight, size = 27525120, offset = 2899224576, type = f16, n_elts = 13762560
+gguf_ex_read_1: tensor[256]: name = blk.3.ffn_gate.weight, size = 27525120, offset = 2926749696, type = f16, n_elts = 13762560
+gguf_ex_read_1: tensor[257]: name = blk.3.ffn_up.weight, size = 27525120, offset = 2954274816, type = f16, n_elts = 13762560
+gguf_ex_read_1: tensor[258]: name = blk.3.ffn_norm.weight, size = 6144, offset = 2981799936, type = f32, n_elts = 1536
+gguf_ex_read_1: tensor[259]: name = blk.3.attn_k.bias, size = 1024, offset = 2981806080, type = f32, n_elts = 256
+gguf_ex_read_1: tensor[260]: name = blk.3.attn_k.weight, size = 786432, offset = 2981807104, type = f16, n_elts = 393216
+gguf_ex_read_1: tensor[261]: name = blk.3.attn_output.weight, size = 4718592, offset = 2982593536, type = f16, n_elts = 2359296
+gguf_ex_read_1: tensor[262]: name = blk.3.attn_q.bias, size = 6144, offset = 2987312128, type = f32, n_elts = 1536
+gguf_ex_read_1: tensor[263]: name = blk.3.attn_q.weight, size = 4718592, offset = 2987318272, type = f16, n_elts = 2359296
+gguf_ex_read_1: tensor[264]: name = blk.3.attn_v.bias, size = 1024, offset = 2992036864, type = f32, n_elts = 256
+gguf_ex_read_1: tensor[265]: name = blk.3.attn_v.weight, size = 786432, offset = 2992037888, type = f16, n_elts = 393216
+gguf_ex_read_1: tensor[266]: name = blk.4.attn_norm.weight, size = 6144, offset = 2992824320, type = f32, n_elts = 1536
+gguf_ex_read_1: tensor[267]: name = blk.4.ffn_down.weight, size = 27525120, offset = 2992830464, type = f16, n_elts = 13762560
+gguf_ex_read_1: tensor[268]: name = blk.4.ffn_gate.weight, size = 27525120, offset = 3020355584, type = f16, n_elts = 13762560
+gguf_ex_read_1: tensor[269]: name = blk.4.ffn_up.weight, size = 27525120, offset = 3047880704, type = f16, n_elts = 13762560
+gguf_ex_read_1: tensor[270]: name = blk.4.ffn_norm.weight, size = 6144, offset = 3075405824, type = f32, n_elts = 1536
+gguf_ex_read_1: tensor[271]: name = blk.4.attn_k.bias, size = 1024, offset = 3075411968, type = f32, n_elts = 256
+gguf_ex_read_1: tensor[272]: name = blk.4.attn_k.weight, size = 786432, offset = 3075412992, type = f16, n_elts = 393216
+gguf_ex_read_1: tensor[273]: name = blk.4.attn_output.weight, size = 4718592, offset = 3076199424, type = f16, n_elts = 2359296
+gguf_ex_read_1: tensor[274]: name = blk.4.attn_q.bias, size = 6144, offset = 3080918016, type = f32, n_elts = 1536
+gguf_ex_read_1: tensor[275]: name = blk.4.attn_q.weight, size = 4718592, offset = 3080924160, type = f16, n_elts = 2359296
+gguf_ex_read_1: tensor[276]: name = blk.4.attn_v.bias, size = 1024, offset = 3085642752, type = f32, n_elts = 256
+gguf_ex_read_1: tensor[277]: name = blk.4.attn_v.weight, size = 786432, offset = 3085643776, type = f16, n_elts = 393216
+gguf_ex_read_1: tensor[278]: name = blk.5.attn_norm.weight, size = 6144, offset = 3086430208, type = f32, n_elts = 1536
+gguf_ex_read_1: tensor[279]: name = blk.5.ffn_down.weight, size = 27525120, offset = 3086436352, type = f16, n_elts = 13762560
+gguf_ex_read_1: tensor[280]: name = blk.5.ffn_gate.weight, size = 27525120, offset = 3113961472, type = f16, n_elts = 13762560
+gguf_ex_read_1: tensor[281]: name = blk.5.ffn_up.weight, size = 27525120, offset = 3141486592, type = f16, n_elts = 13762560
+gguf_ex_read_1: tensor[282]: name = blk.5.ffn_norm.weight, size = 6144, offset = 3169011712, type = f32, n_elts = 1536
+gguf_ex_read_1: tensor[283]: name = blk.5.attn_k.bias, size = 1024, offset = 3169017856, type = f32, n_elts = 256
+gguf_ex_read_1: tensor[284]: name = blk.5.attn_k.weight, size = 786432, offset = 3169018880, type = f16, n_elts = 393216
+gguf_ex_read_1: tensor[285]: name = blk.5.attn_output.weight, size = 4718592, offset = 3169805312, type = f16, n_elts = 2359296
+gguf_ex_read_1: tensor[286]: name = blk.5.attn_q.bias, size = 6144, offset = 3174523904, type = f32, n_elts = 1536
+gguf_ex_read_1: tensor[287]: name = blk.5.attn_q.weight, size = 4718592, offset = 3174530048, type = f16, n_elts = 2359296
+gguf_ex_read_1: tensor[288]: name = blk.5.attn_v.bias, size = 1024, offset = 3179248640, type = f32, n_elts = 256
+gguf_ex_read_1: tensor[289]: name = blk.5.attn_v.weight, size = 786432, offset = 3179249664, type = f16, n_elts = 393216
+gguf_ex_read_1: tensor[290]: name = blk.6.attn_norm.weight, size = 6144, offset = 3180036096, type = f32, n_elts = 1536
+gguf_ex_read_1: tensor[291]: name = blk.6.ffn_down.weight, size = 27525120, offset = 3180042240, type = f16, n_elts = 13762560
+gguf_ex_read_1: tensor[292]: name = blk.6.ffn_gate.weight, size = 27525120, offset = 3207567360, type = f16, n_elts = 13762560
+gguf_ex_read_1: tensor[293]: name = blk.6.ffn_up.weight, size = 27525120, offset = 3235092480, type = f16, n_elts = 13762560
+gguf_ex_read_1: tensor[294]: name = blk.6.ffn_norm.weight, size = 6144, offset = 3262617600, type = f32, n_elts = 1536
+gguf_ex_read_1: tensor[295]: name = blk.6.attn_k.bias, size = 1024, offset = 3262623744, type = f32, n_elts = 256
+gguf_ex_read_1: tensor[296]: name = blk.6.attn_k.weight, size = 786432, offset = 3262624768, type = f16, n_elts = 393216
+gguf_ex_read_1: tensor[297]: name = blk.6.attn_output.weight, size = 4718592, offset = 3263411200, type = f16, n_elts = 2359296
+gguf_ex_read_1: tensor[298]: name = blk.6.attn_q.bias, size = 6144, offset = 3268129792, type = f32, n_elts = 1536
+gguf_ex_read_1: tensor[299]: name = blk.6.attn_q.weight, size = 4718592, offset = 3268135936, type = f16, n_elts = 2359296
+gguf_ex_read_1: tensor[300]: name = blk.6.attn_v.bias, size = 1024, offset = 3272854528, type = f32, n_elts = 256
+gguf_ex_read_1: tensor[301]: name = blk.6.attn_v.weight, size = 786432, offset = 3272855552, type = f16, n_elts = 393216
+gguf_ex_read_1: tensor[302]: name = blk.7.attn_norm.weight, size = 6144, offset = 3273641984, type = f32, n_elts = 1536
+gguf_ex_read_1: tensor[303]: name = blk.7.ffn_down.weight, size = 27525120, offset = 3273648128, type = f16, n_elts = 13762560
+gguf_ex_read_1: tensor[304]: name = blk.7.ffn_gate.weight, size = 27525120, offset = 3301173248, type = f16, n_elts = 13762560
+gguf_ex_read_1: tensor[305]: name = blk.7.ffn_up.weight, size = 27525120, offset = 3328698368, type = f16, n_elts = 13762560
+gguf_ex_read_1: tensor[306]: name = blk.7.ffn_norm.weight, size = 6144, offset = 3356223488, type = f32, n_elts = 1536
+gguf_ex_read_1: tensor[307]: name = blk.7.attn_k.bias, size = 1024, offset = 3356229632, type = f32, n_elts = 256
+gguf_ex_read_1: tensor[308]: name = blk.7.attn_k.weight, size = 786432, offset = 3356230656, type = f16, n_elts = 393216
+gguf_ex_read_1: tensor[309]: name = blk.7.attn_output.weight, size = 4718592, offset = 3357017088, type = f16, n_elts = 2359296
+gguf_ex_read_1: tensor[310]: name = blk.7.attn_q.bias, size = 6144, offset = 3361735680, type = f32, n_elts = 1536
+gguf_ex_read_1: tensor[311]: name = blk.7.attn_q.weight, size = 4718592, offset = 3361741824, type = f16, n_elts = 2359296
+gguf_ex_read_1: tensor[312]: name = blk.7.attn_v.bias, size = 1024, offset = 3366460416, type = f32, n_elts = 256
+gguf_ex_read_1: tensor[313]: name = blk.7.attn_v.weight, size = 786432, offset = 3366461440, type = f16, n_elts = 393216
+gguf_ex_read_1: tensor[314]: name = blk.8.attn_norm.weight, size = 6144, offset = 3367247872, type = f32, n_elts = 1536
+gguf_ex_read_1: tensor[315]: name = blk.8.ffn_down.weight, size = 27525120, offset = 3367254016, type = f16, n_elts = 13762560
+gguf_ex_read_1: tensor[316]: name = blk.8.ffn_gate.weight, size = 27525120, offset = 3394779136, type = f16, n_elts = 13762560
+gguf_ex_read_1: tensor[317]: name = blk.8.ffn_up.weight, size = 27525120, offset = 3422304256, type = f16, n_elts = 13762560
+gguf_ex_read_1: tensor[318]: name = blk.8.ffn_norm.weight, size = 6144, offset = 3449829376, type = f32, n_elts = 1536
+gguf_ex_read_1: tensor[319]: name = blk.8.attn_k.bias, size = 1024, offset = 3449835520, type = f32, n_elts = 256
+gguf_ex_read_1: tensor[320]: name = blk.8.attn_k.weight, size = 786432, offset = 3449836544, type = f16, n_elts = 393216
+gguf_ex_read_1: tensor[321]: name = blk.8.attn_output.weight, size = 4718592, offset = 3450622976, type = f16, n_elts = 2359296
+gguf_ex_read_1: tensor[322]: name = blk.8.attn_q.bias, size = 6144, offset = 3455341568, type = f32, n_elts = 1536
+gguf_ex_read_1: tensor[323]: name = blk.8.attn_q.weight, size = 4718592, offset = 3455347712, type = f16, n_elts = 2359296
+gguf_ex_read_1: tensor[324]: name = blk.8.attn_v.bias, size = 1024, offset = 3460066304, type = f32, n_elts = 256
+gguf_ex_read_1: tensor[325]: name = blk.8.attn_v.weight, size = 786432, offset = 3460067328, type = f16, n_elts = 393216
+gguf_ex_read_1: tensor[326]: name = blk.9.attn_norm.weight, size = 6144, offset = 3460853760, type = f32, n_elts = 1536
+gguf_ex_read_1: tensor[327]: name = blk.9.ffn_down.weight, size = 27525120, offset = 3460859904, type = f16, n_elts = 13762560
+gguf_ex_read_1: tensor[328]: name = blk.9.ffn_gate.weight, size = 27525120, offset = 3488385024, type = f16, n_elts = 13762560
+gguf_ex_read_1: tensor[329]: name = blk.9.ffn_up.weight, size = 27525120, offset = 3515910144, type = f16, n_elts = 13762560
+gguf_ex_read_1: tensor[330]: name = blk.9.ffn_norm.weight, size = 6144, offset = 3543435264, type = f32, n_elts = 1536
+gguf_ex_read_1: tensor[331]: name = blk.9.attn_k.bias, size = 1024, offset = 3543441408, type = f32, n_elts = 256
+gguf_ex_read_1: tensor[332]: name = blk.9.attn_k.weight, size = 786432, offset = 3543442432, type = f16, n_elts = 393216
+gguf_ex_read_1: tensor[333]: name = blk.9.attn_output.weight, size = 4718592, offset = 3544228864, type = f16, n_elts = 2359296
+gguf_ex_read_1: tensor[334]: name = blk.9.attn_q.bias, size = 6144, offset = 3548947456, type = f32, n_elts = 1536
+gguf_ex_read_1: tensor[335]: name = blk.9.attn_q.weight, size = 4718592, offset = 3548953600, type = f16, n_elts = 2359296
+gguf_ex_read_1: tensor[336]: name = blk.9.attn_v.bias, size = 1024, offset = 3553672192, type = f32, n_elts = 256
+gguf_ex_read_1: tensor[337]: name = blk.9.attn_v.weight, size = 786432, offset = 3553673216, type = f16, n_elts = 393216
+gguf_ex_read_1: tensor[338]: name = output_norm.weight, size = 6144, offset = 3554459648, type = f32, n_elts = 1536
+gguf_ex_read_1: reading tensor 0 data
+gguf_ex_read_1: tensor[0]: n_dims = 2, ne = (1536, 151936, 1, 1), name = output.weight, data = 0x78df5e6131b0
+output.weight data[:10] : 0.000000 0.000000 0.000000 -0.000000 -0.000000 -0.000000 0.000000 0.000000 -0.000000 -0.000000 
+
+gguf_ex_read_1: reading tensor 1 data
+gguf_ex_read_1: tensor[1]: n_dims = 2, ne = (1536, 151936, 1, 1), name = token_embd.weight, data = 0x78df7a3331b0
+token_embd.weight data[:10] : 0.000000 0.000000 0.000000 -0.000000 -0.000000 -0.000000 0.000000 0.000000 -0.000000 -0.000000 
+
+gguf_ex_read_1: reading tensor 2 data
+gguf_ex_read_1: tensor[2]: n_dims = 1, ne = (1536, 1, 1, 1), name = blk.0.attn_norm.weight, data = 0x78df960531b0
+blk.0.attn_norm.weight data[:10] : 0.453125 0.114258 0.193359 0.294922 0.176758 0.380859 0.077148 0.166992 0.359375 0.375000 
+
+gguf_ex_read_1: reading tensor 3 data
+gguf_ex_read_1: tensor[3]: n_dims = 2, ne = (8960, 1536, 1, 1), name = blk.0.ffn_down.weight, data = 0x78df960549b0
+blk.0.ffn_down.weight data[:10] : -0.000000 -0.000000 0.000000 0.000000 -0.000000 0.000000 0.000000 -0.000000 0.000000 -0.000000 
+
+gguf_ex_read_1: reading tensor 4 data
+gguf_ex_read_1: tensor[4]: n_dims = 2, ne = (1536, 8960, 1, 1), name = blk.0.ffn_gate.weight, data = 0x78df97a949b0
+blk.0.ffn_gate.weight data[:10] : 0.000000 0.000000 -0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 -0.000000 0.000000 
+
+gguf_ex_read_1: reading tensor 5 data
+gguf_ex_read_1: tensor[5]: n_dims = 2, ne = (1536, 8960, 1, 1), name = blk.0.ffn_up.weight, data = 0x78df994d49b0
+blk.0.ffn_up.weight data[:10] : -0.000000 -0.000000 0.000000 -0.000000 0.000000 0.000000 0.000000 -0.000000 0.000000 -0.000000 
+
+gguf_ex_read_1: reading tensor 6 data
+gguf_ex_read_1: tensor[6]: n_dims = 1, ne = (1536, 1, 1, 1), name = blk.0.ffn_norm.weight, data = 0x78df9af149b0
+blk.0.ffn_norm.weight data[:10] : 0.183594 0.304688 0.208984 0.245117 -0.008240 0.187500 0.300781 0.261719 0.312500 0.194336 
+
+gguf_ex_read_1: reading tensor 7 data
+gguf_ex_read_1: tensor[7]: n_dims = 1, ne = (256, 1, 1, 1), name = blk.0.attn_k.bias, data = 0x78df9af161b0
+blk.0.attn_k.bias data[:10] : 4.406250 0.894531 -1.406250 -0.472656 3.015625 0.060547 -0.028564 -2.671875 0.253906 0.109375 
+
+gguf_ex_read_1: reading tensor 8 data
+gguf_ex_read_1: tensor[8]: n_dims = 2, ne = (1536, 256, 1, 1), name = blk.0.attn_k.weight, data = 0x78df9af165b0
+blk.0.attn_k.weight data[:10] : 0.000000 0.000000 0.000000 0.000000 -0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 
+
+gguf_ex_read_1: reading tensor 9 data
+gguf_ex_read_1: tensor[9]: n_dims = 2, ne = (1536, 1536, 1, 1), name = blk.0.attn_output.weight, data = 0x78df9afd65b0
+blk.0.attn_output.weight data[:10] : 0.000000 -0.000000 -0.000000 0.000000 -0.000000 -0.000000 0.000000 0.000000 0.000000 0.000000 
+
+gguf_ex_read_1: reading tensor 10 data
+gguf_ex_read_1: tensor[10]: n_dims = 1, ne = (1536, 1, 1, 1), name = blk.0.attn_q.bias, data = 0x78df9b4565b0
+blk.0.attn_q.bias data[:10] : 0.291016 -0.204102 0.757812 -0.353516 -0.110840 0.044434 -0.085938 -0.198242 0.031250 -0.324219 
+
+gguf_ex_read_1: reading tensor 11 data
+gguf_ex_read_1: tensor[11]: n_dims = 2, ne = (1536, 1536, 1, 1), name = blk.0.attn_q.weight, data = 0x78df9b457db0
+blk.0.attn_q.weight data[:10] : 0.000000 0.000000 -0.000000 0.000000 0.000000 0.000000 -0.000000 -0.000000 0.000000 -0.000000 
+
+gguf_ex_read_1: reading tensor 12 data
+gguf_ex_read_1: tensor[12]: n_dims = 1, ne = (256, 1, 1, 1), name = blk.0.attn_v.bias, data = 0x78df9b8d7db0
+blk.0.attn_v.bias data[:10] : -0.087891 0.075195 -0.055908 0.027832 0.058350 -0.080078 -0.033203 -0.096680 0.072266 0.020508 
+
+gguf_ex_read_1: reading tensor 13 data
+gguf_ex_read_1: tensor[13]: n_dims = 2, ne = (1536, 256, 1, 1), name = blk.0.attn_v.weight, data = 0x78df9b8d81b0
+blk.0.attn_v.weight data[:10] : -0.000000 0.000000 0.000000 -0.000000 0.000000 -0.000000 -0.000000 0.000000 0.000000 -0.000000 
+
+gguf_ex_read_1: reading tensor 14 data
+gguf_ex_read_1: tensor[14]: n_dims = 1, ne = (1536, 1, 1, 1), name = blk.1.attn_norm.weight, data = 0x78df9b9981b0
+blk.1.attn_norm.weight data[:10] : 0.135742 0.169922 0.184570 0.163086 0.750000 0.101562 0.225586 -0.124512 0.244141 0.121094 
+
+gguf_ex_read_1: reading tensor 15 data
+gguf_ex_read_1: tensor[15]: n_dims = 2, ne = (8960, 1536, 1, 1), name = blk.1.ffn_down.weight, data = 0x78df9b9999b0
+blk.1.ffn_down.weight data[:10] : 0.000000 0.000000 0.000000 0.000000 0.000000 -0.000000 0.000000 -0.000000 0.000000 0.000000 
+
+gguf_ex_read_1: reading tensor 16 data
+gguf_ex_read_1: tensor[16]: n_dims = 2, ne = (1536, 8960, 1, 1), name = blk.1.ffn_gate.weight, data = 0x78df9d3d99b0
+blk.1.ffn_gate.weight data[:10] : 0.000000 0.000000 0.000000 -0.000000 -0.000000 -0.000000 -0.000000 -0.000000 0.000000 0.000000 
+
+gguf_ex_read_1: reading tensor 17 data
+gguf_ex_read_1: tensor[17]: n_dims = 2, ne = (1536, 8960, 1, 1), name = blk.1.ffn_up.weight, data = 0x78df9ee199b0
+blk.1.ffn_up.weight data[:10] : -0.000000 0.000000 0.000000 0.000000 -0.000000 0.000000 -0.000000 0.000000 0.000000 -0.000000 
+
+gguf_ex_read_1: reading tensor 18 data
+gguf_ex_read_1: tensor[18]: n_dims = 1, ne = (1536, 1, 1, 1), name = blk.1.ffn_norm.weight, data = 0x78dfa08599b0
+blk.1.ffn_norm.weight data[:10] : 0.419922 0.757812 0.664062 0.742188 0.953125 0.632812 0.796875 0.718750 0.742188 0.531250 
+
+gguf_ex_read_1: reading tensor 19 data
+gguf_ex_read_1: tensor[19]: n_dims = 1, ne = (256, 1, 1, 1), name = blk.1.attn_k.bias, data = 0x78dfa085b1b0
+blk.1.attn_k.bias data[:10] : -3.609375 -0.032959 0.515625 2.156250 -0.098145 -0.539062 -0.035645 0.515625 -1.335938 -0.267578 
+
+gguf_ex_read_1: reading tensor 20 data
+gguf_ex_read_1: tensor[20]: n_dims = 2, ne = (1536, 256, 1, 1), name = blk.1.attn_k.weight, data = 0x78dfa085b5b0
+blk.1.attn_k.weight data[:10] : -0.000000 0.000000 -0.000000 -0.000000 -0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 
+
+gguf_ex_read_1: reading tensor 21 data
+gguf_ex_read_1: tensor[21]: n_dims = 2, ne = (1536, 1536, 1, 1), name = blk.1.attn_output.weight, data = 0x78dfa091b5b0
+blk.1.attn_output.weight data[:10] : 0.000000 -0.000000 0.000000 -0.000000 -0.000000 0.000000 -0.000000 0.000000 -0.000000 0.000000 
+
+gguf_ex_read_1: reading tensor 22 data
+gguf_ex_read_1: tensor[22]: n_dims = 1, ne = (1536, 1, 1, 1), name = blk.1.attn_q.bias, data = 0x78dfa0d9b5b0
+blk.1.attn_q.bias data[:10] : -0.037598 -0.238281 -1.015625 -2.250000 0.392578 0.734375 -0.195312 -0.621094 4.437500 0.400391 
+
+gguf_ex_read_1: reading tensor 23 data
+gguf_ex_read_1: tensor[23]: n_dims = 2, ne = (1536, 1536, 1, 1), name = blk.1.attn_q.weight, data = 0x78dfa0d9cdb0
+blk.1.attn_q.weight data[:10] : 0.000000 -0.000000 -0.000000 -0.000000 0.000000 0.000000 0.000000 0.000000 -0.000000 0.000000 
+
+gguf_ex_read_1: reading tensor 24 data
+gguf_ex_read_1: tensor[24]: n_dims = 1, ne = (256, 1, 1, 1), name = blk.1.attn_v.bias, data = 0x78dfa121cdb0
+blk.1.attn_v.bias data[:10] : -0.001884 0.121094 0.011047 0.040283 0.017334 -0.113770 -0.025879 -0.001831 -0.108398 0.041016 
+
+gguf_ex_read_1: reading tensor 25 data
+gguf_ex_read_1: tensor[25]: n_dims = 2, ne = (1536, 256, 1, 1), name = blk.1.attn_v.weight, data = 0x78dfa121d1b0
+blk.1.attn_v.weight data[:10] : -0.000000 0.000000 0.000000 0.000000 -0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 
+
+gguf_ex_read_1: reading tensor 26 data
+gguf_ex_read_1: tensor[26]: n_dims = 1, ne = (1536, 1, 1, 1), name = blk.10.attn_norm.weight, data = 0x78dfa12dd1b0
+blk.10.attn_norm.weight data[:10] : 0.075195 0.875000 0.964844 0.621094 0.613281 0.437500 0.660156 0.542969 0.578125 0.384766 
+
+gguf_ex_read_1: reading tensor 27 data
+gguf_ex_read_1: tensor[27]: n_dims = 2, ne = (8960, 1536, 1, 1), name = blk.10.ffn_down.weight, data = 0x78dfa12de9b0
+blk.10.ffn_down.weight data[:10] : -0.000000 0.000000 0.000000 0.000000 0.000000 -0.000000 0.000000 0.000000 0.000000 -0.000000 
+
+gguf_ex_read_1: reading tensor 28 data
+gguf_ex_read_1: tensor[28]: n_dims = 2, ne = (1536, 8960, 1, 1), name = blk.10.ffn_gate.weight, data = 0x78dfa2d1e9b0
+blk.10.ffn_gate.weight data[:10] : 0.000000 -0.000000 -0.000000 -0.000000 0.000000 -0.000000 -0.000000 0.000000 -0.000000 -0.000000 
+
+gguf_ex_read_1: reading tensor 29 data
+gguf_ex_read_1: tensor[29]: n_dims = 2, ne = (1536, 8960, 1, 1), name = blk.10.ffn_up.weight, data = 0x78dfa475e9b0
+blk.10.ffn_up.weight data[:10] : -0.000000 -0.000000 -0.000000 0.000000 0.000000 0.000000 -0.000000 0.000000 -0.000000 0.000000 
+
+gguf_ex_read_1: reading tensor 30 data
+gguf_ex_read_1: tensor[30]: n_dims = 1, ne = (1536, 1, 1, 1), name = blk.10.ffn_norm.weight, data = 0x78dfa619e9b0
+blk.10.ffn_norm.weight data[:10] : 0.127930 0.820312 0.566406 0.632812 0.486328 0.498047 0.679688 0.546875 0.687500 0.380859 
+
+gguf_ex_read_1: reading tensor 31 data
+gguf_ex_read_1: tensor[31]: n_dims = 1, ne = (256, 1, 1, 1), name = blk.10.attn_k.bias, data = 0x78dfa61a01b0
+blk.10.attn_k.bias data[:10] : 0.789062 0.257812 0.443359 -0.116699 -0.730469 -0.020508 0.214844 0.232422 0.054688 0.020508 
+
+gguf_ex_read_1: reading tensor 32 data
+gguf_ex_read_1: tensor[32]: n_dims = 2, ne = (1536, 256, 1, 1), name = blk.10.attn_k.weight, data = 0x78dfa61a05b0
+blk.10.attn_k.weight data[:10] : -0.000000 -0.000000 -0.000000 -0.000000 0.000000 0.000000 0.000000 -0.000000 -0.000000 -0.000000 
+
+gguf_ex_read_1: reading tensor 33 data
+gguf_ex_read_1: tensor[33]: n_dims = 2, ne = (1536, 1536, 1, 1), name = blk.10.attn_output.weight, data = 0x78dfa62605b0
+blk.10.attn_output.weight data[:10] : -0.000000 -0.000000 -0.000000 0.000000 0.000000 0.000000 -0.000000 0.000000 0.000000 -0.000000 
+
+gguf_ex_read_1: reading tensor 34 data
+gguf_ex_read_1: tensor[34]: n_dims = 1, ne = (1536, 1, 1, 1), name = blk.10.attn_q.bias, data = 0x78dfa66e05b0
+blk.10.attn_q.bias data[:10] : -0.140625 -0.175781 -0.229492 0.238281 0.285156 0.057129 -0.032227 -0.343750 -0.109863 -0.312500 
+
+gguf_ex_read_1: reading tensor 35 data
+gguf_ex_read_1: tensor[35]: n_dims = 2, ne = (1536, 1536, 1, 1), name = blk.10.attn_q.weight, data = 0x78dfa66e1db0
+blk.10.attn_q.weight data[:10] : -0.000000 0.000000 -0.000000 -0.000000 0.000000 -0.000000 0.000000 -0.000000 0.000000 -0.000000 
+
+gguf_ex_read_1: reading tensor 36 data
+gguf_ex_read_1: tensor[36]: n_dims = 1, ne = (256, 1, 1, 1), name = blk.10.attn_v.bias, data = 0x78dfa6b61db0
+blk.10.attn_v.bias data[:10] : -0.025879 -0.081055 -0.012695 0.035645 0.006622 0.015381 0.026733 0.018555 -0.003708 -0.013611 
+
+gguf_ex_read_1: reading tensor 37 data
+gguf_ex_read_1: tensor[37]: n_dims = 2, ne = (1536, 256, 1, 1), name = blk.10.attn_v.weight, data = 0x78dfa6b621b0
+blk.10.attn_v.weight data[:10] : 0.000000 -0.000000 0.000000 -0.000000 0.000000 -0.000000 0.000000 0.000000 0.000000 0.000000 
+
+gguf_ex_read_1: reading tensor 38 data
+gguf_ex_read_1: tensor[38]: n_dims = 1, ne = (1536, 1, 1, 1), name = blk.11.attn_norm.weight, data = 0x78dfa6c221b0
+blk.11.attn_norm.weight data[:10] : 0.057129 0.863281 0.867188 0.578125 0.546875 0.412109 0.636719 0.462891 0.500000 0.357422 
+
+gguf_ex_read_1: reading tensor 39 data
+gguf_ex_read_1: tensor[39]: n_dims = 2, ne = (8960, 1536, 1, 1), name = blk.11.ffn_down.weight, data = 0x78dfa6c239b0
+blk.11.ffn_down.weight data[:10] : -0.000000 -0.000000 -0.000000 -0.000000 -0.000000 -0.000000 -0.000000 -0.000000 -0.000000 0.000000 
+
+gguf_ex_read_1: reading tensor 40 data
+gguf_ex_read_1: tensor[40]: n_dims = 2, ne = (1536, 8960, 1, 1), name = blk.11.ffn_gate.weight, data = 0x78dfa86639b0
+blk.11.ffn_gate.weight data[:10] : -0.000000 0.000000 0.000000 -0.000000 0.000000 0.000000 -0.000000 0.000000 -0.000000 -0.000000 
+
+gguf_ex_read_1: reading tensor 41 data
+gguf_ex_read_1: tensor[41]: n_dims = 2, ne = (1536, 8960, 1, 1), name = blk.11.ffn_up.weight, data = 0x78dfaa0a39b0
+blk.11.ffn_up.weight data[:10] : 0.000000 0.000000 -0.000000 0.000000 -0.000000 -0.000000 0.000000 0.000000 -0.000000 0.000000 
+
+gguf_ex_read_1: reading tensor 42 data
+gguf_ex_read_1: tensor[42]: n_dims = 1, ne = (1536, 1, 1, 1), name = blk.11.ffn_norm.weight, data = 0x78dfabae39b0
+blk.11.ffn_norm.weight data[:10] : 0.159180 0.820312 0.519531 0.605469 0.455078 0.455078 0.656250 0.535156 0.671875 0.347656 
+
+gguf_ex_read_1: reading tensor 43 data
+gguf_ex_read_1: tensor[43]: n_dims = 1, ne = (256, 1, 1, 1), name = blk.11.attn_k.bias, data = 0x78dfabae51b0
+blk.11.attn_k.bias data[:10] : 0.609375 -0.929688 0.679688 0.121582 -0.208008 0.333984 0.238281 0.090820 -0.025513 -1.320312 
+
+gguf_ex_read_1: reading tensor 44 data
+gguf_ex_read_1: tensor[44]: n_dims = 2, ne = (1536, 256, 1, 1), name = blk.11.attn_k.weight, data = 0x78dfabae55b0
+blk.11.attn_k.weight data[:10] : -0.000000 -0.000000 0.000000 0.000000 -0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 
+
+gguf_ex_read_1: reading tensor 45 data
+gguf_ex_read_1: tensor[45]: n_dims = 2, ne = (1536, 1536, 1, 1), name = blk.11.attn_output.weight, data = 0x78dfabba55b0
+blk.11.attn_output.weight data[:10] : -0.000000 0.000000 -0.000000 0.000000 -0.000000 0.000000 -0.000000 0.000000 0.000000 -0.000000 
+
+gguf_ex_read_1: reading tensor 46 data
+gguf_ex_read_1: tensor[46]: n_dims = 1, ne = (1536, 1, 1, 1), name = blk.11.attn_q.bias, data = 0x78dfac0255b0
+blk.11.attn_q.bias data[:10] : 0.039307 0.140625 -0.168945 -0.008057 0.141602 -0.113770 -0.195312 0.023804 0.153320 0.233398 
+
+gguf_ex_read_1: reading tensor 47 data
+gguf_ex_read_1: tensor[47]: n_dims = 2, ne = (1536, 1536, 1, 1), name = blk.11.attn_q.weight, data = 0x78dfac026db0
+blk.11.attn_q.weight data[:10] : -0.000000 0.000000 0.000000 0.000000 0.000000 -0.000000 0.000000 -0.000000 -0.000000 -0.000000 
+
+gguf_ex_read_1: reading tensor 48 data
+gguf_ex_read_1: tensor[48]: n_dims = 1, ne = (256, 1, 1, 1), name = blk.11.attn_v.bias, data = 0x78dfac4a6db0
+blk.11.attn_v.bias data[:10] : -0.015381 -0.052734 0.031494 0.014221 0.004028 0.036133 -0.027100 0.010437 -0.009460 -0.026733 
+
+gguf_ex_read_1: reading tensor 49 data
+gguf_ex_read_1: tensor[49]: n_dims = 2, ne = (1536, 256, 1, 1), name = blk.11.attn_v.weight, data = 0x78dfac4a71b0
+blk.11.attn_v.weight data[:10] : -0.000000 0.000000 0.000000 -0.000000 0.000000 -0.000000 -0.000000 0.000000 0.000000 0.000000 
+
+gguf_ex_read_1: reading tensor 50 data
+gguf_ex_read_1: tensor[50]: n_dims = 1, ne = (1536, 1, 1, 1), name = blk.12.attn_norm.weight, data = 0x78dfac5671b0
+blk.12.attn_norm.weight data[:10] : 0.625000 0.867188 1.093750 0.558594 0.625000 0.376953 0.710938 0.519531 0.542969 0.392578 
+
+gguf_ex_read_1: reading tensor 51 data
+gguf_ex_read_1: tensor[51]: n_dims = 2, ne = (8960, 1536, 1, 1), name = blk.12.ffn_down.weight, data = 0x78dfac5689b0
+blk.12.ffn_down.weight data[:10] : 0.000000 -0.000000 -0.000000 0.000000 0.000000 0.000000 0.000000 -0.000000 0.000000 0.000000 
+
+gguf_ex_read_1: reading tensor 52 data
+gguf_ex_read_1: tensor[52]: n_dims = 2, ne = (1536, 8960, 1, 1), name = blk.12.ffn_gate.weight, data = 0x78dfadfa89b0
+blk.12.ffn_gate.weight data[:10] : 0.000000 -0.000000 -0.000000 0.000000 0.000000 -0.000000 0.000000 0.000000 -0.000000 0.000000 
+
+gguf_ex_read_1: reading tensor 53 data
+gguf_ex_read_1: tensor[53]: n_dims = 2, ne = (1536, 8960, 1, 1), name = blk.12.ffn_up.weight, data = 0x78dfaf9e89b0
+blk.12.ffn_up.weight data[:10] : 0.000000 0.000000 0.000000 -0.000000 -0.000000 -0.000000 -0.000000 -0.000000 0.000000 0.000000 
+
+gguf_ex_read_1: reading tensor 54 data
+gguf_ex_read_1: tensor[54]: n_dims = 1, ne = (1536, 1, 1, 1), name = blk.12.ffn_norm.weight, data = 0x78dfb14289b0
+blk.12.ffn_norm.weight data[:10] : 0.114258 0.863281 0.535156 0.605469 0.455078 0.431641 0.675781 0.542969 0.679688 0.333984 
+
+gguf_ex_read_1: reading tensor 55 data
+gguf_ex_read_1: tensor[55]: n_dims = 1, ne = (256, 1, 1, 1), name = blk.12.attn_k.bias, data = 0x78dfb142a1b0
+blk.12.attn_k.bias data[:10] : 0.059570 0.287109 0.151367 -0.239258 0.398438 -0.390625 0.441406 -0.080078 0.369141 0.363281 
+
+gguf_ex_read_1: reading tensor 56 data
+gguf_ex_read_1: tensor[56]: n_dims = 2, ne = (1536, 256, 1, 1), name = blk.12.attn_k.weight, data = 0x78dfb142a5b0
+blk.12.attn_k.weight data[:10] : 0.000000 0.000000 0.000000 0.000000 0.000000 -0.000000 -0.000000 -0.000000 0.000000 0.000000 
+
+gguf_ex_read_1: reading tensor 57 data
+gguf_ex_read_1: tensor[57]: n_dims = 2, ne = (1536, 1536, 1, 1), name = blk.12.attn_output.weight, data = 0x78dfb14ea5b0
+blk.12.attn_output.weight data[:10] : 0.000000 0.000000 0.000000 0.000000 -0.000000 0.000000 -0.000000 -0.000000 -0.000000 -0.000000 
+
+gguf_ex_read_1: reading tensor 58 data
+gguf_ex_read_1: tensor[58]: n_dims = 1, ne = (1536, 1, 1, 1), name = blk.12.attn_q.bias, data = 0x78dfb196a5b0
+blk.12.attn_q.bias data[:10] : -0.287109 -0.322266 -0.464844 0.613281 -0.550781 0.359375 -0.710938 -0.664062 -0.953125 -0.828125 
+
+gguf_ex_read_1: reading tensor 59 data
+gguf_ex_read_1: tensor[59]: n_dims = 2, ne = (1536, 1536, 1, 1), name = blk.12.attn_q.weight, data = 0x78dfb196bdb0
+blk.12.attn_q.weight data[:10] : 0.000000 0.000000 -0.000000 0.000000 -0.000000 0.000000 -0.000000 0.000000 -0.000000 -0.000000 
+
+gguf_ex_read_1: reading tensor 60 data
+gguf_ex_read_1: tensor[60]: n_dims = 1, ne = (256, 1, 1, 1), name = blk.12.attn_v.bias, data = 0x78dfb1debdb0
+blk.12.attn_v.bias data[:10] : -0.023438 -0.001747 0.012756 -0.015747 -0.076660 0.010986 -0.055908 -0.016724 0.003937 0.195312 
+
+gguf_ex_read_1: reading tensor 61 data
+gguf_ex_read_1: tensor[61]: n_dims = 2, ne = (1536, 256, 1, 1), name = blk.12.attn_v.weight, data = 0x78dfb1dec1b0
+blk.12.attn_v.weight data[:10] : -0.000000 0.000000 -0.000000 0.000000 0.000000 -0.000000 -0.000000 -0.000000 -0.000000 0.000000 
+
+gguf_ex_read_1: reading tensor 62 data
+gguf_ex_read_1: tensor[62]: n_dims = 1, ne = (1536, 1, 1, 1), name = blk.13.attn_norm.weight, data = 0x78dfb1eac1b0
+blk.13.attn_norm.weight data[:10] : 0.055664 0.835938 0.843750 0.486328 0.500000 0.294922 0.617188 0.423828 0.519531 0.261719 
+
+gguf_ex_read_1: reading tensor 63 data
+gguf_ex_read_1: tensor[63]: n_dims = 2, ne = (8960, 1536, 1, 1), name = blk.13.ffn_down.weight, data = 0x78dfb1ead9b0
+blk.13.ffn_down.weight data[:10] : 0.000000 0.000000 -0.000000 0.000000 -0.000000 0.000000 -0.000000 0.000000 -0.000000 -0.000000 
+
+gguf_ex_read_1: reading tensor 64 data
+gguf_ex_read_1: tensor[64]: n_dims = 2, ne = (1536, 8960, 1, 1), name = blk.13.ffn_gate.weight, data = 0x78dfb38ed9b0
+blk.13.ffn_gate.weight data[:10] : -0.000000 -0.000000 -0.000000 -0.000000 -0.000000 -0.000000 0.000000 0.000000 0.000000 -0.000000 
+
+gguf_ex_read_1: reading tensor 65 data
+gguf_ex_read_1: tensor[65]: n_dims = 2, ne = (1536, 8960, 1, 1), name = blk.13.ffn_up.weight, data = 0x78dfb532d9b0
+blk.13.ffn_up.weight data[:10] : 0.000000 -0.000000 0.000000 0.000000 -0.000000 -0.000000 0.000000 -0.000000 0.000000 -0.000000 
+
+gguf_ex_read_1: reading tensor 66 data
+gguf_ex_read_1: tensor[66]: n_dims = 1, ne = (1536, 1, 1, 1), name = blk.13.ffn_norm.weight, data = 0x78dfb6d6d9b0
+blk.13.ffn_norm.weight data[:10] : 0.098633 0.855469 0.480469 0.582031 0.437500 0.398438 0.636719 0.523438 0.667969 0.306641 
+
+gguf_ex_read_1: reading tensor 67 data
+gguf_ex_read_1: tensor[67]: n_dims = 1, ne = (256, 1, 1, 1), name = blk.13.attn_k.bias, data = 0x78dfb6d6f1b0
+blk.13.attn_k.bias data[:10] : -2.750000 0.016357 -0.367188 -0.052246 0.628906 -0.084961 -1.421875 0.090820 -0.445312 -1.609375 
+
+gguf_ex_read_1: reading tensor 68 data
+gguf_ex_read_1: tensor[68]: n_dims = 2, ne = (1536, 256, 1, 1), name = blk.13.attn_k.weight, data = 0x78dfb6d6f5b0
+blk.13.attn_k.weight data[:10] : 0.000000 -0.000000 -0.000000 0.000000 0.000000 -0.000000 0.000000 0.000000 -0.000000 -0.000000 
+
+gguf_ex_read_1: reading tensor 69 data
+gguf_ex_read_1: tensor[69]: n_dims = 2, ne = (1536, 1536, 1, 1), name = blk.13.attn_output.weight, data = 0x78dfb6e2f5b0
+blk.13.attn_output.weight data[:10] : 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 -0.000000 -0.000000 0.000000 0.000000 
+
+gguf_ex_read_1: reading tensor 70 data
+gguf_ex_read_1: tensor[70]: n_dims = 1, ne = (1536, 1, 1, 1), name = blk.13.attn_q.bias, data = 0x78dfb72af5b0
+blk.13.attn_q.bias data[:10] : -0.644531 1.539062 3.859375 -0.005554 -3.843750 0.326172 -0.816406 0.371094 0.593750 0.890625 
+
+gguf_ex_read_1: reading tensor 71 data
+gguf_ex_read_1: tensor[71]: n_dims = 2, ne = (1536, 1536, 1, 1), name = blk.13.attn_q.weight, data = 0x78dfb72b0db0
+blk.13.attn_q.weight data[:10] : 0.000000 0.000000 -0.000000 -0.000000 -0.000000 -0.000000 0.000000 0.000000 0.000000 -0.000000 
+
+gguf_ex_read_1: reading tensor 72 data
+gguf_ex_read_1: tensor[72]: n_dims = 1, ne = (256, 1, 1, 1), name = blk.13.attn_v.bias, data = 0x78dfb7730db0
+blk.13.attn_v.bias data[:10] : 0.036133 -0.048096 -0.026001 0.010681 -0.005188 -0.111328 -0.022095 -0.008179 -0.034668 0.073730 
+
+gguf_ex_read_1: reading tensor 73 data
+gguf_ex_read_1: tensor[73]: n_dims = 2, ne = (1536, 256, 1, 1), name = blk.13.attn_v.weight, data = 0x78dfb77311b0
+blk.13.attn_v.weight data[:10] : -0.000000 -0.000000 0.000000 -0.000000 -0.000000 0.000000 0.000000 -0.000000 -0.000000 0.000000 
+
+gguf_ex_read_1: reading tensor 74 data
+gguf_ex_read_1: tensor[74]: n_dims = 1, ne = (1536, 1, 1, 1), name = blk.14.attn_norm.weight, data = 0x78dfb77f11b0
+blk.14.attn_norm.weight data[:10] : 0.078125 1.062500 1.429688 0.562500 0.605469 0.332031 0.667969 0.500000 0.593750 0.267578 
+
+gguf_ex_read_1: reading tensor 75 data
+gguf_ex_read_1: tensor[75]: n_dims = 2, ne = (8960, 1536, 1, 1), name = blk.14.ffn_down.weight, data = 0x78dfb77f29b0
+blk.14.ffn_down.weight data[:10] : 0.000000 -0.000000 0.000000 -0.000000 0.000000 -0.000000 -0.000000 0.000000 0.000000 -0.000000 
+
+gguf_ex_read_1: reading tensor 76 data
+gguf_ex_read_1: tensor[76]: n_dims = 2, ne = (1536, 8960, 1, 1), name = blk.14.ffn_gate.weight, data = 0x78dfb92329b0
+blk.14.ffn_gate.weight data[:10] : 0.000000 -0.000000 -0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 
+
+gguf_ex_read_1: reading tensor 77 data
+gguf_ex_read_1: tensor[77]: n_dims = 2, ne = (1536, 8960, 1, 1), name = blk.14.ffn_up.weight, data = 0x78dfbac729b0
+blk.14.ffn_up.weight data[:10] : 0.000000 0.000000 0.000000 -0.000000 0.000000 -0.000000 -0.000000 0.000000 -0.000000 -0.000000 
+
+gguf_ex_read_1: reading tensor 78 data
+gguf_ex_read_1: tensor[78]: n_dims = 1, ne = (1536, 1, 1, 1), name = blk.14.ffn_norm.weight, data = 0x78dfbc6b29b0
+blk.14.ffn_norm.weight data[:10] : 0.109863 0.945312 0.439453 0.593750 0.468750 0.417969 0.691406 0.566406 0.722656 0.328125 
+
+gguf_ex_read_1: reading tensor 79 data
+gguf_ex_read_1: tensor[79]: n_dims = 1, ne = (256, 1, 1, 1), name = blk.14.attn_k.bias, data = 0x78dfbc6b41b0
+blk.14.attn_k.bias data[:10] : 0.039795 0.106934 -0.015747 0.013489 -0.049805 0.086914 -0.191406 0.204102 -0.000389 0.117188 
+
+gguf_ex_read_1: reading tensor 80 data
+gguf_ex_read_1: tensor[80]: n_dims = 2, ne = (1536, 256, 1, 1), name = blk.14.attn_k.weight, data = 0x78dfbc6b45b0
+blk.14.attn_k.weight data[:10] : -0.000000 -0.000000 0.000000 -0.000000 0.000000 0.000000 -0.000000 0.000000 0.000000 -0.000000 
+
+gguf_ex_read_1: reading tensor 81 data
+gguf_ex_read_1: tensor[81]: n_dims = 2, ne = (1536, 1536, 1, 1), name = blk.14.attn_output.weight, data = 0x78dfbc7745b0
+blk.14.attn_output.weight data[:10] : -0.000000 -0.000000 0.000000 -0.000000 0.000000 0.000000 0.000000 -0.000000 -0.000000 0.000000 
+
+gguf_ex_read_1: reading tensor 82 data
+gguf_ex_read_1: tensor[82]: n_dims = 1, ne = (1536, 1, 1, 1), name = blk.14.attn_q.bias, data = 0x78dfbcbf45b0
+blk.14.attn_q.bias data[:10] : -0.225586 -0.238281 -0.004852 -0.115723 0.107422 -0.211914 0.476562 -0.291016 0.145508 -0.523438 
+
+gguf_ex_read_1: reading tensor 83 data
+gguf_ex_read_1: tensor[83]: n_dims = 2, ne = (1536, 1536, 1, 1), name = blk.14.attn_q.weight, data = 0x78dfbcbf5db0
+blk.14.attn_q.weight data[:10] : 0.000000 -0.000000 -0.000000 0.000000 0.000000 -0.000000 -0.000000 -0.000000 -0.000000 -0.000000 
+
+gguf_ex_read_1: reading tensor 84 data
+gguf_ex_read_1: tensor[84]: n_dims = 1, ne = (256, 1, 1, 1), name = blk.14.attn_v.bias, data = 0x78dfbd075db0
+blk.14.attn_v.bias data[:10] : -0.675781 0.033203 0.029053 0.034668 0.007233 -0.033203 0.014587 -0.006287 0.008545 -0.035645 
+
+gguf_ex_read_1: reading tensor 85 data
+gguf_ex_read_1: tensor[85]: n_dims = 2, ne = (1536, 256, 1, 1), name = blk.14.attn_v.weight, data = 0x78dfbd0761b0
+blk.14.attn_v.weight data[:10] : -0.000000 -0.000000 0.000000 -0.000000 0.000000 -0.000000 -0.000000 0.000000 -0.000000 -0.000000 
+
+gguf_ex_read_1: reading tensor 86 data
+gguf_ex_read_1: tensor[86]: n_dims = 1, ne = (1536, 1, 1, 1), name = blk.15.attn_norm.weight, data = 0x78dfbd1361b0
+blk.15.attn_norm.weight data[:10] : 0.048584 1.093750 0.906250 0.574219 0.470703 0.361328 0.640625 0.472656 0.648438 0.277344 
+
+gguf_ex_read_1: reading tensor 87 data
+gguf_ex_read_1: tensor[87]: n_dims = 2, ne = (8960, 1536, 1, 1), name = blk.15.ffn_down.weight, data = 0x78dfbd1379b0
+blk.15.ffn_down.weight data[:10] : -0.000000 -0.000000 0.000000 -0.000000 -0.000000 0.000000 0.000000 0.000000 0.000000 -0.000000 
+
+gguf_ex_read_1: reading tensor 88 data
+gguf_ex_read_1: tensor[88]: n_dims = 2, ne = (1536, 8960, 1, 1), name = blk.15.ffn_gate.weight, data = 0x78dfbeb779b0
+blk.15.ffn_gate.weight data[:10] : 0.000000 -0.000000 -0.000000 -0.000000 -0.000000 0.000000 -0.000000 -0.000000 0.000000 -0.000000 
+
+gguf_ex_read_1: reading tensor 89 data
+gguf_ex_read_1: tensor[89]: n_dims = 2, ne = (1536, 8960, 1, 1), name = blk.15.ffn_up.weight, data = 0x78dfc05b79b0
+blk.15.ffn_up.weight data[:10] : 0.000000 -0.000000 -0.000000 0.000000 0.000000 -0.000000 -0.000000 -0.000000 0.000000 0.000000 
+
+gguf_ex_read_1: reading tensor 90 data
+gguf_ex_read_1: tensor[90]: n_dims = 1, ne = (1536, 1, 1, 1), name = blk.15.ffn_norm.weight, data = 0x78dfc1ff79b0
+blk.15.ffn_norm.weight data[:10] : 0.109863 0.929688 0.412109 0.585938 0.435547 0.427734 0.640625 0.542969 0.671875 0.333984 
+
+gguf_ex_read_1: reading tensor 91 data
+gguf_ex_read_1: tensor[91]: n_dims = 1, ne = (256, 1, 1, 1), name = blk.15.attn_k.bias, data = 0x78dfc1ff91b0
+blk.15.attn_k.bias data[:10] : 0.812500 -0.578125 -0.191406 0.742188 -0.038818 0.746094 0.008545 0.051514 0.769531 -0.171875 
+
+gguf_ex_read_1: reading tensor 92 data
+gguf_ex_read_1: tensor[92]: n_dims = 2, ne = (1536, 256, 1, 1), name = blk.15.attn_k.weight, data = 0x78dfc1ff95b0
+blk.15.attn_k.weight data[:10] : 0.000000 0.000000 0.000000 0.000000 -0.000000 0.000000 0.000000 0.000000 0.000000 -0.000000 
+
+gguf_ex_read_1: reading tensor 93 data
+gguf_ex_read_1: tensor[93]: n_dims = 2, ne = (1536, 1536, 1, 1), name = blk.15.attn_output.weight, data = 0x78dfc20b95b0
+blk.15.attn_output.weight data[:10] : -0.000000 -0.000000 0.000000 0.000000 -0.000000 -0.000000 -0.000000 -0.000000 -0.000000 -0.000000 
+
+gguf_ex_read_1: reading tensor 94 data
+gguf_ex_read_1: tensor[94]: n_dims = 1, ne = (1536, 1, 1, 1), name = blk.15.attn_q.bias, data = 0x78dfc25395b0
+blk.15.attn_q.bias data[:10] : 0.746094 -0.671875 -0.050293 0.221680 0.275391 0.229492 -0.154297 0.058838 0.609375 -0.421875 
+
+gguf_ex_read_1: reading tensor 95 data
+gguf_ex_read_1: tensor[95]: n_dims = 2, ne = (1536, 1536, 1, 1), name = blk.15.attn_q.weight, data = 0x78dfc253adb0
+blk.15.attn_q.weight data[:10] : 0.000000 0.000000 -0.000000 -0.000000 -0.000000 0.000000 0.000000 0.000000 -0.000000 -0.000000 
+
+gguf_ex_read_1: reading tensor 96 data
+gguf_ex_read_1: tensor[96]: n_dims = 1, ne = (256, 1, 1, 1), name = blk.15.attn_v.bias, data = 0x78dfc29badb0
+blk.15.attn_v.bias data[:10] : -0.018555 0.008423 -0.000511 0.052246 -0.025757 -0.013733 -0.028687 -0.000637 -0.024658 0.075684 
+
+gguf_ex_read_1: reading tensor 97 data
+gguf_ex_read_1: tensor[97]: n_dims = 2, ne = (1536, 256, 1, 1), name = blk.15.attn_v.weight, data = 0x78dfc29bb1b0
+blk.15.attn_v.weight data[:10] : -0.000000 -0.000000 -0.000000 -0.000000 0.000000 0.000000 0.000000 -0.000000 0.000000 -0.000000 
+
+gguf_ex_read_1: reading tensor 98 data
+gguf_ex_read_1: tensor[98]: n_dims = 1, ne = (1536, 1, 1, 1), name = blk.16.attn_norm.weight, data = 0x78dfc2a7b1b0
+blk.16.attn_norm.weight data[:10] : 0.077148 1.242188 1.304688 0.679688 0.683594 0.423828 0.792969 0.644531 0.730469 0.371094 
+
+gguf_ex_read_1: reading tensor 99 data
+gguf_ex_read_1: tensor[99]: n_dims = 2, ne = (8960, 1536, 1, 1), name = blk.16.ffn_down.weight, data = 0x78dfc2a7c9b0
+blk.16.ffn_down.weight data[:10] : -0.000000 -0.000000 -0.000000 -0.000000 0.000000 -0.000000 -0.000000 0.000000 -0.000000 0.000000 
+
+gguf_ex_read_1: reading tensor 100 data
+gguf_ex_read_1: tensor[100]: n_dims = 2, ne = (1536, 8960, 1, 1), name = blk.16.ffn_gate.weight, data = 0x78dfc44bc9b0
+blk.16.ffn_gate.weight data[:10] : 0.000000 0.000000 0.000000 -0.000000 0.000000 0.000000 -0.000000 0.000000 0.000000 -0.000000 
+
+gguf_ex_read_1: reading tensor 101 data
+gguf_ex_read_1: tensor[101]: n_dims = 2, ne = (1536, 8960, 1, 1), name = blk.16.ffn_up.weight, data = 0x78dfc5efc9b0
+blk.16.ffn_up.weight data[:10] : -0.000000 0.000000 0.000000 -0.000000 -0.000000 -0.000000 -0.000000 -0.000000 0.000000 -0.000000 
+
+gguf_ex_read_1: reading tensor 102 data
+gguf_ex_read_1: tensor[102]: n_dims = 1, ne = (1536, 1, 1, 1), name = blk.16.ffn_norm.weight, data = 0x78dfc793c9b0
+blk.16.ffn_norm.weight data[:10] : 0.137695 0.941406 0.359375 0.613281 0.457031 0.476562 0.664062 0.578125 0.699219 0.367188 
+
+gguf_ex_read_1: reading tensor 103 data
+gguf_ex_read_1: tensor[103]: n_dims = 1, ne = (256, 1, 1, 1), name = blk.16.attn_k.bias, data = 0x78dfc793e1b0
+blk.16.attn_k.bias data[:10] : -0.050537 -0.096680 -0.386719 0.062988 -0.398438 -0.182617 0.396484 -0.153320 -0.132812 -0.351562 
+
+gguf_ex_read_1: reading tensor 104 data
+gguf_ex_read_1: tensor[104]: n_dims = 2, ne = (1536, 256, 1, 1), name = blk.16.attn_k.weight, data = 0x78dfc793e5b0
+blk.16.attn_k.weight data[:10] : 0.000000 0.000000 0.000000 0.000000 -0.000000 0.000000 -0.000000 0.000000 0.000000 0.000000 
+
+gguf_ex_read_1: reading tensor 105 data
+gguf_ex_read_1: tensor[105]: n_dims = 2, ne = (1536, 1536, 1, 1), name = blk.16.attn_output.weight, data = 0x78dfc79fe5b0
+blk.16.attn_output.weight data[:10] : -0.000000 -0.000000 0.000000 0.000000 -0.000000 -0.000000 0.000000 0.000000 -0.000000 -0.000000 
+
+gguf_ex_read_1: reading tensor 106 data
+gguf_ex_read_1: tensor[106]: n_dims = 1, ne = (1536, 1, 1, 1), name = blk.16.attn_q.bias, data = 0x78dfc7e7e5b0
+blk.16.attn_q.bias data[:10] : 0.679688 0.617188 0.863281 0.125977 0.976562 0.474609 -1.031250 0.332031 -0.519531 1.054688 
+
+gguf_ex_read_1: reading tensor 107 data
+gguf_ex_read_1: tensor[107]: n_dims = 2, ne = (1536, 1536, 1, 1), name = blk.16.attn_q.weight, data = 0x78dfc7e7fdb0
+blk.16.attn_q.weight data[:10] : 0.000000 -0.000000 -0.000000 -0.000000 0.000000 -0.000000 0.000000 0.000000 -0.000000 -0.000000 
+
+gguf_ex_read_1: reading tensor 108 data
+gguf_ex_read_1: tensor[108]: n_dims = 1, ne = (256, 1, 1, 1), name = blk.16.attn_v.bias, data = 0x78dfc82ffdb0
+blk.16.attn_v.bias data[:10] : -0.023438 0.004150 -0.062012 0.033936 0.116211 -0.019043 0.038818 0.028687 -0.004333 -0.011047 
+
+gguf_ex_read_1: reading tensor 109 data
+gguf_ex_read_1: tensor[109]: n_dims = 2, ne = (1536, 256, 1, 1), name = blk.16.attn_v.weight, data = 0x78dfc83001b0
+blk.16.attn_v.weight data[:10] : 0.000000 0.000000 -0.000000 0.000000 -0.000000 -0.000000 0.000000 -0.000000 0.000000 0.000000 
+
+gguf_ex_read_1: reading tensor 110 data
+gguf_ex_read_1: tensor[110]: n_dims = 1, ne = (1536, 1, 1, 1), name = blk.17.attn_norm.weight, data = 0x78dfc83c01b0
+blk.17.attn_norm.weight data[:10] : 0.134766 1.031250 0.871094 0.582031 0.593750 0.380859 0.675781 0.589844 0.656250 0.361328 
+
+gguf_ex_read_1: reading tensor 111 data
+gguf_ex_read_1: tensor[111]: n_dims = 2, ne = (8960, 1536, 1, 1), name = blk.17.ffn_down.weight, data = 0x78dfc83c19b0
+blk.17.ffn_down.weight data[:10] : 0.000000 0.000000 -0.000000 -0.000000 0.000000 -0.000000 0.000000 0.000000 -0.000000 -0.000000 
+
+gguf_ex_read_1: reading tensor 112 data
+gguf_ex_read_1: tensor[112]: n_dims = 2, ne = (1536, 8960, 1, 1), name = blk.17.ffn_gate.weight, data = 0x78dfc9e019b0
+blk.17.ffn_gate.weight data[:10] : -0.000000 -0.000000 0.000000 -0.000000 -0.000000 -0.000000 -0.000000 0.000000 -0.000000 -0.000000 
+
+gguf_ex_read_1: reading tensor 113 data
+gguf_ex_read_1: tensor[113]: n_dims = 2, ne = (1536, 8960, 1, 1), name = blk.17.ffn_up.weight, data = 0x78dfcb8419b0
+blk.17.ffn_up.weight data[:10] : 0.000000 -0.000000 -0.000000 -0.000000 -0.000000 0.000000 0.000000 -0.000000 -0.000000 0.000000 
+
+gguf_ex_read_1: reading tensor 114 data
+gguf_ex_read_1: tensor[114]: n_dims = 1, ne = (1536, 1, 1, 1), name = blk.17.ffn_norm.weight, data = 0x78dfcd2819b0
+blk.17.ffn_norm.weight data[:10] : 0.167969 0.949219 0.361328 0.621094 0.492188 0.476562 0.664062 0.582031 0.675781 0.398438 
+
+gguf_ex_read_1: reading tensor 115 data
+gguf_ex_read_1: tensor[115]: n_dims = 1, ne = (256, 1, 1, 1), name = blk.17.attn_k.bias, data = 0x78dfcd2831b0
+blk.17.attn_k.bias data[:10] : -0.163086 0.233398 -0.291016 -0.080078 -0.294922 0.039551 -0.122070 0.542969 0.053955 0.714844 
+
+gguf_ex_read_1: reading tensor 116 data
+gguf_ex_read_1: tensor[116]: n_dims = 2, ne = (1536, 256, 1, 1), name = blk.17.attn_k.weight, data = 0x78dfcd2835b0
+blk.17.attn_k.weight data[:10] : -0.000000 0.000000 0.000000 0.000000 0.000000 -0.000000 0.000000 0.000000 0.000000 0.000000 
+
+gguf_ex_read_1: reading tensor 117 data
+gguf_ex_read_1: tensor[117]: n_dims = 2, ne = (1536, 1536, 1, 1), name = blk.17.attn_output.weight, data = 0x78dfcd3435b0
+blk.17.attn_output.weight data[:10] : 0.000000 -0.000000 0.000000 -0.000000 0.000000 -0.000000 -0.000000 0.000000 -0.000000 0.000000 
+
+gguf_ex_read_1: reading tensor 118 data
+gguf_ex_read_1: tensor[118]: n_dims = 1, ne = (1536, 1, 1, 1), name = blk.17.attn_q.bias, data = 0x78dfcd7c35b0
+blk.17.attn_q.bias data[:10] : 1.445312 0.613281 0.232422 1.179688 -0.808594 -1.804688 0.157227 1.242188 -0.005981 2.171875 
+
+gguf_ex_read_1: reading tensor 119 data
+gguf_ex_read_1: tensor[119]: n_dims = 2, ne = (1536, 1536, 1, 1), name = blk.17.attn_q.weight, data = 0x78dfcd7c4db0
+blk.17.attn_q.weight data[:10] : 0.000000 -0.000000 -0.000000 0.000000 0.000000 0.000000 -0.000000 0.000000 -0.000000 -0.000000 
+
+gguf_ex_read_1: reading tensor 120 data
+gguf_ex_read_1: tensor[120]: n_dims = 1, ne = (256, 1, 1, 1), name = blk.17.attn_v.bias, data = 0x78dfcdc44db0
+blk.17.attn_v.bias data[:10] : 0.006836 0.021240 0.051025 -0.029297 -0.013855 -0.028687 0.013428 0.020752 0.012878 -0.000473 
+
+gguf_ex_read_1: reading tensor 121 data
+gguf_ex_read_1: tensor[121]: n_dims = 2, ne = (1536, 256, 1, 1), name = blk.17.attn_v.weight, data = 0x78dfcdc451b0
+blk.17.attn_v.weight data[:10] : -0.000000 -0.000000 -0.000000 -0.000000 0.000000 0.000000 0.000000 -0.000000 0.000000 -0.000000 
+
+gguf_ex_read_1: reading tensor 122 data
+gguf_ex_read_1: tensor[122]: n_dims = 1, ne = (1536, 1, 1, 1), name = blk.18.attn_norm.weight, data = 0x78dfcdd051b0
+blk.18.attn_norm.weight data[:10] : 0.095215 0.984375 0.980469 0.511719 0.621094 0.382812 0.617188 0.523438 0.578125 0.341797 
+
+gguf_ex_read_1: reading tensor 123 data
+gguf_ex_read_1: tensor[123]: n_dims = 2, ne = (8960, 1536, 1, 1), name = blk.18.ffn_down.weight, data = 0x78dfcdd069b0
+blk.18.ffn_down.weight data[:10] : -0.000000 0.000000 0.000000 -0.000000 0.000000 -0.000000 0.000000 0.000000 0.000000 -0.000000 
+
+gguf_ex_read_1: reading tensor 124 data
+gguf_ex_read_1: tensor[124]: n_dims = 2, ne = (1536, 8960, 1, 1), name = blk.18.ffn_gate.weight, data = 0x78dfcf7469b0
+blk.18.ffn_gate.weight data[:10] : 0.000000 -0.000000 0.000000 0.000000 -0.000000 -0.000000 -0.000000 0.000000 0.000000 0.000000 
+
+gguf_ex_read_1: reading tensor 125 data
+gguf_ex_read_1: tensor[125]: n_dims = 2, ne = (1536, 8960, 1, 1), name = blk.18.ffn_up.weight, data = 0x78dfd11869b0
+blk.18.ffn_up.weight data[:10] : 0.000000 -0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 -0.000000 
+
+gguf_ex_read_1: reading tensor 126 data
+gguf_ex_read_1: tensor[126]: n_dims = 1, ne = (1536, 1, 1, 1), name = blk.18.ffn_norm.weight, data = 0x78dfd2bc69b0
+blk.18.ffn_norm.weight data[:10] : 0.200195 0.906250 0.408203 0.589844 0.515625 0.486328 0.644531 0.593750 0.656250 0.435547 
+
+gguf_ex_read_1: reading tensor 127 data
+gguf_ex_read_1: tensor[127]: n_dims = 1, ne = (256, 1, 1, 1), name = blk.18.attn_k.bias, data = 0x78dfd2bc81b0
+blk.18.attn_k.bias data[:10] : 0.582031 0.249023 -0.636719 -0.021362 0.033691 0.045654 -0.470703 -0.080078 0.125977 0.308594 
+
+gguf_ex_read_1: reading tensor 128 data
+gguf_ex_read_1: tensor[128]: n_dims = 2, ne = (1536, 256, 1, 1), name = blk.18.attn_k.weight, data = 0x78dfd2bc85b0
+blk.18.attn_k.weight data[:10] : -0.000000 0.000000 -0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 -0.000000 -0.000000 
+
+gguf_ex_read_1: reading tensor 129 data
+gguf_ex_read_1: tensor[129]: n_dims = 2, ne = (1536, 1536, 1, 1), name = blk.18.attn_output.weight, data = 0x78dfd2c885b0
+blk.18.attn_output.weight data[:10] : 0.000000 -0.000000 -0.000000 -0.000000 -0.000000 -0.000000 0.000000 0.000000 -0.000000 -0.000000 
+
+gguf_ex_read_1: reading tensor 130 data
+gguf_ex_read_1: tensor[130]: n_dims = 1, ne = (1536, 1, 1, 1), name = blk.18.attn_q.bias, data = 0x78dfd31085b0
+blk.18.attn_q.bias data[:10] : -0.063965 0.013916 0.730469 0.052734 0.500000 -0.718750 -0.179688 -0.466797 0.240234 -0.094727 
+
+gguf_ex_read_1: reading tensor 131 data
+gguf_ex_read_1: tensor[131]: n_dims = 2, ne = (1536, 1536, 1, 1), name = blk.18.attn_q.weight, data = 0x78dfd3109db0
+blk.18.attn_q.weight data[:10] : -0.000000 -0.000000 -0.000000 0.000000 -0.000000 0.000000 -0.000000 0.000000 0.000000 -0.000000 
+
+gguf_ex_read_1: reading tensor 132 data
+gguf_ex_read_1: tensor[132]: n_dims = 1, ne = (256, 1, 1, 1), name = blk.18.attn_v.bias, data = 0x78dfd3589db0
+blk.18.attn_v.bias data[:10] : 0.029419 0.007385 -0.010986 -0.039062 0.001259 0.001465 -0.003540 -0.004639 -0.011719 -0.026611 
+
+gguf_ex_read_1: reading tensor 133 data
+gguf_ex_read_1: tensor[133]: n_dims = 2, ne = (1536, 256, 1, 1), name = blk.18.attn_v.weight, data = 0x78dfd358a1b0
+blk.18.attn_v.weight data[:10] : 0.000000 0.000000 0.000000 0.000000 -0.000000 0.000000 0.000000 -0.000000 -0.000000 -0.000000 
+
+gguf_ex_read_1: reading tensor 134 data
+gguf_ex_read_1: tensor[134]: n_dims = 1, ne = (1536, 1, 1, 1), name = blk.19.attn_norm.weight, data = 0x78dfd364a1b0
+blk.19.attn_norm.weight data[:10] : 0.283203 1.039062 1.023438 0.554688 0.636719 0.416016 0.656250 0.511719 0.667969 0.421875 
+
+gguf_ex_read_1: reading tensor 135 data
+gguf_ex_read_1: tensor[135]: n_dims = 2, ne = (8960, 1536, 1, 1), name = blk.19.ffn_down.weight, data = 0x78dfd364b9b0
+blk.19.ffn_down.weight data[:10] : -0.000000 -0.000000 -0.000000 0.000000 0.000000 -0.000000 0.000000 0.000000 0.000000 -0.000000 
+
+gguf_ex_read_1: reading tensor 136 data
+gguf_ex_read_1: tensor[136]: n_dims = 2, ne = (1536, 8960, 1, 1), name = blk.19.ffn_gate.weight, data = 0x78dfd508b9b0
+blk.19.ffn_gate.weight data[:10] : -0.000000 -0.000000 -0.000000 -0.000000 0.000000 0.000000 -0.000000 0.000000 -0.000000 0.000000 
+
+gguf_ex_read_1: reading tensor 137 data
+gguf_ex_read_1: tensor[137]: n_dims = 2, ne = (1536, 8960, 1, 1), name = blk.19.ffn_up.weight, data = 0x78dfd6acb9b0
+blk.19.ffn_up.weight data[:10] : -0.000000 0.000000 0.000000 -0.000000 -0.000000 -0.000000 0.000000 0.000000 0.000000 0.000000 
+
+gguf_ex_read_1: reading tensor 138 data
+gguf_ex_read_1: tensor[138]: n_dims = 1, ne = (1536, 1, 1, 1), name = blk.19.ffn_norm.weight, data = 0x78dfd850b9b0
+blk.19.ffn_norm.weight data[:10] : 0.341797 0.914062 0.376953 0.632812 0.554688 0.542969 0.687500 0.621094 0.691406 0.507812 
+
+gguf_ex_read_1: reading tensor 139 data
+gguf_ex_read_1: tensor[139]: n_dims = 1, ne = (256, 1, 1, 1), name = blk.19.attn_k.bias, data = 0x78dfd850d1b0
+blk.19.attn_k.bias data[:10] : -0.119141 0.037354 0.068359 0.107910 0.133789 -0.120117 0.040283 0.157227 0.314453 0.001915 
+
+gguf_ex_read_1: reading tensor 140 data
+gguf_ex_read_1: tensor[140]: n_dims = 2, ne = (1536, 256, 1, 1), name = blk.19.attn_k.weight, data = 0x78dfd850d5b0
+blk.19.attn_k.weight data[:10] : 0.000000 -0.000000 -0.000000 -0.000000 -0.000000 -0.000000 -0.000000 0.000000 0.000000 0.000000 
+
+gguf_ex_read_1: reading tensor 141 data
+gguf_ex_read_1: tensor[141]: n_dims = 2, ne = (1536, 1536, 1, 1), name = blk.19.attn_output.weight, data = 0x78dfd85cd5b0
+blk.19.attn_output.weight data[:10] : 0.000000 -0.000000 -0.000000 -0.000000 0.000000 -0.000000 0.000000 0.000000 -0.000000 -0.000000 
+
+gguf_ex_read_1: reading tensor 142 data
+gguf_ex_read_1: tensor[142]: n_dims = 1, ne = (1536, 1, 1, 1), name = blk.19.attn_q.bias, data = 0x78dfd8a4d5b0
+blk.19.attn_q.bias data[:10] : 0.055664 -0.058105 -0.030884 -0.039795 -0.112793 0.170898 -0.012512 -0.343750 -0.296875 0.263672 
+
+gguf_ex_read_1: reading tensor 143 data
+gguf_ex_read_1: tensor[143]: n_dims = 2, ne = (1536, 1536, 1, 1), name = blk.19.attn_q.weight, data = 0x78dfd8a4edb0
+blk.19.attn_q.weight data[:10] : 0.000000 -0.000000 -0.000000 0.000000 0.000000 -0.000000 -0.000000 0.000000 0.000000 -0.000000 
+
+gguf_ex_read_1: reading tensor 144 data
+gguf_ex_read_1: tensor[144]: n_dims = 1, ne = (256, 1, 1, 1), name = blk.19.attn_v.bias, data = 0x78dfd8ecedb0
+blk.19.attn_v.bias data[:10] : 0.070801 -0.025513 0.028442 -0.070801 0.000828 -0.009216 0.024536 -0.056152 0.011658 -0.044678 
+
+gguf_ex_read_1: reading tensor 145 data
+gguf_ex_read_1: tensor[145]: n_dims = 2, ne = (1536, 256, 1, 1), name = blk.19.attn_v.weight, data = 0x78dfd8ecf1b0
+blk.19.attn_v.weight data[:10] : 0.000000 0.000000 -0.000000 -0.000000 -0.000000 -0.000000 -0.000000 0.000000 -0.000000 -0.000000 
+
+gguf_ex_read_1: reading tensor 146 data
+gguf_ex_read_1: tensor[146]: n_dims = 1, ne = (1536, 1, 1, 1), name = blk.2.attn_norm.weight, data = 0x78dfd8f8f1b0
+blk.2.attn_norm.weight data[:10] : 0.275391 0.388672 0.455078 0.355469 0.488281 0.236328 0.503906 0.304688 0.414062 0.271484 
+
+gguf_ex_read_1: reading tensor 147 data
+gguf_ex_read_1: tensor[147]: n_dims = 2, ne = (8960, 1536, 1, 1), name = blk.2.ffn_down.weight, data = 0x78dfd8f909b0
+blk.2.ffn_down.weight data[:10] : 0.000000 0.000000 -0.000000 0.000000 0.000000 -0.000000 -0.000000 -0.000000 0.000000 -0.000000 
+
+gguf_ex_read_1: reading tensor 148 data
+gguf_ex_read_1: tensor[148]: n_dims = 2, ne = (1536, 8960, 1, 1), name = blk.2.ffn_gate.weight, data = 0x78dfda9d09b0
+blk.2.ffn_gate.weight data[:10] : 0.000000 -0.000000 0.000000 0.000000 -0.000000 -0.000000 0.000000 0.000000 -0.000000 0.000000 
+
+gguf_ex_read_1: reading tensor 149 data
+gguf_ex_read_1: tensor[149]: n_dims = 2, ne = (1536, 8960, 1, 1), name = blk.2.ffn_up.weight, data = 0x78dfdc4109b0
+blk.2.ffn_up.weight data[:10] : 0.000000 -0.000000 -0.000000 -0.000000 0.000000 -0.000000 -0.000000 0.000000 0.000000 -0.000000 
+
+gguf_ex_read_1: reading tensor 150 data
+gguf_ex_read_1: tensor[150]: n_dims = 1, ne = (1536, 1, 1, 1), name = blk.2.ffn_norm.weight, data = 0x78dfdde509b0
+blk.2.ffn_norm.weight data[:10] : 0.601562 0.691406 0.660156 0.667969 0.679688 0.652344 0.679688 0.675781 0.753906 0.562500 
+
+gguf_ex_read_1: reading tensor 151 data
+gguf_ex_read_1: tensor[151]: n_dims = 1, ne = (256, 1, 1, 1), name = blk.2.attn_k.bias, data = 0x78dfdde521b0
+blk.2.attn_k.bias data[:10] : 0.353516 0.378906 0.275391 0.371094 -0.076172 0.472656 -0.333984 -0.176758 0.208984 -0.449219 
+
+gguf_ex_read_1: reading tensor 152 data
+gguf_ex_read_1: tensor[152]: n_dims = 2, ne = (1536, 256, 1, 1), name = blk.2.attn_k.weight, data = 0x78dfdde525b0
+blk.2.attn_k.weight data[:10] : 0.000000 -0.000000 0.000000 -0.000000 0.000000 0.000000 0.000000 -0.000000 0.000000 0.000000 
+
+gguf_ex_read_1: reading tensor 153 data
+gguf_ex_read_1: tensor[153]: n_dims = 2, ne = (1536, 1536, 1, 1), name = blk.2.attn_output.weight, data = 0x78dfddf125b0
+blk.2.attn_output.weight data[:10] : -0.000000 -0.000000 0.000000 0.000000 -0.000000 0.000000 0.000000 -0.000000 -0.000000 -0.000000 
+
+gguf_ex_read_1: reading tensor 154 data
+gguf_ex_read_1: tensor[154]: n_dims = 1, ne = (1536, 1, 1, 1), name = blk.2.attn_q.bias, data = 0x78dfde3925b0
+blk.2.attn_q.bias data[:10] : -1.140625 -0.490234 -0.249023 0.761719 1.265625 0.589844 -0.408203 0.412109 -1.546875 -0.554688 
+
+gguf_ex_read_1: reading tensor 155 data
+gguf_ex_read_1: tensor[155]: n_dims = 2, ne = (1536, 1536, 1, 1), name = blk.2.attn_q.weight, data = 0x78dfde393db0
+blk.2.attn_q.weight data[:10] : 0.000000 0.000000 -0.000000 -0.000000 0.000000 0.000000 -0.000000 0.000000 -0.000000 0.000000 
+
+gguf_ex_read_1: reading tensor 156 data
+gguf_ex_read_1: tensor[156]: n_dims = 1, ne = (256, 1, 1, 1), name = blk.2.attn_v.bias, data = 0x78dfde813db0
+blk.2.attn_v.bias data[:10] : -0.037109 -0.017334 -0.020996 -0.016846 0.063477 0.012329 0.013611 0.015991 0.024292 -0.045654 
+
+gguf_ex_read_1: reading tensor 157 data
+gguf_ex_read_1: tensor[157]: n_dims = 2, ne = (1536, 256, 1, 1), name = blk.2.attn_v.weight, data = 0x78dfde8141b0
+blk.2.attn_v.weight data[:10] : -0.000000 0.000000 -0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 
+
+gguf_ex_read_1: reading tensor 158 data
+gguf_ex_read_1: tensor[158]: n_dims = 1, ne = (1536, 1, 1, 1), name = blk.20.attn_norm.weight, data = 0x78dfde8d41b0
+blk.20.attn_norm.weight data[:10] : 0.384766 0.742188 1.023438 0.679688 0.851562 0.769531 0.710938 0.667969 0.667969 0.972656 
+
+gguf_ex_read_1: reading tensor 159 data
+gguf_ex_read_1: tensor[159]: n_dims = 2, ne = (8960, 1536, 1, 1), name = blk.20.ffn_down.weight, data = 0x78dfde8d59b0
+blk.20.ffn_down.weight data[:10] : 0.000000 0.000000 -0.000000 0.000000 0.000000 -0.000000 -0.000000 -0.000000 0.000000 0.000000 
+
+gguf_ex_read_1: reading tensor 160 data
+gguf_ex_read_1: tensor[160]: n_dims = 2, ne = (1536, 8960, 1, 1), name = blk.20.ffn_gate.weight, data = 0x78dfe03159b0
+blk.20.ffn_gate.weight data[:10] : -0.000000 -0.000000 0.000000 0.000000 -0.000000 0.000000 0.000000 -0.000000 0.000000 -0.000000 
+
+gguf_ex_read_1: reading tensor 161 data
+gguf_ex_read_1: tensor[161]: n_dims = 2, ne = (1536, 8960, 1, 1), name = blk.20.ffn_up.weight, data = 0x78dfe1d559b0
+blk.20.ffn_up.weight data[:10] : 0.000000 0.000000 -0.000000 0.000000 -0.000000 0.000000 0.000000 0.000000 -0.000000 0.000000 
+
+gguf_ex_read_1: reading tensor 162 data
+gguf_ex_read_1: tensor[162]: n_dims = 1, ne = (1536, 1, 1, 1), name = blk.20.ffn_norm.weight, data = 0x78dfe37959b0
+blk.20.ffn_norm.weight data[:10] : 0.330078 0.871094 0.343750 0.691406 0.621094 0.636719 0.742188 0.703125 0.726562 0.632812 
+
+gguf_ex_read_1: reading tensor 163 data
+gguf_ex_read_1: tensor[163]: n_dims = 1, ne = (256, 1, 1, 1), name = blk.20.attn_k.bias, data = 0x78dfe37971b0
+blk.20.attn_k.bias data[:10] : -0.447266 -0.026855 0.247070 0.332031 -0.294922 -0.148438 -0.020508 -0.105957 -0.355469 -0.112793 
+
+gguf_ex_read_1: reading tensor 164 data
+gguf_ex_read_1: tensor[164]: n_dims = 2, ne = (1536, 256, 1, 1), name = blk.20.attn_k.weight, data = 0x78dfe37975b0
+blk.20.attn_k.weight data[:10] : 0.000000 -0.000000 -0.000000 -0.000000 -0.000000 0.000000 -0.000000 -0.000000 -0.000000 0.000000 
+
+gguf_ex_read_1: reading tensor 165 data
+gguf_ex_read_1: tensor[165]: n_dims = 2, ne = (1536, 1536, 1, 1), name = blk.20.attn_output.weight, data = 0x78dfe38575b0
+blk.20.attn_output.weight data[:10] : 0.000000 0.000000 0.000000 -0.000000 -0.000000 0.000000 0.000000 0.000000 -0.000000 -0.000000 
+
+gguf_ex_read_1: reading tensor 166 data
+gguf_ex_read_1: tensor[166]: n_dims = 1, ne = (1536, 1, 1, 1), name = blk.20.attn_q.bias, data = 0x78dfe3cd75b0
+blk.20.attn_q.bias data[:10] : 0.296875 -0.148438 0.941406 -0.253906 -0.703125 0.664062 0.125977 1.117188 0.041992 -0.083496 
+
+gguf_ex_read_1: reading tensor 167 data
+gguf_ex_read_1: tensor[167]: n_dims = 2, ne = (1536, 1536, 1, 1), name = blk.20.attn_q.weight, data = 0x78dfe3cd8db0
+blk.20.attn_q.weight data[:10] : 0.000000 0.000000 -0.000000 0.000000 -0.000000 0.000000 0.000000 0.000000 0.000000 -0.000000 
+
+gguf_ex_read_1: reading tensor 168 data
+gguf_ex_read_1: tensor[168]: n_dims = 1, ne = (256, 1, 1, 1), name = blk.20.attn_v.bias, data = 0x78dfe4158db0
+blk.20.attn_v.bias data[:10] : 0.037354 0.050537 -0.026855 -0.050049 0.020142 -0.044922 0.007477 -0.012451 -0.012024 0.082031 
+
+gguf_ex_read_1: reading tensor 169 data
+gguf_ex_read_1: tensor[169]: n_dims = 2, ne = (1536, 256, 1, 1), name = blk.20.attn_v.weight, data = 0x78dfe41591b0
+blk.20.attn_v.weight data[:10] : -0.000000 -0.000000 0.000000 -0.000000 -0.000000 0.000000 -0.000000 0.000000 0.000000 -0.000000 
+
+gguf_ex_read_1: reading tensor 170 data
+gguf_ex_read_1: tensor[170]: n_dims = 1, ne = (1536, 1, 1, 1), name = blk.21.attn_norm.weight, data = 0x78dfe42191b0
+blk.21.attn_norm.weight data[:10] : 0.245117 0.710938 1.031250 0.613281 0.792969 0.523438 0.675781 0.601562 0.660156 0.664062 
+
+gguf_ex_read_1: reading tensor 171 data
+gguf_ex_read_1: tensor[171]: n_dims = 2, ne = (8960, 1536, 1, 1), name = blk.21.ffn_down.weight, data = 0x78dfe421a9b0
+blk.21.ffn_down.weight data[:10] : -0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 -0.000000 -0.000000 -0.000000 -0.000000 
+
+gguf_ex_read_1: reading tensor 172 data
+gguf_ex_read_1: tensor[172]: n_dims = 2, ne = (1536, 8960, 1, 1), name = blk.21.ffn_gate.weight, data = 0x78dfe5c5a9b0
+blk.21.ffn_gate.weight data[:10] : 0.000000 -0.000000 -0.000000 -0.000000 0.000000 0.000000 0.000000 -0.000000 0.000000 0.000000 
+
+gguf_ex_read_1: reading tensor 173 data
+gguf_ex_read_1: tensor[173]: n_dims = 2, ne = (1536, 8960, 1, 1), name = blk.21.ffn_up.weight, data = 0x78dfe769a9b0
+blk.21.ffn_up.weight data[:10] : -0.000000 0.000000 0.000000 -0.000000 -0.000000 -0.000000 0.000000 -0.000000 -0.000000 0.000000 
+
+gguf_ex_read_1: reading tensor 174 data
+gguf_ex_read_1: tensor[174]: n_dims = 1, ne = (1536, 1, 1, 1), name = blk.21.ffn_norm.weight, data = 0x78dfe90da9b0
+blk.21.ffn_norm.weight data[:10] : 0.542969 0.960938 0.423828 0.773438 0.695312 0.714844 0.832031 0.785156 0.812500 0.675781 
+
+gguf_ex_read_1: reading tensor 175 data
+gguf_ex_read_1: tensor[175]: n_dims = 1, ne = (256, 1, 1, 1), name = blk.21.attn_k.bias, data = 0x78dfe90dc1b0
+blk.21.attn_k.bias data[:10] : -0.589844 -0.593750 -0.245117 -0.146484 -0.478516 -0.200195 -0.110840 -0.308594 -0.050781 -0.185547 
+
+gguf_ex_read_1: reading tensor 176 data
+gguf_ex_read_1: tensor[176]: n_dims = 2, ne = (1536, 256, 1, 1), name = blk.21.attn_k.weight, data = 0x78dfe90dc5b0
+blk.21.attn_k.weight data[:10] : -0.000000 -0.000000 -0.000000 -0.000000 -0.000000 -0.000000 0.000000 0.000000 0.000000 0.000000 
+
+gguf_ex_read_1: reading tensor 177 data
+gguf_ex_read_1: tensor[177]: n_dims = 2, ne = (1536, 1536, 1, 1), name = blk.21.attn_output.weight, data = 0x78dfe919c5b0
+blk.21.attn_output.weight data[:10] : 0.000000 0.000000 -0.000000 -0.000000 0.000000 0.000000 0.000000 -0.000000 -0.000000 0.000000 
+
+gguf_ex_read_1: reading tensor 178 data
+gguf_ex_read_1: tensor[178]: n_dims = 1, ne = (1536, 1, 1, 1), name = blk.21.attn_q.bias, data = 0x78dfe961c5b0
+blk.21.attn_q.bias data[:10] : 0.160156 0.208008 0.171875 0.081543 0.218750 0.225586 -0.008789 0.316406 0.273438 -0.042725 
+
+gguf_ex_read_1: reading tensor 179 data
+gguf_ex_read_1: tensor[179]: n_dims = 2, ne = (1536, 1536, 1, 1), name = blk.21.attn_q.weight, data = 0x78dfe961ddb0
+blk.21.attn_q.weight data[:10] : -0.000000 0.000000 0.000000 0.000000 0.000000 -0.000000 0.000000 -0.000000 -0.000000 0.000000 
+
+gguf_ex_read_1: reading tensor 180 data
+gguf_ex_read_1: tensor[180]: n_dims = 1, ne = (256, 1, 1, 1), name = blk.21.attn_v.bias, data = 0x78dfe9a9ddb0
+blk.21.attn_v.bias data[:10] : -0.015015 -0.007721 0.037109 0.007477 0.037354 -0.063477 0.003754 0.062988 -0.033447 0.009521 
+
+gguf_ex_read_1: reading tensor 181 data
+gguf_ex_read_1: tensor[181]: n_dims = 2, ne = (1536, 256, 1, 1), name = blk.21.attn_v.weight, data = 0x78dfe9a9e1b0
+blk.21.attn_v.weight data[:10] : 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 -0.000000 0.000000 0.000000 
+
+gguf_ex_read_1: reading tensor 182 data
+gguf_ex_read_1: tensor[182]: n_dims = 1, ne = (1536, 1, 1, 1), name = blk.22.attn_norm.weight, data = 0x78dfe9b5e1b0
+blk.22.attn_norm.weight data[:10] : 0.812500 0.695312 1.054688 0.546875 0.726562 0.431641 0.605469 0.570312 0.562500 0.402344 
+
+gguf_ex_read_1: reading tensor 183 data
+gguf_ex_read_1: tensor[183]: n_dims = 2, ne = (8960, 1536, 1, 1), name = blk.22.ffn_down.weight, data = 0x78dfe9b5f9b0
+blk.22.ffn_down.weight data[:10] : 0.000000 -0.000000 -0.000000 0.000000 -0.000000 -0.000000 -0.000000 -0.000000 -0.000000 -0.000000 
+
+gguf_ex_read_1: reading tensor 184 data
+gguf_ex_read_1: tensor[184]: n_dims = 2, ne = (1536, 8960, 1, 1), name = blk.22.ffn_gate.weight, data = 0x78dfeb59f9b0
+blk.22.ffn_gate.weight data[:10] : -0.000000 0.000000 -0.000000 -0.000000 0.000000 -0.000000 -0.000000 -0.000000 -0.000000 -0.000000 
+
+gguf_ex_read_1: reading tensor 185 data
+gguf_ex_read_1: tensor[185]: n_dims = 2, ne = (1536, 8960, 1, 1), name = blk.22.ffn_up.weight, data = 0x78dfecfdf9b0
+blk.22.ffn_up.weight data[:10] : 0.000000 0.000000 -0.000000 -0.000000 0.000000 -0.000000 0.000000 0.000000 -0.000000 0.000000 
+
+gguf_ex_read_1: reading tensor 186 data
+gguf_ex_read_1: tensor[186]: n_dims = 1, ne = (1536, 1, 1, 1), name = blk.22.ffn_norm.weight, data = 0x78dfeea1f9b0
+blk.22.ffn_norm.weight data[:10] : 0.523438 0.988281 0.527344 0.804688 0.750000 0.742188 0.882812 0.828125 0.828125 0.753906 
+
+gguf_ex_read_1: reading tensor 187 data
+gguf_ex_read_1: tensor[187]: n_dims = 1, ne = (256, 1, 1, 1), name = blk.22.attn_k.bias, data = 0x78dfeea211b0
+blk.22.attn_k.bias data[:10] : 0.166992 0.318359 -1.359375 -0.201172 0.318359 0.188477 0.194336 0.135742 -0.225586 0.196289 
+
+gguf_ex_read_1: reading tensor 188 data
+gguf_ex_read_1: tensor[188]: n_dims = 2, ne = (1536, 256, 1, 1), name = blk.22.attn_k.weight, data = 0x78dfeea215b0
+blk.22.attn_k.weight data[:10] : -0.000000 -0.000000 -0.000000 0.000000 -0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 
+
+gguf_ex_read_1: reading tensor 189 data
+gguf_ex_read_1: tensor[189]: n_dims = 2, ne = (1536, 1536, 1, 1), name = blk.22.attn_output.weight, data = 0x78dfeeae15b0
+blk.22.attn_output.weight data[:10] : -0.000000 -0.000000 -0.000000 0.000000 0.000000 -0.000000 0.000000 -0.000000 -0.000000 -0.000000 
+
+gguf_ex_read_1: reading tensor 190 data
+gguf_ex_read_1: tensor[190]: n_dims = 1, ne = (1536, 1, 1, 1), name = blk.22.attn_q.bias, data = 0x78dfeef615b0
+blk.22.attn_q.bias data[:10] : -1.164062 1.726562 -2.000000 1.375000 -0.867188 -0.221680 -2.046875 0.330078 0.388672 -0.019043 
+
+gguf_ex_read_1: reading tensor 191 data
+gguf_ex_read_1: tensor[191]: n_dims = 2, ne = (1536, 1536, 1, 1), name = blk.22.attn_q.weight, data = 0x78dfeef62db0
+blk.22.attn_q.weight data[:10] : 0.000000 -0.000000 -0.000000 0.000000 -0.000000 0.000000 0.000000 -0.000000 0.000000 -0.000000 
+
+gguf_ex_read_1: reading tensor 192 data
+gguf_ex_read_1: tensor[192]: n_dims = 1, ne = (256, 1, 1, 1), name = blk.22.attn_v.bias, data = 0x78dfef3e2db0
+blk.22.attn_v.bias data[:10] : 0.113770 0.003571 0.021484 0.075195 -0.119141 -0.057129 -0.128906 0.209961 -0.002350 0.078125 
+
+gguf_ex_read_1: reading tensor 193 data
+gguf_ex_read_1: tensor[193]: n_dims = 2, ne = (1536, 256, 1, 1), name = blk.22.attn_v.weight, data = 0x78dfef3e31b0
+blk.22.attn_v.weight data[:10] : -0.000000 0.000000 -0.000000 -0.000000 0.000000 0.000000 -0.000000 0.000000 -0.000000 0.000000 
+
+gguf_ex_read_1: reading tensor 194 data
+gguf_ex_read_1: tensor[194]: n_dims = 1, ne = (1536, 1, 1, 1), name = blk.23.attn_norm.weight, data = 0x78dfef4a31b0
+blk.23.attn_norm.weight data[:10] : 0.906250 0.605469 1.281250 0.609375 0.757812 0.498047 0.609375 0.546875 0.554688 0.427734 
+
+gguf_ex_read_1: reading tensor 195 data
+gguf_ex_read_1: tensor[195]: n_dims = 2, ne = (8960, 1536, 1, 1), name = blk.23.ffn_down.weight, data = 0x78dfef4a49b0
+blk.23.ffn_down.weight data[:10] : -0.000000 -0.000000 0.000000 0.000000 0.000000 -0.000000 0.000000 0.000000 0.000000 0.000000 
+
+gguf_ex_read_1: reading tensor 196 data
+gguf_ex_read_1: tensor[196]: n_dims = 2, ne = (1536, 8960, 1, 1), name = blk.23.ffn_gate.weight, data = 0x78dff0ee49b0
+blk.23.ffn_gate.weight data[:10] : -0.000000 -0.000000 -0.000000 -0.000000 0.000000 0.000000 0.000000 0.000000 -0.000000 -0.000000 
+
+gguf_ex_read_1: reading tensor 197 data
+gguf_ex_read_1: tensor[197]: n_dims = 2, ne = (1536, 8960, 1, 1), name = blk.23.ffn_up.weight, data = 0x78dff29249b0
+blk.23.ffn_up.weight data[:10] : 0.000000 -0.000000 -0.000000 -0.000000 -0.000000 -0.000000 -0.000000 0.000000 -0.000000 0.000000 
+
+gguf_ex_read_1: reading tensor 198 data
+gguf_ex_read_1: tensor[198]: n_dims = 1, ne = (1536, 1, 1, 1), name = blk.23.ffn_norm.weight, data = 0x78dff43649b0
+blk.23.ffn_norm.weight data[:10] : 0.707031 1.070312 0.519531 0.847656 0.843750 0.847656 1.015625 0.902344 0.851562 0.839844 
+
+gguf_ex_read_1: reading tensor 199 data
+gguf_ex_read_1: tensor[199]: n_dims = 1, ne = (256, 1, 1, 1), name = blk.23.attn_k.bias, data = 0x78dff43661b0
+blk.23.attn_k.bias data[:10] : 0.173828 -0.070801 0.001480 -0.087891 -0.225586 0.108398 -0.093750 -0.223633 -0.015747 0.017212 
+
+gguf_ex_read_1: reading tensor 200 data
+gguf_ex_read_1: tensor[200]: n_dims = 2, ne = (1536, 256, 1, 1), name = blk.23.attn_k.weight, data = 0x78dff43665b0
+blk.23.attn_k.weight data[:10] : -0.000000 0.000000 0.000000 -0.000000 -0.000000 0.000000 0.000000 -0.000000 0.000000 -0.000000 
+
+gguf_ex_read_1: reading tensor 201 data
+gguf_ex_read_1: tensor[201]: n_dims = 2, ne = (1536, 1536, 1, 1), name = blk.23.attn_output.weight, data = 0x78dff44265b0
+blk.23.attn_output.weight data[:10] : -0.000000 0.000000 0.000000 -0.000000 -0.000000 0.000000 -0.000000 0.000000 0.000000 0.000000 
+
+gguf_ex_read_1: reading tensor 202 data
+gguf_ex_read_1: tensor[202]: n_dims = 1, ne = (1536, 1, 1, 1), name = blk.23.attn_q.bias, data = 0x78dff48a65b0
+blk.23.attn_q.bias data[:10] : -0.080078 -0.023315 0.024170 0.087402 0.190430 -0.067871 0.023071 0.167969 -0.123047 -0.119141 
+
+gguf_ex_read_1: reading tensor 203 data
+gguf_ex_read_1: tensor[203]: n_dims = 2, ne = (1536, 1536, 1, 1), name = blk.23.attn_q.weight, data = 0x78dff48a7db0
+blk.23.attn_q.weight data[:10] : 0.000000 -0.000000 -0.000000 0.000000 0.000000 -0.000000 -0.000000 -0.000000 -0.000000 0.000000 
+
+gguf_ex_read_1: reading tensor 204 data
+gguf_ex_read_1: tensor[204]: n_dims = 1, ne = (256, 1, 1, 1), name = blk.23.attn_v.bias, data = 0x78dff4d27db0
+blk.23.attn_v.bias data[:10] : 0.058594 0.101074 0.011658 0.013428 -0.006653 0.048340 -0.062988 0.011475 -0.022339 -0.013428 
+
+gguf_ex_read_1: reading tensor 205 data
+gguf_ex_read_1: tensor[205]: n_dims = 2, ne = (1536, 256, 1, 1), name = blk.23.attn_v.weight, data = 0x78dff4d281b0
+blk.23.attn_v.weight data[:10] : 0.000000 -0.000000 -0.000000 -0.000000 0.000000 -0.000000 0.000000 0.000000 -0.000000 0.000000 
+
+gguf_ex_read_1: reading tensor 206 data
+gguf_ex_read_1: tensor[206]: n_dims = 1, ne = (1536, 1, 1, 1), name = blk.24.attn_norm.weight, data = 0x78dff4de81b0
+blk.24.attn_norm.weight data[:10] : 1.187500 0.589844 1.109375 0.632812 0.769531 0.566406 0.679688 0.601562 0.593750 0.535156 
+
+gguf_ex_read_1: reading tensor 207 data
+gguf_ex_read_1: tensor[207]: n_dims = 2, ne = (8960, 1536, 1, 1), name = blk.24.ffn_down.weight, data = 0x78dff4de99b0
+blk.24.ffn_down.weight data[:10] : 0.000000 0.000000 0.000000 -0.000000 -0.000000 -0.000000 0.000000 0.000000 0.000000 -0.000000 
+
+gguf_ex_read_1: reading tensor 208 data
+gguf_ex_read_1: tensor[208]: n_dims = 2, ne = (1536, 8960, 1, 1), name = blk.24.ffn_gate.weight, data = 0x78dff68299b0
+blk.24.ffn_gate.weight data[:10] : -0.000000 0.000000 -0.000000 0.000000 -0.000000 -0.000000 0.000000 -0.000000 0.000000 -0.000000 
+
+gguf_ex_read_1: reading tensor 209 data
+gguf_ex_read_1: tensor[209]: n_dims = 2, ne = (1536, 8960, 1, 1), name = blk.24.ffn_up.weight, data = 0x78dff82699b0
+blk.24.ffn_up.weight data[:10] : -0.000000 0.000000 0.000000 0.000000 0.000000 -0.000000 -0.000000 0.000000 -0.000000 -0.000000 
+
+gguf_ex_read_1: reading tensor 210 data
+gguf_ex_read_1: tensor[210]: n_dims = 1, ne = (1536, 1, 1, 1), name = blk.24.ffn_norm.weight, data = 0x78dff9ca99b0
+blk.24.ffn_norm.weight data[:10] : 0.664062 1.101562 0.585938 0.894531 0.906250 0.878906 1.023438 0.968750 0.898438 0.898438 
+
+gguf_ex_read_1: reading tensor 211 data
+gguf_ex_read_1: tensor[211]: n_dims = 1, ne = (256, 1, 1, 1), name = blk.24.attn_k.bias, data = 0x78dff9cab1b0
+blk.24.attn_k.bias data[:10] : -1.359375 -0.437500 -0.202148 -0.671875 0.069336 0.578125 -0.221680 0.073242 -0.108887 0.127930 
+
+gguf_ex_read_1: reading tensor 212 data
+gguf_ex_read_1: tensor[212]: n_dims = 2, ne = (1536, 256, 1, 1), name = blk.24.attn_k.weight, data = 0x78dff9cab5b0
+blk.24.attn_k.weight data[:10] : -0.000000 -0.000000 -0.000000 0.000000 -0.000000 -0.000000 0.000000 -0.000000 0.000000 0.000000 
+
+gguf_ex_read_1: reading tensor 213 data
+gguf_ex_read_1: tensor[213]: n_dims = 2, ne = (1536, 1536, 1, 1), name = blk.24.attn_output.weight, data = 0x78dff9d6b5b0
+blk.24.attn_output.weight data[:10] : -0.000000 -0.000000 0.000000 0.000000 -0.000000 -0.000000 0.000000 0.000000 0.000000 -0.000000 
+
+gguf_ex_read_1: reading tensor 214 data
+gguf_ex_read_1: tensor[214]: n_dims = 1, ne = (1536, 1, 1, 1), name = blk.24.attn_q.bias, data = 0x78dffa1eb5b0
+blk.24.attn_q.bias data[:10] : -1.109375 -0.375000 -0.628906 0.204102 -1.046875 0.494141 0.472656 0.298828 -0.382812 -0.511719 
+
+gguf_ex_read_1: reading tensor 215 data
+gguf_ex_read_1: tensor[215]: n_dims = 2, ne = (1536, 1536, 1, 1), name = blk.24.attn_q.weight, data = 0x78dffa1ecdb0
+blk.24.attn_q.weight data[:10] : 0.000000 0.000000 -0.000000 -0.000000 0.000000 0.000000 0.000000 -0.000000 -0.000000 0.000000 
+
+gguf_ex_read_1: reading tensor 216 data
+gguf_ex_read_1: tensor[216]: n_dims = 1, ne = (256, 1, 1, 1), name = blk.24.attn_v.bias, data = 0x78dffa66cdb0
+blk.24.attn_v.bias data[:10] : 0.043701 0.121582 -0.008362 -0.025146 0.004761 -0.067383 0.074707 0.018433 0.008423 -0.018555 
+
+gguf_ex_read_1: reading tensor 217 data
+gguf_ex_read_1: tensor[217]: n_dims = 2, ne = (1536, 256, 1, 1), name = blk.24.attn_v.weight, data = 0x78dffa66d1b0
+blk.24.attn_v.weight data[:10] : 0.000000 0.000000 0.000000 -0.000000 0.000000 0.000000 -0.000000 0.000000 -0.000000 -0.000000 
+
+gguf_ex_read_1: reading tensor 218 data
+gguf_ex_read_1: tensor[218]: n_dims = 1, ne = (1536, 1, 1, 1), name = blk.25.attn_norm.weight, data = 0x78dffa72d1b0
+blk.25.attn_norm.weight data[:10] : 1.664062 0.460938 0.824219 0.498047 0.562500 0.414062 0.474609 0.449219 0.480469 0.445312 
+
+gguf_ex_read_1: reading tensor 219 data
+gguf_ex_read_1: tensor[219]: n_dims = 2, ne = (8960, 1536, 1, 1), name = blk.25.ffn_down.weight, data = 0x78dffa72e9b0
+blk.25.ffn_down.weight data[:10] : 0.000000 -0.000000 0.000000 -0.000000 -0.000000 0.000000 0.000000 0.000000 -0.000000 -0.000000 
+
+gguf_ex_read_1: reading tensor 220 data
+gguf_ex_read_1: tensor[220]: n_dims = 2, ne = (1536, 8960, 1, 1), name = blk.25.ffn_gate.weight, data = 0x78dffc16e9b0
+blk.25.ffn_gate.weight data[:10] : 0.000000 -0.000000 0.000000 0.000000 -0.000000 0.000000 -0.000000 -0.000000 0.000000 0.000000 
+
+gguf_ex_read_1: reading tensor 221 data
+gguf_ex_read_1: tensor[221]: n_dims = 2, ne = (1536, 8960, 1, 1), name = blk.25.ffn_up.weight, data = 0x78dffdbae9b0
+blk.25.ffn_up.weight data[:10] : -0.000000 0.000000 0.000000 0.000000 -0.000000 -0.000000 -0.000000 -0.000000 -0.000000 0.000000 
+
+gguf_ex_read_1: reading tensor 222 data
+gguf_ex_read_1: tensor[222]: n_dims = 1, ne = (1536, 1, 1, 1), name = blk.25.ffn_norm.weight, data = 0x78dfff5ee9b0
+blk.25.ffn_norm.weight data[:10] : 0.925781 1.078125 0.660156 0.929688 0.960938 0.929688 1.046875 0.984375 0.945312 0.941406 
+
+gguf_ex_read_1: reading tensor 223 data
+gguf_ex_read_1: tensor[223]: n_dims = 1, ne = (256, 1, 1, 1), name = blk.25.attn_k.bias, data = 0x78dfff5f01b0
+blk.25.attn_k.bias data[:10] : -0.124023 -0.128906 -0.730469 0.004913 -0.085938 0.007751 0.081055 -0.138672 0.166016 -0.937500 
+
+gguf_ex_read_1: reading tensor 224 data
+gguf_ex_read_1: tensor[224]: n_dims = 2, ne = (1536, 256, 1, 1), name = blk.25.attn_k.weight, data = 0x78dfff5f05b0
+blk.25.attn_k.weight data[:10] : -0.000000 -0.000000 -0.000000 0.000000 -0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 
+
+gguf_ex_read_1: reading tensor 225 data
+gguf_ex_read_1: tensor[225]: n_dims = 2, ne = (1536, 1536, 1, 1), name = blk.25.attn_output.weight, data = 0x78dfff6b05b0
+blk.25.attn_output.weight data[:10] : 0.000000 -0.000000 0.000000 0.000000 -0.000000 0.000000 0.000000 0.000000 0.000000 -0.000000 
+
+gguf_ex_read_1: reading tensor 226 data
+gguf_ex_read_1: tensor[226]: n_dims = 1, ne = (1536, 1, 1, 1), name = blk.25.attn_q.bias, data = 0x78dfffb305b0
+blk.25.attn_q.bias data[:10] : 0.339844 -0.253906 -0.016479 0.148438 0.219727 0.314453 0.285156 0.081055 0.220703 -0.406250 
+
+gguf_ex_read_1: reading tensor 227 data
+gguf_ex_read_1: tensor[227]: n_dims = 2, ne = (1536, 1536, 1, 1), name = blk.25.attn_q.weight, data = 0x78dfffb31db0
+blk.25.attn_q.weight data[:10] : -0.000000 0.000000 -0.000000 -0.000000 0.000000 -0.000000 -0.000000 0.000000 -0.000000 -0.000000 
+
+gguf_ex_read_1: reading tensor 228 data
+gguf_ex_read_1: tensor[228]: n_dims = 1, ne = (256, 1, 1, 1), name = blk.25.attn_v.bias, data = 0x78dffffb1db0
+blk.25.attn_v.bias data[:10] : 0.119141 -0.169922 0.104004 0.108887 0.047119 0.023315 -0.136719 0.007812 0.040527 0.240234 
+
+gguf_ex_read_1: reading tensor 229 data
+gguf_ex_read_1: tensor[229]: n_dims = 2, ne = (1536, 256, 1, 1), name = blk.25.attn_v.weight, data = 0x78dffffb21b0
+blk.25.attn_v.weight data[:10] : -0.000000 -0.000000 0.000000 -0.000000 0.000000 0.000000 0.000000 -0.000000 0.000000 -0.000000 
+
+gguf_ex_read_1: reading tensor 230 data
+gguf_ex_read_1: tensor[230]: n_dims = 1, ne = (1536, 1, 1, 1), name = blk.26.attn_norm.weight, data = 0x78e0000721b0
+blk.26.attn_norm.weight data[:10] : 2.406250 0.390625 1.960938 0.384766 0.671875 0.330078 0.398438 0.373047 0.380859 0.359375 
+
+gguf_ex_read_1: reading tensor 231 data
+gguf_ex_read_1: tensor[231]: n_dims = 2, ne = (8960, 1536, 1, 1), name = blk.26.ffn_down.weight, data = 0x78e0000739b0
+blk.26.ffn_down.weight data[:10] : -0.000000 -0.000000 -0.000000 0.000000 0.000000 -0.000000 -0.000000 -0.000000 0.000000 -0.000000 
+
+gguf_ex_read_1: reading tensor 232 data
+gguf_ex_read_1: tensor[232]: n_dims = 2, ne = (1536, 8960, 1, 1), name = blk.26.ffn_gate.weight, data = 0x78e001ab39b0
+blk.26.ffn_gate.weight data[:10] : 0.000000 0.000000 -0.000000 -0.000000 -0.000000 -0.000000 0.000000 -0.000000 -0.000000 0.000000 
+
+gguf_ex_read_1: reading tensor 233 data
+gguf_ex_read_1: tensor[233]: n_dims = 2, ne = (1536, 8960, 1, 1), name = blk.26.ffn_up.weight, data = 0x78e0034f39b0
+blk.26.ffn_up.weight data[:10] : -0.000000 -0.000000 0.000000 -0.000000 -0.000000 -0.000000 0.000000 -0.000000 -0.000000 0.000000 
+
+gguf_ex_read_1: reading tensor 234 data
+gguf_ex_read_1: tensor[234]: n_dims = 1, ne = (1536, 1, 1, 1), name = blk.26.ffn_norm.weight, data = 0x78e004f339b0
+blk.26.ffn_norm.weight data[:10] : 0.906250 1.085938 0.746094 1.007812 1.000000 1.023438 1.054688 1.039062 1.007812 1.007812 
+
+gguf_ex_read_1: reading tensor 235 data
+gguf_ex_read_1: tensor[235]: n_dims = 1, ne = (256, 1, 1, 1), name = blk.26.attn_k.bias, data = 0x78e004f351b0
+blk.26.attn_k.bias data[:10] : 0.394531 0.228516 0.149414 0.040527 0.222656 0.166992 -0.406250 0.185547 0.224609 -0.404297 
+
+gguf_ex_read_1: reading tensor 236 data
+gguf_ex_read_1: tensor[236]: n_dims = 2, ne = (1536, 256, 1, 1), name = blk.26.attn_k.weight, data = 0x78e004f355b0
+blk.26.attn_k.weight data[:10] : -0.000000 -0.000000 0.000000 0.000000 0.000000 0.000000 -0.000000 0.000000 0.000000 -0.000000 
+
+gguf_ex_read_1: reading tensor 237 data
+gguf_ex_read_1: tensor[237]: n_dims = 2, ne = (1536, 1536, 1, 1), name = blk.26.attn_output.weight, data = 0x78e004ff55b0
+blk.26.attn_output.weight data[:10] : 0.000000 0.000000 0.000000 -0.000000 0.000000 0.000000 -0.000000 -0.000000 0.000000 0.000000 
+
+gguf_ex_read_1: reading tensor 238 data
+gguf_ex_read_1: tensor[238]: n_dims = 1, ne = (1536, 1, 1, 1), name = blk.26.attn_q.bias, data = 0x78e0054755b0
+blk.26.attn_q.bias data[:10] : -0.060547 -0.021973 -0.033936 0.006256 -0.098145 -0.222656 0.036133 -0.177734 0.183594 0.279297 
+
+gguf_ex_read_1: reading tensor 239 data
+gguf_ex_read_1: tensor[239]: n_dims = 2, ne = (1536, 1536, 1, 1), name = blk.26.attn_q.weight, data = 0x78e005476db0
+blk.26.attn_q.weight data[:10] : -0.000000 0.000000 -0.000000 -0.000000 0.000000 -0.000000 0.000000 0.000000 0.000000 0.000000 
+
+gguf_ex_read_1: reading tensor 240 data
+gguf_ex_read_1: tensor[240]: n_dims = 1, ne = (256, 1, 1, 1), name = blk.26.attn_v.bias, data = 0x78e0058f6db0
+blk.26.attn_v.bias data[:10] : 0.108398 0.312500 -0.316406 0.099609 -0.027100 0.164062 -0.519531 -0.123535 -6.031250 -0.121582 
+
+gguf_ex_read_1: reading tensor 241 data
+gguf_ex_read_1: tensor[241]: n_dims = 2, ne = (1536, 256, 1, 1), name = blk.26.attn_v.weight, data = 0x78e0058f71b0
+blk.26.attn_v.weight data[:10] : 0.000000 -0.000000 0.000000 -0.000000 0.000000 0.000000 -0.000000 0.000000 0.000000 0.000000 
+
+gguf_ex_read_1: reading tensor 242 data
+gguf_ex_read_1: tensor[242]: n_dims = 1, ne = (1536, 1, 1, 1), name = blk.27.attn_norm.weight, data = 0x78e0059b71b0
+blk.27.attn_norm.weight data[:10] : 2.890625 0.439453 2.203125 0.484375 0.769531 0.421875 0.443359 0.439453 0.457031 0.417969 
+
+gguf_ex_read_1: reading tensor 243 data
+gguf_ex_read_1: tensor[243]: n_dims = 2, ne = (8960, 1536, 1, 1), name = blk.27.ffn_down.weight, data = 0x78e0059b89b0
+blk.27.ffn_down.weight data[:10] : 0.000000 -0.000000 -0.000000 -0.000000 -0.000000 -0.000000 -0.000000 0.000000 -0.000000 0.000000 
+
+gguf_ex_read_1: reading tensor 244 data
+gguf_ex_read_1: tensor[244]: n_dims = 2, ne = (1536, 8960, 1, 1), name = blk.27.ffn_gate.weight, data = 0x78e0073f89b0
+blk.27.ffn_gate.weight data[:10] : 0.000000 0.000000 -0.000000 -0.000000 0.000000 -0.000000 0.000000 0.000000 -0.000000 0.000000 
+
+gguf_ex_read_1: reading tensor 245 data
+gguf_ex_read_1: tensor[245]: n_dims = 2, ne = (1536, 8960, 1, 1), name = blk.27.ffn_up.weight, data = 0x78e008e389b0
+blk.27.ffn_up.weight data[:10] : 0.000000 -0.000000 -0.000000 0.000000 -0.000000 -0.000000 0.000000 -0.000000 -0.000000 0.000000 
+
+gguf_ex_read_1: reading tensor 246 data
+gguf_ex_read_1: tensor[246]: n_dims = 1, ne = (1536, 1, 1, 1), name = blk.27.ffn_norm.weight, data = 0x78e00a8789b0
+blk.27.ffn_norm.weight data[:10] : 1.578125 1.289062 0.937500 1.265625 1.210938 1.304688 1.312500 1.281250 1.210938 1.218750 
+
+gguf_ex_read_1: reading tensor 247 data
+gguf_ex_read_1: tensor[247]: n_dims = 1, ne = (256, 1, 1, 1), name = blk.27.attn_k.bias, data = 0x78e00a87a1b0
+blk.27.attn_k.bias data[:10] : 0.031738 -0.147461 -0.109863 0.046143 -0.170898 0.281250 -0.287109 -0.306641 0.009949 0.038330 
+
+gguf_ex_read_1: reading tensor 248 data
+gguf_ex_read_1: tensor[248]: n_dims = 2, ne = (1536, 256, 1, 1), name = blk.27.attn_k.weight, data = 0x78e00a87a5b0
+blk.27.attn_k.weight data[:10] : -0.000000 -0.000000 -0.000000 -0.000000 0.000000 -0.000000 0.000000 0.000000 0.000000 -0.000000 
+
+gguf_ex_read_1: reading tensor 249 data
+gguf_ex_read_1: tensor[249]: n_dims = 2, ne = (1536, 1536, 1, 1), name = blk.27.attn_output.weight, data = 0x78e00a93a5b0
+blk.27.attn_output.weight data[:10] : 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 -0.000000 -0.000000 
+
+gguf_ex_read_1: reading tensor 250 data
+gguf_ex_read_1: tensor[250]: n_dims = 1, ne = (1536, 1, 1, 1), name = blk.27.attn_q.bias, data = 0x78e00adba5b0
+blk.27.attn_q.bias data[:10] : -0.020996 0.047363 0.047607 0.003693 0.113281 -0.222656 0.193359 0.153320 0.081055 0.086426 
+
+gguf_ex_read_1: reading tensor 251 data
+gguf_ex_read_1: tensor[251]: n_dims = 2, ne = (1536, 1536, 1, 1), name = blk.27.attn_q.weight, data = 0x78e00adbbdb0
+blk.27.attn_q.weight data[:10] : 0.000000 -0.000000 -0.000000 -0.000000 -0.000000 -0.000000 0.000000 0.000000 -0.000000 -0.000000 
+
+gguf_ex_read_1: reading tensor 252 data
+gguf_ex_read_1: tensor[252]: n_dims = 1, ne = (256, 1, 1, 1), name = blk.27.attn_v.bias, data = 0x78e00b23bdb0
+blk.27.attn_v.bias data[:10] : -0.186523 -0.047607 0.027710 0.116211 0.087402 -0.071289 -0.141602 0.222656 0.195312 0.069824 
+
+gguf_ex_read_1: reading tensor 253 data
+gguf_ex_read_1: tensor[253]: n_dims = 2, ne = (1536, 256, 1, 1), name = blk.27.attn_v.weight, data = 0x78e00b23c1b0
+blk.27.attn_v.weight data[:10] : -0.000000 -0.000000 -0.000000 0.000000 -0.000000 -0.000000 -0.000000 0.000000 -0.000000 0.000000 
+
+gguf_ex_read_1: reading tensor 254 data
+gguf_ex_read_1: tensor[254]: n_dims = 1, ne = (1536, 1, 1, 1), name = blk.3.attn_norm.weight, data = 0x78e00b2fc1b0
+blk.3.attn_norm.weight data[:10] : 0.326172 0.339844 0.384766 0.314453 0.445312 0.285156 0.359375 0.378906 0.333984 0.335938 
+
+gguf_ex_read_1: reading tensor 255 data
+gguf_ex_read_1: tensor[255]: n_dims = 2, ne = (8960, 1536, 1, 1), name = blk.3.ffn_down.weight, data = 0x78e00b2fd9b0
+blk.3.ffn_down.weight data[:10] : 0.000000 0.000000 -0.000000 0.000000 -0.000000 -0.000000 0.000000 0.000000 0.000000 -0.000000 
+
+gguf_ex_read_1: reading tensor 256 data
+gguf_ex_read_1: tensor[256]: n_dims = 2, ne = (1536, 8960, 1, 1), name = blk.3.ffn_gate.weight, data = 0x78e00cd3d9b0
+blk.3.ffn_gate.weight data[:10] : 0.000000 0.000000 -0.000000 0.000000 0.000000 -0.000000 0.000000 0.000000 -0.000000 0.000000 
+
+gguf_ex_read_1: reading tensor 257 data
+gguf_ex_read_1: tensor[257]: n_dims = 2, ne = (1536, 8960, 1, 1), name = blk.3.ffn_up.weight, data = 0x78e00e77d9b0
+blk.3.ffn_up.weight data[:10] : -0.000000 -0.000000 -0.000000 -0.000000 0.000000 -0.000000 0.000000 -0.000000 -0.000000 -0.000000 
+
+gguf_ex_read_1: reading tensor 258 data
+gguf_ex_read_1: tensor[258]: n_dims = 1, ne = (1536, 1, 1, 1), name = blk.3.ffn_norm.weight, data = 0x78e0101bd9b0
+blk.3.ffn_norm.weight data[:10] : 0.476562 0.722656 0.683594 0.691406 0.687500 0.664062 0.738281 0.683594 0.695312 0.593750 
+
+gguf_ex_read_1: reading tensor 259 data
+gguf_ex_read_1: tensor[259]: n_dims = 1, ne = (256, 1, 1, 1), name = blk.3.attn_k.bias, data = 0x78e0101bf1b0
+blk.3.attn_k.bias data[:10] : 2.156250 -0.392578 -1.171875 0.097168 -0.249023 1.554688 -0.149414 1.617188 -0.001938 -0.249023 
+
+gguf_ex_read_1: reading tensor 260 data
+gguf_ex_read_1: tensor[260]: n_dims = 2, ne = (1536, 256, 1, 1), name = blk.3.attn_k.weight, data = 0x78e0101bf5b0
+blk.3.attn_k.weight data[:10] : -0.000000 -0.000000 0.000000 0.000000 -0.000000 0.000000 -0.000000 0.000000 -0.000000 0.000000 
+
+gguf_ex_read_1: reading tensor 261 data
+gguf_ex_read_1: tensor[261]: n_dims = 2, ne = (1536, 1536, 1, 1), name = blk.3.attn_output.weight, data = 0x78e01027f5b0
+blk.3.attn_output.weight data[:10] : -0.000000 -0.000000 -0.000000 -0.000000 -0.000000 -0.000000 -0.000000 -0.000000 -0.000000 0.000000 
+
+gguf_ex_read_1: reading tensor 262 data
+gguf_ex_read_1: tensor[262]: n_dims = 1, ne = (1536, 1, 1, 1), name = blk.3.attn_q.bias, data = 0x78e0106ff5b0
+blk.3.attn_q.bias data[:10] : 0.184570 -1.320312 -0.398438 1.937500 -0.031250 1.164062 1.531250 0.765625 1.234375 -0.200195 
+
+gguf_ex_read_1: reading tensor 263 data
+gguf_ex_read_1: tensor[263]: n_dims = 2, ne = (1536, 1536, 1, 1), name = blk.3.attn_q.weight, data = 0x78e010700db0
+blk.3.attn_q.weight data[:10] : -0.000000 0.000000 0.000000 -0.000000 0.000000 -0.000000 0.000000 0.000000 -0.000000 -0.000000 
+
+gguf_ex_read_1: reading tensor 264 data
+gguf_ex_read_1: tensor[264]: n_dims = 1, ne = (256, 1, 1, 1), name = blk.3.attn_v.bias, data = 0x78e010b80db0
+blk.3.attn_v.bias data[:10] : 0.006622 -0.017578 -0.036865 0.002167 -0.033691 -0.000028 -0.002838 -0.003540 -0.013916 -0.024902 
+
+gguf_ex_read_1: reading tensor 265 data
+gguf_ex_read_1: tensor[265]: n_dims = 2, ne = (1536, 256, 1, 1), name = blk.3.attn_v.weight, data = 0x78e010b811b0
+blk.3.attn_v.weight data[:10] : 0.000000 0.000000 -0.000000 -0.000000 0.000000 -0.000000 0.000000 0.000000 0.000000 -0.000000 
+
+gguf_ex_read_1: reading tensor 266 data
+gguf_ex_read_1: tensor[266]: n_dims = 1, ne = (1536, 1, 1, 1), name = blk.4.attn_norm.weight, data = 0x78e010c411b0
+blk.4.attn_norm.weight data[:10] : 0.203125 0.398438 0.558594 0.410156 0.562500 0.417969 0.417969 0.439453 0.380859 0.507812 
+
+gguf_ex_read_1: reading tensor 267 data
+gguf_ex_read_1: tensor[267]: n_dims = 2, ne = (8960, 1536, 1, 1), name = blk.4.ffn_down.weight, data = 0x78e010c429b0
+blk.4.ffn_down.weight data[:10] : 0.000000 0.000000 -0.000000 -0.000000 0.000000 0.000000 -0.000000 0.000000 0.000000 -0.000000 
+
+gguf_ex_read_1: reading tensor 268 data
+gguf_ex_read_1: tensor[268]: n_dims = 2, ne = (1536, 8960, 1, 1), name = blk.4.ffn_gate.weight, data = 0x78e0126829b0
+blk.4.ffn_gate.weight data[:10] : -0.000000 0.000000 -0.000000 -0.000000 -0.000000 -0.000000 -0.000000 -0.000000 0.000000 0.000000 
+
+gguf_ex_read_1: reading tensor 269 data
+gguf_ex_read_1: tensor[269]: n_dims = 2, ne = (1536, 8960, 1, 1), name = blk.4.ffn_up.weight, data = 0x78e0140c29b0
+blk.4.ffn_up.weight data[:10] : 0.000000 -0.000000 -0.000000 -0.000000 -0.000000 0.000000 -0.000000 -0.000000 0.000000 -0.000000 
+
+gguf_ex_read_1: reading tensor 270 data
+gguf_ex_read_1: tensor[270]: n_dims = 1, ne = (1536, 1, 1, 1), name = blk.4.ffn_norm.weight, data = 0x78e015b029b0
+blk.4.ffn_norm.weight data[:10] : 0.335938 0.593750 0.535156 0.542969 0.527344 0.500000 0.570312 0.539062 0.562500 0.451172 
+
+gguf_ex_read_1: reading tensor 271 data
+gguf_ex_read_1: tensor[271]: n_dims = 1, ne = (256, 1, 1, 1), name = blk.4.attn_k.bias, data = 0x78e015b041b0
+blk.4.attn_k.bias data[:10] : -0.753906 0.636719 -0.185547 0.081543 0.863281 0.222656 -0.398438 -0.041748 0.384766 -0.058105 
+
+gguf_ex_read_1: reading tensor 272 data
+gguf_ex_read_1: tensor[272]: n_dims = 2, ne = (1536, 256, 1, 1), name = blk.4.attn_k.weight, data = 0x78e015b045b0
+blk.4.attn_k.weight data[:10] : -0.000000 0.000000 0.000000 0.000000 0.000000 -0.000000 0.000000 0.000000 -0.000000 -0.000000 
+
+gguf_ex_read_1: reading tensor 273 data
+gguf_ex_read_1: tensor[273]: n_dims = 2, ne = (1536, 1536, 1, 1), name = blk.4.attn_output.weight, data = 0x78e015bc45b0
+blk.4.attn_output.weight data[:10] : -0.000000 0.000000 -0.000000 0.000000 0.000000 0.000000 0.000000 -0.000000 -0.000000 -0.000000 
+
+gguf_ex_read_1: reading tensor 274 data
+gguf_ex_read_1: tensor[274]: n_dims = 1, ne = (1536, 1, 1, 1), name = blk.4.attn_q.bias, data = 0x78e0160445b0
+blk.4.attn_q.bias data[:10] : -0.030640 0.240234 -0.343750 -0.412109 0.259766 -0.103027 0.890625 0.820312 0.361328 -0.792969 
+
+gguf_ex_read_1: reading tensor 275 data
+gguf_ex_read_1: tensor[275]: n_dims = 2, ne = (1536, 1536, 1, 1), name = blk.4.attn_q.weight, data = 0x78e016045db0
+blk.4.attn_q.weight data[:10] : -0.000000 -0.000000 -0.000000 0.000000 -0.000000 0.000000 -0.000000 0.000000 0.000000 0.000000 
+
+gguf_ex_read_1: reading tensor 276 data
+gguf_ex_read_1: tensor[276]: n_dims = 1, ne = (256, 1, 1, 1), name = blk.4.attn_v.bias, data = 0x78e0164c5db0
+blk.4.attn_v.bias data[:10] : 0.046875 0.016357 -0.028442 -0.032471 -0.007782 -0.044922 -0.026367 -0.048828 -0.000923 0.009094 
+
+gguf_ex_read_1: reading tensor 277 data
+gguf_ex_read_1: tensor[277]: n_dims = 2, ne = (1536, 256, 1, 1), name = blk.4.attn_v.weight, data = 0x78e0164c61b0
+blk.4.attn_v.weight data[:10] : -0.000000 -0.000000 0.000000 0.000000 0.000000 0.000000 -0.000000 0.000000 0.000000 0.000000 
+
+gguf_ex_read_1: reading tensor 278 data
+gguf_ex_read_1: tensor[278]: n_dims = 1, ne = (1536, 1, 1, 1), name = blk.5.attn_norm.weight, data = 0x78e0165861b0
+blk.5.attn_norm.weight data[:10] : 0.550781 0.554688 0.482422 0.296875 0.460938 0.341797 0.390625 0.365234 0.343750 0.351562 
+
+gguf_ex_read_1: reading tensor 279 data
+gguf_ex_read_1: tensor[279]: n_dims = 2, ne = (8960, 1536, 1, 1), name = blk.5.ffn_down.weight, data = 0x78e0165879b0
+blk.5.ffn_down.weight data[:10] : -0.000000 -0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 -0.000000 -0.000000 0.000000 
+
+gguf_ex_read_1: reading tensor 280 data
+gguf_ex_read_1: tensor[280]: n_dims = 2, ne = (1536, 8960, 1, 1), name = blk.5.ffn_gate.weight, data = 0x78e017fc79b0
+blk.5.ffn_gate.weight data[:10] : -0.000000 0.000000 -0.000000 0.000000 -0.000000 -0.000000 -0.000000 -0.000000 -0.000000 -0.000000 
+
+gguf_ex_read_1: reading tensor 281 data
+gguf_ex_read_1: tensor[281]: n_dims = 2, ne = (1536, 8960, 1, 1), name = blk.5.ffn_up.weight, data = 0x78e019a079b0
+blk.5.ffn_up.weight data[:10] : -0.000000 -0.000000 -0.000000 -0.000000 0.000000 -0.000000 -0.000000 0.000000 -0.000000 0.000000 
+
+gguf_ex_read_1: reading tensor 282 data
+gguf_ex_read_1: tensor[282]: n_dims = 1, ne = (1536, 1, 1, 1), name = blk.5.ffn_norm.weight, data = 0x78e01b4479b0
+blk.5.ffn_norm.weight data[:10] : 0.394531 1.117188 0.894531 0.929688 0.851562 0.894531 0.988281 0.910156 0.949219 0.750000 
+
+gguf_ex_read_1: reading tensor 283 data
+gguf_ex_read_1: tensor[283]: n_dims = 1, ne = (256, 1, 1, 1), name = blk.5.attn_k.bias, data = 0x78e01b4491b0
+blk.5.attn_k.bias data[:10] : -0.671875 -0.239258 -0.051270 0.287109 -0.065918 0.015747 -0.957031 0.259766 0.042969 0.139648 
+
+gguf_ex_read_1: reading tensor 284 data
+gguf_ex_read_1: tensor[284]: n_dims = 2, ne = (1536, 256, 1, 1), name = blk.5.attn_k.weight, data = 0x78e01b4495b0
+blk.5.attn_k.weight data[:10] : -0.000000 0.000000 0.000000 0.000000 -0.000000 0.000000 0.000000 0.000000 -0.000000 -0.000000 
+
+gguf_ex_read_1: reading tensor 285 data
+gguf_ex_read_1: tensor[285]: n_dims = 2, ne = (1536, 1536, 1, 1), name = blk.5.attn_output.weight, data = 0x78e01b5095b0
+blk.5.attn_output.weight data[:10] : 0.000000 0.000000 -0.000000 -0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 -0.000000 
+
+gguf_ex_read_1: reading tensor 286 data
+gguf_ex_read_1: tensor[286]: n_dims = 1, ne = (1536, 1, 1, 1), name = blk.5.attn_q.bias, data = 0x78e01b9895b0
+blk.5.attn_q.bias data[:10] : 0.059326 0.078613 -0.032715 -0.486328 0.239258 -0.063965 0.304688 -0.009155 0.097656 -0.480469 
+
+gguf_ex_read_1: reading tensor 287 data
+gguf_ex_read_1: tensor[287]: n_dims = 2, ne = (1536, 1536, 1, 1), name = blk.5.attn_q.weight, data = 0x78e01b98adb0
+blk.5.attn_q.weight data[:10] : 0.000000 0.000000 -0.000000 0.000000 0.000000 -0.000000 0.000000 0.000000 -0.000000 -0.000000 
+
+gguf_ex_read_1: reading tensor 288 data
+gguf_ex_read_1: tensor[288]: n_dims = 1, ne = (256, 1, 1, 1), name = blk.5.attn_v.bias, data = 0x78e01be0adb0
+blk.5.attn_v.bias data[:10] : -0.000675 -0.003998 0.093262 0.039551 -0.024902 -0.057129 -0.010864 0.003845 0.000069 0.005676 
+
+gguf_ex_read_1: reading tensor 289 data
+gguf_ex_read_1: tensor[289]: n_dims = 2, ne = (1536, 256, 1, 1), name = blk.5.attn_v.weight, data = 0x78e01be0b1b0
+blk.5.attn_v.weight data[:10] : 0.000000 -0.000000 0.000000 0.000000 -0.000000 -0.000000 -0.000000 -0.000000 0.000000 -0.000000 
+
+gguf_ex_read_1: reading tensor 290 data
+gguf_ex_read_1: tensor[290]: n_dims = 1, ne = (1536, 1, 1, 1), name = blk.6.attn_norm.weight, data = 0x78e01becb1b0
+blk.6.attn_norm.weight data[:10] : 0.839844 0.394531 0.531250 0.291016 0.458984 0.289062 0.382812 0.345703 0.279297 0.324219 
+
+gguf_ex_read_1: reading tensor 291 data
+gguf_ex_read_1: tensor[291]: n_dims = 2, ne = (8960, 1536, 1, 1), name = blk.6.ffn_down.weight, data = 0x78e01becc9b0
+blk.6.ffn_down.weight data[:10] : 0.000000 -0.000000 0.000000 0.000000 -0.000000 0.000000 -0.000000 0.000000 -0.000000 0.000000 
+
+gguf_ex_read_1: reading tensor 292 data
+gguf_ex_read_1: tensor[292]: n_dims = 2, ne = (1536, 8960, 1, 1), name = blk.6.ffn_gate.weight, data = 0x78e01d90c9b0
+blk.6.ffn_gate.weight data[:10] : 0.000000 -0.000000 0.000000 0.000000 0.000000 0.000000 -0.000000 0.000000 -0.000000 -0.000000 
+
+gguf_ex_read_1: reading tensor 293 data
+gguf_ex_read_1: tensor[293]: n_dims = 2, ne = (1536, 8960, 1, 1), name = blk.6.ffn_up.weight, data = 0x78e01f34c9b0
+blk.6.ffn_up.weight data[:10] : -0.000000 -0.000000 -0.000000 0.000000 -0.000000 0.000000 -0.000000 -0.000000 -0.000000 0.000000 
+
+gguf_ex_read_1: reading tensor 294 data
+gguf_ex_read_1: tensor[294]: n_dims = 1, ne = (1536, 1, 1, 1), name = blk.6.ffn_norm.weight, data = 0x78e020d8c9b0
+blk.6.ffn_norm.weight data[:10] : 0.200195 0.652344 0.554688 0.554688 0.523438 0.507812 0.593750 0.535156 0.570312 0.453125 
+
+gguf_ex_read_1: reading tensor 295 data
+gguf_ex_read_1: tensor[295]: n_dims = 1, ne = (256, 1, 1, 1), name = blk.6.attn_k.bias, data = 0x78e020d8e1b0
+blk.6.attn_k.bias data[:10] : -0.168945 0.330078 -0.108398 -0.024048 -0.408203 -0.128906 -0.090820 -0.106445 -0.112793 -1.078125 
+
+gguf_ex_read_1: reading tensor 296 data
+gguf_ex_read_1: tensor[296]: n_dims = 2, ne = (1536, 256, 1, 1), name = blk.6.attn_k.weight, data = 0x78e020d8e5b0
+blk.6.attn_k.weight data[:10] : 0.000000 -0.000000 0.000000 0.000000 -0.000000 0.000000 -0.000000 0.000000 0.000000 -0.000000 
+
+gguf_ex_read_1: reading tensor 297 data
+gguf_ex_read_1: tensor[297]: n_dims = 2, ne = (1536, 1536, 1, 1), name = blk.6.attn_output.weight, data = 0x78e020e4e5b0
+blk.6.attn_output.weight data[:10] : -0.000000 -0.000000 0.000000 -0.000000 0.000000 0.000000 0.000000 -0.000000 0.000000 0.000000 
+
+gguf_ex_read_1: reading tensor 298 data
+gguf_ex_read_1: tensor[298]: n_dims = 1, ne = (1536, 1, 1, 1), name = blk.6.attn_q.bias, data = 0x78e0212ce5b0
+blk.6.attn_q.bias data[:10] : 0.496094 -0.816406 0.086426 -0.605469 0.714844 -0.369141 0.777344 0.057129 -0.121582 0.283203 
+
+gguf_ex_read_1: reading tensor 299 data
+gguf_ex_read_1: tensor[299]: n_dims = 2, ne = (1536, 1536, 1, 1), name = blk.6.attn_q.weight, data = 0x78e0212cfdb0
+blk.6.attn_q.weight data[:10] : -0.000000 0.000000 0.000000 0.000000 0.000000 -0.000000 0.000000 -0.000000 -0.000000 0.000000 
+
+gguf_ex_read_1: reading tensor 300 data
+gguf_ex_read_1: tensor[300]: n_dims = 1, ne = (256, 1, 1, 1), name = blk.6.attn_v.bias, data = 0x78e02174fdb0
+blk.6.attn_v.bias data[:10] : 0.049561 -0.016602 -0.018921 0.020386 0.124023 0.043457 0.001083 0.053467 0.045654 0.060059 
+
+gguf_ex_read_1: reading tensor 301 data
+gguf_ex_read_1: tensor[301]: n_dims = 2, ne = (1536, 256, 1, 1), name = blk.6.attn_v.weight, data = 0x78e0217501b0
+blk.6.attn_v.weight data[:10] : 0.000000 -0.000000 -0.000000 0.000000 -0.000000 -0.000000 0.000000 0.000000 -0.000000 0.000000 
+
+gguf_ex_read_1: reading tensor 302 data
+gguf_ex_read_1: tensor[302]: n_dims = 1, ne = (1536, 1, 1, 1), name = blk.7.attn_norm.weight, data = 0x78e0218101b0
+blk.7.attn_norm.weight data[:10] : 0.077637 0.494141 0.570312 0.341797 0.492188 0.357422 0.462891 0.335938 0.310547 0.408203 
+
+gguf_ex_read_1: reading tensor 303 data
+gguf_ex_read_1: tensor[303]: n_dims = 2, ne = (8960, 1536, 1, 1), name = blk.7.ffn_down.weight, data = 0x78e0218119b0
+blk.7.ffn_down.weight data[:10] : -0.000000 0.000000 0.000000 -0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 
+
+gguf_ex_read_1: reading tensor 304 data
+gguf_ex_read_1: tensor[304]: n_dims = 2, ne = (1536, 8960, 1, 1), name = blk.7.ffn_gate.weight, data = 0x78e0232519b0
+blk.7.ffn_gate.weight data[:10] : -0.000000 0.000000 -0.000000 -0.000000 -0.000000 -0.000000 -0.000000 -0.000000 0.000000 0.000000 
+
+gguf_ex_read_1: reading tensor 305 data
+gguf_ex_read_1: tensor[305]: n_dims = 2, ne = (1536, 8960, 1, 1), name = blk.7.ffn_up.weight, data = 0x78e024c919b0
+blk.7.ffn_up.weight data[:10] : -0.000000 -0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 -0.000000 0.000000 0.000000 
+
+gguf_ex_read_1: reading tensor 306 data
+gguf_ex_read_1: tensor[306]: n_dims = 1, ne = (1536, 1, 1, 1), name = blk.7.ffn_norm.weight, data = 0x78e0266d19b0
+blk.7.ffn_norm.weight data[:10] : 0.203125 0.679688 0.566406 0.589844 0.503906 0.519531 0.625000 0.531250 0.593750 0.439453 
+
+gguf_ex_read_1: reading tensor 307 data
+gguf_ex_read_1: tensor[307]: n_dims = 1, ne = (256, 1, 1, 1), name = blk.7.attn_k.bias, data = 0x78e0266d31b0
+blk.7.attn_k.bias data[:10] : 0.863281 1.125000 0.384766 1.195312 0.089355 -1.132812 0.367188 -0.687500 -0.792969 -0.036377 
+
+gguf_ex_read_1: reading tensor 308 data
+gguf_ex_read_1: tensor[308]: n_dims = 2, ne = (1536, 256, 1, 1), name = blk.7.attn_k.weight, data = 0x78e0266d35b0
+blk.7.attn_k.weight data[:10] : 0.000000 -0.000000 -0.000000 -0.000000 -0.000000 0.000000 -0.000000 -0.000000 0.000000 0.000000 
+
+gguf_ex_read_1: reading tensor 309 data
+gguf_ex_read_1: tensor[309]: n_dims = 2, ne = (1536, 1536, 1, 1), name = blk.7.attn_output.weight, data = 0x78e0267935b0
+blk.7.attn_output.weight data[:10] : -0.000000 -0.000000 -0.000000 -0.000000 -0.000000 -0.000000 -0.000000 -0.000000 0.000000 0.000000 
+
+gguf_ex_read_1: reading tensor 310 data
+gguf_ex_read_1: tensor[310]: n_dims = 1, ne = (1536, 1, 1, 1), name = blk.7.attn_q.bias, data = 0x78e026c135b0
+blk.7.attn_q.bias data[:10] : 0.625000 0.796875 0.445312 0.953125 0.033691 -0.828125 0.761719 -0.691406 -0.917969 0.010864 
+
+gguf_ex_read_1: reading tensor 311 data
+gguf_ex_read_1: tensor[311]: n_dims = 2, ne = (1536, 1536, 1, 1), name = blk.7.attn_q.weight, data = 0x78e026c14db0
+blk.7.attn_q.weight data[:10] : -0.000000 -0.000000 -0.000000 0.000000 -0.000000 0.000000 -0.000000 0.000000 0.000000 0.000000 
+
+gguf_ex_read_1: reading tensor 312 data
+gguf_ex_read_1: tensor[312]: n_dims = 1, ne = (256, 1, 1, 1), name = blk.7.attn_v.bias, data = 0x78e027094db0
+blk.7.attn_v.bias data[:10] : 0.005585 0.048340 0.074219 -0.008545 -0.079590 0.040039 -0.112305 -0.027344 0.026367 0.019531 
+
+gguf_ex_read_1: reading tensor 313 data
+gguf_ex_read_1: tensor[313]: n_dims = 2, ne = (1536, 256, 1, 1), name = blk.7.attn_v.weight, data = 0x78e0270951b0
+blk.7.attn_v.weight data[:10] : 0.000000 -0.000000 0.000000 -0.000000 -0.000000 -0.000000 0.000000 0.000000 -0.000000 -0.000000 
+
+gguf_ex_read_1: reading tensor 314 data
+gguf_ex_read_1: tensor[314]: n_dims = 1, ne = (1536, 1, 1, 1), name = blk.8.attn_norm.weight, data = 0x78e0271551b0
+blk.8.attn_norm.weight data[:10] : 0.143555 0.636719 0.878906 0.527344 0.613281 0.410156 0.609375 0.503906 0.402344 0.386719 
+
+gguf_ex_read_1: reading tensor 315 data
+gguf_ex_read_1: tensor[315]: n_dims = 2, ne = (8960, 1536, 1, 1), name = blk.8.ffn_down.weight, data = 0x78e0271569b0
+blk.8.ffn_down.weight data[:10] : -0.000000 -0.000000 -0.000000 -0.000000 0.000000 0.000000 -0.000000 -0.000000 0.000000 -0.000000 
+
+gguf_ex_read_1: reading tensor 316 data
+gguf_ex_read_1: tensor[316]: n_dims = 2, ne = (1536, 8960, 1, 1), name = blk.8.ffn_gate.weight, data = 0x78e028b969b0
+blk.8.ffn_gate.weight data[:10] : 0.000000 0.000000 0.000000 -0.000000 0.000000 -0.000000 -0.000000 0.000000 -0.000000 -0.000000 
+
+gguf_ex_read_1: reading tensor 317 data
+gguf_ex_read_1: tensor[317]: n_dims = 2, ne = (1536, 8960, 1, 1), name = blk.8.ffn_up.weight, data = 0x78e02a5d69b0
+blk.8.ffn_up.weight data[:10] : -0.000000 -0.000000 -0.000000 0.000000 -0.000000 -0.000000 0.000000 0.000000 -0.000000 -0.000000 
+
+gguf_ex_read_1: reading tensor 318 data
+gguf_ex_read_1: tensor[318]: n_dims = 1, ne = (1536, 1, 1, 1), name = blk.8.ffn_norm.weight, data = 0x78e02c0169b0
+blk.8.ffn_norm.weight data[:10] : 0.169922 0.753906 0.585938 0.632812 0.511719 0.535156 0.679688 0.582031 0.664062 0.431641 
+
+gguf_ex_read_1: reading tensor 319 data
+gguf_ex_read_1: tensor[319]: n_dims = 1, ne = (256, 1, 1, 1), name = blk.8.attn_k.bias, data = 0x78e02c0181b0
+blk.8.attn_k.bias data[:10] : 0.125000 -0.441406 -0.302734 -0.363281 -0.431641 -0.192383 -0.050781 -0.012878 0.593750 0.542969 
+
+gguf_ex_read_1: reading tensor 320 data
+gguf_ex_read_1: tensor[320]: n_dims = 2, ne = (1536, 256, 1, 1), name = blk.8.attn_k.weight, data = 0x78e02c0185b0
+blk.8.attn_k.weight data[:10] : -0.000000 -0.000000 -0.000000 0.000000 0.000000 0.000000 -0.000000 -0.000000 -0.000000 0.000000 
+
+gguf_ex_read_1: reading tensor 321 data
+gguf_ex_read_1: tensor[321]: n_dims = 2, ne = (1536, 1536, 1, 1), name = blk.8.attn_output.weight, data = 0x78e02c0d85b0
+blk.8.attn_output.weight data[:10] : -0.000000 -0.000000 -0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 
+
+gguf_ex_read_1: reading tensor 322 data
+gguf_ex_read_1: tensor[322]: n_dims = 1, ne = (1536, 1, 1, 1), name = blk.8.attn_q.bias, data = 0x78e02c5585b0
+blk.8.attn_q.bias data[:10] : 0.613281 0.476562 -0.394531 -0.609375 0.150391 1.734375 0.507812 -0.960938 0.722656 0.855469 
+
+gguf_ex_read_1: reading tensor 323 data
+gguf_ex_read_1: tensor[323]: n_dims = 2, ne = (1536, 1536, 1, 1), name = blk.8.attn_q.weight, data = 0x78e02c559db0
+blk.8.attn_q.weight data[:10] : 0.000000 -0.000000 0.000000 -0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 
+
+gguf_ex_read_1: reading tensor 324 data
+gguf_ex_read_1: tensor[324]: n_dims = 1, ne = (256, 1, 1, 1), name = blk.8.attn_v.bias, data = 0x78e02c9d9db0
+blk.8.attn_v.bias data[:10] : 0.056885 0.025635 -0.035645 -0.010864 0.017212 0.038086 -0.030762 -0.004578 -0.014771 0.023315 
+
+gguf_ex_read_1: reading tensor 325 data
+gguf_ex_read_1: tensor[325]: n_dims = 2, ne = (1536, 256, 1, 1), name = blk.8.attn_v.weight, data = 0x78e02c9da1b0
+blk.8.attn_v.weight data[:10] : -0.000000 0.000000 -0.000000 -0.000000 -0.000000 0.000000 0.000000 -0.000000 -0.000000 0.000000 
+
+gguf_ex_read_1: reading tensor 326 data
+gguf_ex_read_1: tensor[326]: n_dims = 1, ne = (1536, 1, 1, 1), name = blk.9.attn_norm.weight, data = 0x78e02ca9a1b0
+blk.9.attn_norm.weight data[:10] : 0.184570 0.660156 0.726562 0.542969 0.601562 0.457031 0.613281 0.490234 0.468750 0.511719 
+
+gguf_ex_read_1: reading tensor 327 data
+gguf_ex_read_1: tensor[327]: n_dims = 2, ne = (8960, 1536, 1, 1), name = blk.9.ffn_down.weight, data = 0x78e02ca9b9b0
+blk.9.ffn_down.weight data[:10] : 0.000000 -0.000000 -0.000000 0.000000 0.000000 0.000000 0.000000 -0.000000 -0.000000 -0.000000 
+
+gguf_ex_read_1: reading tensor 328 data
+gguf_ex_read_1: tensor[328]: n_dims = 2, ne = (1536, 8960, 1, 1), name = blk.9.ffn_gate.weight, data = 0x78e02e4db9b0
+blk.9.ffn_gate.weight data[:10] : -0.000000 -0.000000 -0.000000 0.000000 -0.000000 0.000000 0.000000 0.000000 0.000000 -0.000000 
+
+gguf_ex_read_1: reading tensor 329 data
+gguf_ex_read_1: tensor[329]: n_dims = 2, ne = (1536, 8960, 1, 1), name = blk.9.ffn_up.weight, data = 0x78e02ff1b9b0
+blk.9.ffn_up.weight data[:10] : -0.000000 0.000000 0.000000 0.000000 0.000000 -0.000000 0.000000 0.000000 -0.000000 -0.000000 
+
+gguf_ex_read_1: reading tensor 330 data
+gguf_ex_read_1: tensor[330]: n_dims = 1, ne = (1536, 1, 1, 1), name = blk.9.ffn_norm.weight, data = 0x78e03195b9b0
+blk.9.ffn_norm.weight data[:10] : 0.133789 0.785156 0.574219 0.652344 0.515625 0.503906 0.707031 0.582031 0.679688 0.392578 
+
+gguf_ex_read_1: reading tensor 331 data
+gguf_ex_read_1: tensor[331]: n_dims = 1, ne = (256, 1, 1, 1), name = blk.9.attn_k.bias, data = 0x78e03195d1b0
+blk.9.attn_k.bias data[:10] : 0.012817 0.010742 0.582031 -0.910156 -0.077637 0.863281 -0.382812 0.213867 -0.079102 -0.246094 
+
+gguf_ex_read_1: reading tensor 332 data
+gguf_ex_read_1: tensor[332]: n_dims = 2, ne = (1536, 256, 1, 1), name = blk.9.attn_k.weight, data = 0x78e03195d5b0
+blk.9.attn_k.weight data[:10] : -0.000000 0.000000 -0.000000 -0.000000 0.000000 0.000000 -0.000000 0.000000 -0.000000 -0.000000 
+
+gguf_ex_read_1: reading tensor 333 data
+gguf_ex_read_1: tensor[333]: n_dims = 2, ne = (1536, 1536, 1, 1), name = blk.9.attn_output.weight, data = 0x78e031a1d5b0
+blk.9.attn_output.weight data[:10] : -0.000000 0.000000 -0.000000 -0.000000 -0.000000 0.000000 -0.000000 0.000000 -0.000000 -0.000000 
+
+gguf_ex_read_1: reading tensor 334 data
+gguf_ex_read_1: tensor[334]: n_dims = 1, ne = (1536, 1, 1, 1), name = blk.9.attn_q.bias, data = 0x78e031e9d5b0
+blk.9.attn_q.bias data[:10] : 0.202148 0.343750 0.480469 -0.871094 -0.016357 0.742188 -0.201172 0.214844 0.170898 -0.220703 
+
+gguf_ex_read_1: reading tensor 335 data
+gguf_ex_read_1: tensor[335]: n_dims = 2, ne = (1536, 1536, 1, 1), name = blk.9.attn_q.weight, data = 0x78e031e9edb0
+blk.9.attn_q.weight data[:10] : 0.000000 0.000000 -0.000000 -0.000000 0.000000 -0.000000 0.000000 -0.000000 -0.000000 -0.000000 
+
+gguf_ex_read_1: reading tensor 336 data
+gguf_ex_read_1: tensor[336]: n_dims = 1, ne = (256, 1, 1, 1), name = blk.9.attn_v.bias, data = 0x78e03231edb0
+blk.9.attn_v.bias data[:10] : 0.001160 0.002777 0.012756 -0.028442 -0.008362 -0.001251 0.012512 0.027466 -0.006348 0.005707 
+
+gguf_ex_read_1: reading tensor 337 data
+gguf_ex_read_1: tensor[337]: n_dims = 2, ne = (1536, 256, 1, 1), name = blk.9.attn_v.weight, data = 0x78e03231f1b0
+blk.9.attn_v.weight data[:10] : -0.000000 -0.000000 -0.000000 -0.000000 -0.000000 -0.000000 -0.000000 -0.000000 -0.000000 -0.000000 
+
+gguf_ex_read_1: reading tensor 338 data
+gguf_ex_read_1: tensor[338]: n_dims = 1, ne = (1536, 1, 1, 1), name = output_norm.weight, data = 0x78e0323df1b0
+output_norm.weight data[:10] : 2.125000 2.265625 1.453125 2.343750 2.171875 2.421875 2.265625 2.250000 2.359375 2.406250 
+
+gguf_ex_read_1: ctx_data size: 3554590912
