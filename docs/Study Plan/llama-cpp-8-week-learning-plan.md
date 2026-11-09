@@ -247,6 +247,8 @@ ggml_backend_load_all
 
 ### 第 3 周: 从 Transformer 公式到 GGML 计算图
 
+按天执行的详细路线见 [第 3 周每日学习路线](003-llama-cpp-week3-daily-learning-route.md)。
+
 | 项目 | 计划 |
 | --- | --- |
 | 本周主题 | 把第 1-2 周的 token、shape 和 block 结构映射到 Llama 的权重声明和 GGML graph; 本周不真正适配新模型 |
@@ -264,6 +266,8 @@ ggml_backend_load_all
 
 ### 第 4 周: llama_context、batch、ubatch、encode/decode 主调用链
 
+按天执行的详细路线见 [第 4 周每日学习路线](004-llama-cpp-week4-daily-learning-route.md)。
+
 | 项目 | 计划 |
 | --- | --- |
 | 本周主题 | 彻底拆解 prefill 和逐 token decode, 理解图复用、micro-batch 和 backend scheduler |
@@ -279,6 +283,8 @@ ggml_backend_load_all
 | 每日投入 | 工作日 2 小时, 周末 4 小时, 共约 18 小时 |
 
 ### 第 5 周: KV Cache、序列管理、上下文移动和状态保存恢复
+
+按天执行的详细路线见 [第 5 周每日学习路线](005-llama-cpp-week5-daily-learning-route.md)。
 
 | 项目 | 计划 |
 | --- | --- |
@@ -296,6 +302,8 @@ ggml_backend_load_all
 
 ### 第 6 周: 词表、Tokenizer、Sampler、Grammar 和结构化输出
 
+按天执行的详细路线见 [第 6 周每日学习路线](006-llama-cpp-week6-daily-learning-route.md)。
+
 | 项目 | 计划 |
 | --- | --- |
 | 本周主题 | 理解 logits 之后的整个生成控制层和 chat prompt 构造 |
@@ -312,6 +320,8 @@ ggml_backend_load_all
 
 ### 第 7 周: GGML、CPU/GPU Backend、量化、内存与性能分析
 
+按天执行的详细路线见 [第 7 周每日学习路线](007-llama-cpp-week7-daily-learning-route.md)。
+
 | 项目 | 计划 |
 | --- | --- |
 | 本周主题 | 把模型图与具体硬件执行连接起来, 建立可重复的性能分析方法 |
@@ -327,6 +337,8 @@ ggml_backend_load_all
 | 每日投入 | 工作日 2 小时, 周末 4 小时, 共约 18 小时 |
 
 ### 第 8 周: CLI、Server、并发调度和多 Agent 最终项目
+
+按天执行的详细路线见 [第 8 周每日学习路线](008-llama-cpp-week8-daily-learning-route.md)。
 
 | 项目 | 计划 |
 | --- | --- |
