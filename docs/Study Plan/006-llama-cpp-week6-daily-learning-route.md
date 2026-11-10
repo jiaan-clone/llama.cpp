@@ -116,7 +116,7 @@ cmake --build build-study-debug --target \
 
 ### 当天输出与验收
 
-- `notes/week6-day1.md`: 从 GGUF 到 tokenizer 的分派图及参数对照。
+- 从 GGUF 到 tokenizer 的分派图及参数对照。
 - `results/week6/tokenizer-roundtrip.csv`: 至少六类输入的实际 ID、字节差异及解释。
 - 能说明为什么中文 piece 的显示异常未必表示 tokenizer 错误, 以及为什么重复添加 BOS 会改变模型输入。
 
@@ -154,7 +154,7 @@ cmake --build build-study-debug --target \
 
 ### 当天输出与验收
 
-- `notes/week6-day2.md`: 所有权图、两层 API 表、checkpoint 状态补充图。
+- 所有权图、两层 API 表、checkpoint 状态补充图。
 - 能指出重复 accept、漏 accept、共享可变 sampler 分别会怎样污染历史或 grammar 状态。
 
 ## Day 3: 固定 logits、采样顺序与概率观察
@@ -210,7 +210,7 @@ print cur_p->data[0]
 ### 当天输出与验收
 
 - `results/week6/sampler-stages.csv`: 同一 logits 在各阶段的有效视图和概率变化。
-- `notes/week6-day3.md`: 顺序实验的数值结果, 以及 greedy 与固定 seed 随机采样各自的复现条件。
+- 顺序实验的数值结果, 以及 greedy 与固定 seed 随机采样各自的复现条件。
 - 能独立解释一个顺序变化会影响结果的例子, 同时说明正温度缩放通常不改变最大 logit 的 ID。
 
 ## Day 4: Grammar parser、候选屏蔽和前缀状态
@@ -258,7 +258,7 @@ printf '%s' 'accept!' > "$STUDY_DIR/results/week6/decision-invalid.txt"
 
 ### 当天输出与验收
 
-- `notes/week6-day4.md`: grammar 状态图、枚举正反例和 common 两条路径图。
+- grammar 状态图、枚举正反例和 common 两条路径图。
 - 能解释为什么合法前缀在 token 上限处被截断, 仍可能不是完整合法输出。
 
 ## Day 5: Jinja chat template、JSON Schema 与应用协议
@@ -328,7 +328,7 @@ python3 examples/json_schema_to_grammar.py \
 
 ### 当天输出与验收
 
-- `notes/week6-day5.md`: prompt 构造图、当前模型的模板与生成前缀说明。
+- prompt 构造图、当前模型的模板与生成前缀说明。
 - `planner.schema.json`、`planner.gbnf`、格式化后的 `planner-prompt.txt` 和转换日志。
 - 能解释为什么合法 JSON 仍可能不满足 Schema, 满足 Schema 仍可能不能完成用户任务。
 

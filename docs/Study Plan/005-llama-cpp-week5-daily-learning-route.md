@@ -89,7 +89,7 @@ llama_context owns llama_memory_i
 
 ### 当天输出与验收
 
-- `notes/week5-day1.md`: 接口职责图、普通 decode 与 pending update 两条路径。
+- 接口职责图、普通 decode 与 pending update 两条路径。
 - 能说明 model memory、GGML compute buffer、logits output buffer 分别保存什么。
 - 能解释 memory 参与 ubatch 切分的原因: 可用槽位、sequence 布局和状态类型会约束本次计算输入。
 
@@ -130,7 +130,7 @@ V_width = KV_heads * value_head_dim
 
 ### 当天输出与验收
 
-- `notes/week5-day2.md`: cell 映射图、slot 分配过程、容量估算与实际日志。
+- cell 映射图、slot 分配过程、容量估算与实际日志。
 - 能解释前缀共享节省的是哪些重复状态, 以及为什么删除 sequence 不会使预分配 KV buffer 同比例缩小。
 - 能在断点中区分 slot 规划、metadata 应用和 K/V tensor 写入。
 
@@ -176,7 +176,7 @@ next input position: 5
 
 ### 当天输出与验收
 
-- `notes/week5-day3.md`: 五类操作各一张前后状态图、shift 的 metadata/计算两阶段图。
+- 五类操作各一张前后状态图、shift 的 metadata/计算两阶段图。
 - 能解释 `seq_rm()` 的归属删除、槽位复用与物理 buffer 释放是三个不同概念。
 - 能说明 `can_shift=true` 的能力范围, 不把它解释为任意模型均支持任意历史回滚。
 
@@ -239,7 +239,7 @@ baseline and restored branch both:
 
 ### 当天输出与验收
 
-- `notes/week5-day4.md`: API 表、五段测试的真实断言、checkpoint 时间线与应用侧字段清单。
+- API 表、五段测试的真实断言、checkpoint 时间线与应用侧字段清单。
 - 能解释文件加载成功与模型/参数完全匹配之间的区别。实验主动固定同一模型、build、backend、KV 类型与 context 参数。
 - 能指出自己的恢复实验中哪次 decode 产生了随后用于采样的 logits。
 
@@ -380,7 +380,7 @@ print $w5_cache->v_cells[0].seq[0]
 
 ### 当天输出与验收
 
-- `notes/week5-day6.md`: 实验参数、共享前后 cell 图、五组对照结果、shift 断点记录。
+- 实验参数、共享前后 cell 图、五组对照结果、shift 断点记录。
 - `experiments/week5-memory-study.cpp`: 能独立解释输入字段、每次 memory 操作和每个断言的最小实验。
 - 能证明共享减少了重复前缀状态、私有后缀保持隔离, 并解释删除一个 owner 后共享 cell 的存活条件。
 
