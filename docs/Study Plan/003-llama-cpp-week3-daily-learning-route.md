@@ -131,7 +131,7 @@ GGML: X ne=[Din,N], W ne=[Din,Dout]
 
 ### 当天输出与验收
 
-- `notes/week3-day1.md`: 公式表、两个手算例子、逻辑 shape 与 `ne[]` 对照。
+- 公式表、两个手算例子、逻辑 shape 与 `ne[]` 对照。
 - 能解释 RMSNorm 与 softmax 分别沿哪个轴计算, Q head 与 KV head 的区别, 以及 `N/S/O` 为什么不是同一个数。
 - 若不能独立完成 shape 标注, 回到 [Transformer 概念桥接](000-transformer-concept-bridge.md)。优先缩减 Day 5 的 Qwen2 选读, 不靠背函数名继续推进。
 
@@ -156,7 +156,7 @@ GGML: X ne=[Din,N], W ne=[Din,Dout]
 
 ### 当天输出与验收
 
-- `notes/week3-day2.md`: 三类映射表, 一个 Q weight 从枚举到 GGUF 名称的完整过程。
+- 三类映射表, 一个 Q weight 从枚举到 GGUF 名称的完整过程。
 - 能说明 metadata key 常带 architecture 前缀, 而标准 block tensor 名称可跨架构复用。
 - 能区分 `blk.0.attn_q.weight` 和 `Qcur-0`: 前者是权重, 后者是依赖输入生成的激活节点名。
 
@@ -186,7 +186,7 @@ GGML: X ne=[Din,N], W ne=[Din,Dout]
 
 ### 当天输出与验收
 
-- `notes/week3-day3.md`: 工厂到 graph 的调用图、权重声明/使用表、合并 QKV 和 tied output 两个分支说明。
+- 工厂到 graph 的调用图、权重声明/使用表、合并 QKV 和 tied output 两个分支说明。
 - 能解释为什么 `load_arch_tensors()` 中看到的是权重 shape, `build_qkv()` 中看到的是依赖 `N` 的激活 shape。
 - 能从 `blk.0.ffn_down.weight` 找到模型字段、GGML shape 和 graph 使用位置。
 
@@ -231,7 +231,7 @@ flowchart TD
 
 ### 当天输出与验收
 
-- `notes/week3-day4.md`: 带 shape 的单层图、至少 10 个关键节点的预测表、最后一层选行说明。
+- 带 shape 的单层图、至少 10 个关键节点的预测表、最后一层选行说明。
 - 能解释 `inpSA` 和 `ffn_inp` 分别保留哪一次 residual 输入。
 - 能指出 `ggml_build_forward_expand()` 是收集图依赖, 并未执行矩阵乘法。
 - 记录 `cb()` 是构图时的命名/放置 hook; 它与执行时的 `common_debug_cb_eval()` 不是同一个 callback。
@@ -289,7 +289,7 @@ flowchart TD
 
 ### 当天输出与验收
 
-- `notes/week3-day5.md`: Attention shape 表、helper/op 对照、至少一组 `ne[]/nb[]` 预测。
+- Attention shape 表、helper/op 对照、至少一组 `ne[]/nb[]` 预测。
 - 能区分 `reshape/view/permute/cont`, 能用 shape 解释 `ggml_mul_mat(k,q)` 与 `ggml_mul_mat(v,kq)`。
 - 能说明实际图为什么可能比公式步骤少: softmax、SwiGLU 和 Flash Attention 都可能将多步操作合并表达。
 
@@ -421,7 +421,7 @@ rg 'Qcur-0|Kcur-0|Vcur-0|attn_norm-0|kq-0|kq_soft_max-0|kqv-0|ffn_.*-0|l_out-0|r
 
 ### 当天输出与验收
 
-- `notes/week3-day6.md`: 命令、模型身份、参数、预测/实测对照、至少 3 个差异及原因。
+- 命令、模型身份、参数、预测/实测对照、至少 3 个差异及原因。
 - `results/week3/day6/`: commit、架构测试结果、GDB 日志、callback 原始日志和节点摘录。
 - 至少 10 个关键阶段完成“公式 + shape + op + 证据”的闭环。真实模型运行不可用时, 先保留合成 Llama GDB 证据, 将真实 GGUF callback 项标为待完成, 不伪造观测值。
 

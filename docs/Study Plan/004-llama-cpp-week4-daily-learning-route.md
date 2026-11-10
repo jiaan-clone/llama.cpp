@@ -99,7 +99,7 @@ llama_decode(batch)
 
 ### 当天输出与验收
 
-- `notes/week4-day1.md`: context 所有权图、初始化顺序、请求值/有效值对照表。
+- context 所有权图、初始化顺序、请求值/有效值对照表。
 - 能区分四类内存: model weights、model memory/KV、compute buffer、output buffer。
 - 能解释 `sched_reserve()` 的调用不一定触发重新预留, 初始图预留也不等于真实 prompt 执行。
 
@@ -134,7 +134,7 @@ llama_decode(batch)
 
 ### 当天输出与验收
 
-- `notes/week4-day2.md`: 字段与默认值表、四个手算例子、原 batch 下标与 ubatch 下标的关系。
+- 字段与默认值表、四个手算例子、原 batch 下标与 ubatch 下标的关系。
 - 能解释 `n_tokens=n_seq_tokens*n_seqs` 的布局意义, 并说明 `n_seqs` 与 `n_seqs_unq` 的区别。
 - 能说明 splitter 由 memory 路径选择, `ceil(N/n_ubatch)` 只适用于有明确前提的简单切分。
 
@@ -183,7 +183,7 @@ llama_decode(batch)
 
 ### 当天输出与验收
 
-- `notes/week4-day3.md`: decode 调用图、encode/decode 对照表、首次 prefill 与后续单 token 输入差异。
+- decode 调用图、encode/decode 对照表、首次 prefill 与后续单 token 输入差异。
 - 能解释 causal attention 为什么允许前面的 ubatch 完成后再计算后面的 token, 而双向 attention 的完整输入依赖不满足同一条件。
 - 能指出 `memory->init_batch()` 准备切分/状态, `mctx->apply()` 在实际处理当前 ubatch 前应用状态, 二者不是同一个动作。
 
@@ -227,7 +227,7 @@ flowchart TD
 
 ### 当天输出与验收
 
-- `notes/week4-day4.md`: reuse 决策图、判定条件表、三个推演和断点方案。
+- reuse 决策图、判定条件表、三个推演和断点方案。
 - 能解释图复用保留的是可复用的图结构/分配, KV 复用保留的是历史 K/V, 两者都不等于跳过新 token 的计算。
 - 能解释即使某个 ubatch 的 `n_outputs=0`, 仍可能需要计算并更新 KV, 为后面的 token 提供历史。
 
@@ -261,7 +261,7 @@ llama_get_logits_ith(ctx,-1)  -> 最后输出行, 即 row 1
 
 ### 当天输出与验收
 
-- `notes/week4-day5.md`: graph 到 backend 的边界图、输出拷回路径和两个索引例子。
+- graph 到 backend 的边界图、输出拷回路径和两个索引例子。
 - 能解释 GPU/异步 backend 上为什么读取前需要同步, 以及公共结果访问函数如何承担这一职责。
 - 能指出 `n_outputs_prev` 是本次 API 调用内的累计输出偏移, 不等于 cache 中的历史 token 数。
 
@@ -441,7 +441,7 @@ LLAMA_TEST_VERBOSE=1 ./build-study-debug/bin/test-batch-alloc 'split(\..*)?' \
 
 ### 当天输出与验收
 
-- `notes/week4-day6.md`: 六个 ubatch 的完整短程记录、五行参数矩阵、split 测试证据及差异解释。
+- 六个 ubatch 的完整短程记录、五行参数矩阵、split 测试证据及差异解释。
 - 原始日志包含命令、commit、模型和有效 context 参数。至少有一次 PP 和两次连续单 token decode 的运行证据。
 - 能说明同一 API batch 内哪些 ubatch 不输出 logits, 以及为何仍需执行它们。
 - 缺少模型时先完成单元测试与源码推演, 将真实推理项标为待完成; 不用词表 GGUF 代替完整权重。
