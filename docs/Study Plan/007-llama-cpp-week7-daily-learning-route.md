@@ -105,7 +105,7 @@ tensor_bytes = row_bytes * M
 
 ### 当天输出与验收
 
-- `notes/week7-day1.md`: Q projection 的语义 shape 与 GGML `ne/nb` 对照, 至少一个 view 的来源。
+- Q projection 的语义 shape 与 GGML `ne/nb` 对照, 至少一个 view 的来源。
 - `results/week7/tensors.csv`: 权重、中间结果、输出各一行, 未实测字段注明待核对。
 - 能解释 `ggml_mul_mat()` 只建立计算关系, 以及 `sizeof(ggml_tensor)`、tensor 数据大小、buffer 分配大小为什么不同。
 
@@ -180,7 +180,7 @@ nvcc --version > "$WEEK7_RESULTS/nvcc-version.txt" 2>&1
 
 ### 当天输出与验收
 
-- `notes/week7-day2.md`: backend 对象关系图、设备能力表、CUDA 可用或跳过的原因。
+- backend 对象关系图、设备能力表、CUDA 可用或跳过的原因。
 - `results/week7/` 中有构建、模型、硬件和工具参数记录。
 - 能解释“buffer 在哪里”“哪个 backend 执行”“是否需要 copy”是三个相关但不同的问题。
 
@@ -240,7 +240,7 @@ CPU-only 运行没有真实 host/device copy 也是有效结果, 不能为了填
 
 ### 当天输出与验收
 
-- `notes/week7-day3.md`: 真实 CPU split 图, 以及有证据标注的可选跨设备图。
+- 真实 CPU split 图, 以及有证据标注的可选跨设备图。
 - `results/week7/scheduler-trace.txt`: 区分 reserve、prefill、decode 的断点与调用栈。
 - 能解释 compute buffer 为什么可以复用, 以及异步提交返回后为什么不能任意读取结果或复用输入。
 
@@ -297,7 +297,7 @@ bt
 
 ### 当天输出与验收
 
-- `notes/week7-day4.md`: CPU 调用链, 一个实际 MUL_MAT 的输入/输出/类型/线程记录。
+- CPU 调用链, 一个实际 MUL_MAT 的输入/输出/类型/线程记录。
 - 能提出有条件的假设: 多 token projection 可以复用权重, 可能提高计算利用率; 单 sequence TG 每次输入较少, 可能更受权重读取带宽影响。
 - 能说明以上是待验证假设, 长上下文 attention、模型大小、cache、线程和 kernel 都可能改变瓶颈。
 
@@ -351,7 +351,7 @@ imatrix 从校准数据的 activation 统计得到重要性信息, 可用于加�
 
 ### 当天输出与验收
 
-- `notes/week7-day5.md`: block 大小推演、量化/解量化示意、imatrix 的用途与限制。
+- block 大小推演、量化/解量化示意、imatrix 的用途与限制。
 - `results/week7/quantization-decisions.csv`: 5 个真实 tensor 的决策记录。
 - 能解释模型文件变小为什么不保证 PP 和 TG 都按相同比例变快。
 
@@ -472,7 +472,7 @@ CUDA 路线先按 Day 2 的构建配置另建 `build-study-cuda`, 将 build type
 ### 当天输出与验收
 
 - `results/week7/benchmark.csv`: 至少包含配置、model hash、test、线程、batch/ubatch、KV/FA、实际 context、重复数、均值、标准差、RSS 和原始文件路径。
-- `notes/week7-day6.md`: 模型、KV、compute、output 的内存分账, 至少一项估算与实际日志的核对。
+- 模型、KV、compute、output 的内存分账, 至少一项估算与实际日志的核对。
 - 每组保留至少 3 个有效样本; 超时、OOM、后台负载等异常单独标记, 不静默删除不利结果。
 
 ## Day 7: 数值验证、质量观察与性能结论

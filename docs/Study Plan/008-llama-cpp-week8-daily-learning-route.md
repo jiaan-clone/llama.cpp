@@ -156,7 +156,7 @@ cp build-study-release/CMakeCache.txt "$WEEK8_RESULTS/cmake-release.txt"
 
 ### 当天输出与验收
 
-- `notes/week8-day1.md`: 当前 CLI 调用图、common/libllama/产品层边界表。
+- 当前 CLI 调用图、common/libllama/产品层边界表。
 - `results/week8/` 中有版本、构建、帮助和一次 CLI 记录。
 - 能解释为什么最终项目不能为每个 Agent 调一次会重新加载模型的完整初始化流程。
 
@@ -257,7 +257,7 @@ Server 独立运行时, 推理循环由调用 `start_loop()` 的线程执行; HT
 
 ### 当天输出与验收
 
-- `notes/week8-day2.md`: 单请求时序图与线程边界。
+- 单请求时序图与线程边界。
 - `single-a.*`: 原始请求、响应、headers 与客户端时间。
 - 能指出消息/history 由谁提交、task 由谁持有、部分结果在哪里格式化, 并解释服务端 KV 复用不等于持久保存应用聊天历史。
 
@@ -378,7 +378,7 @@ bt
 
 ### 当天输出与验收
 
-- `notes/week8-day3.md`: slot 状态图、一次真实 batch 的 request/slot/seq/logits 对照。
+- slot 状态图、一次真实 batch 的 request/slot/seq/logits 对照。
 - `results/week8/server-concurrency.csv`: 顺序/并发请求、排队与取消记录, 包含未观察到或失败的场景。
 - 能解释为什么合批可能提高总体吞吐, 但不保证每个请求延迟都降低。
 
