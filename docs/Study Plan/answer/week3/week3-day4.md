@@ -331,3 +331,66 @@ cb(cur,"Qcur",0)
 | [common/debug.cpp](../../../../common/debug.cpp) | `common_debug_cb_eval()` 的 `ask` 分支与数据读取/打印 |
 | [llama-kv-cache.cpp](../../../../src/llama-kv-cache.cpp) | `build_input_k_idxs()`、`build_input_v_idxs()` 的索引布局 |
 | [llama-adapter.cpp](../../../../src/llama-adapter.cpp) | 未启用 control vector 时 `llama_adapter_cvec::apply_to()` 的直通行为 |
+
+
+## 习题7 写出 dense Llama 的两条 residual 支路
+Dense LLaMA 采用 Pre-Norm + 两条 Residual（残差）支路，分别位于 Attention 和 FFN 后。
+
+### 1. 第一条：Attention Residual
+
+\\[ \boxed{H=X+\operatorname{Attention}(\operatorname{RMSNorm}(X))} \\]
+
+计算流程：
+
+```
+X ────────────────┐
+│                 │
+RMSNorm           │
+│                 │
+Q/K/V 投影          │
+│                 │
+Attention         │
+│                 │
+Wo 输出投影         │
+│                 │
+└────── (+) ──────┘
+         │
+         H
+```
+
+其中 Attention 包含 `Wq/Wk/Wv/Wo`。
+
+### 2. 第二条：FFN Residual
+
+\\[ \boxed{Y=H+\operatorname{FFN}(\operatorname{RMSNorm}(H))} \\]
+
+计算流程：
+
+```
+H ────────────────┐
+│                 │
+RMSNorm           │
+│                 │
+Wgate / Wup       │
+│                 │
+SiLU + 逐元素相乘   │
+│                 │
+Wdown             │
+│                 │
+└────── (+) ──────┘
+         │
+         Y
+```
+
+### 3. 完整公式
+
+令 \\(X_l\\) 为第 \\(l\\) 层的输入：
+
+\\[ \boxed{ \begin{aligned} H_l &= X_l+\operatorname{Attention}(\operatorname{RMSNorm}(X_l))\\\\[6pt] X\_{l+1} &= H_l+\operatorname{FFN}(\operatorname{RMSNorm}(H_l)) \end{aligned} } \\]
+
+核心区别：
+
+- 第一条残差支路：Attention 负责 Token 之间的信息交互。
+- 第二条残差支路：FFN 负责每个 Token 的特征变换。
+
+两条残差连接都将模块输入直接加到模块输出上，帮助保留原始信息并改善深层网络的梯度传播。

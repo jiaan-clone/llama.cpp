@@ -251,3 +251,138 @@ build_lora_mm(Wq,Xn)
 | [models/qwen2.cpp](../../../../src/models/qwen2.cpp) | Qwen2 复用标准 tensor 名称的声明路径 |
 | [llama-graph.cpp](../../../../src/llama-graph.cpp) | `build_qkv()`、`build_lora_mm()` 和构图 `cb()` |
 | [llama-context.cpp](../../../../src/llama-context.cpp) | `graph_get_cb()` 中 `%s-%d` 的节点命名规则 |
+
+## 习题5  写出 `Wq/Wk/Wv/Wgate/Wdown` 的逻辑 shape 和 GGML `ne[]
+
+以 llama.cpp 中标准 LLaMA 架构（支持 GQA、SwiGLU FFN） 为例。
+
+首先定义参数：
+
+| 参数                   | 含义              |
+| -------------------- | --------------- |
+| `D = n_embd`         | 模型隐藏维度          |
+| `H = n_head`         | Query Head 数量   |
+| `Hkv = n_head_kv`    | KV Head 数量      |
+| `Dh = n_embd_head_k` | 每个 Q/K Head 的维度 |
+| `Dv = n_embd_head_v` | 每个 V Head 的维度   |
+| `F = n_ff`           | FFN 中间层维度       |
+
+### 1. 五个权重矩阵的 Shape
+
+这里的逻辑 Shape采用数学上的 `[输出特征, 输入特征]`，GGML 的 `ne[]` 则采用 `[输入特征, 输出特征]`。
+
+| 权重    | 逻辑 Shape（行 × 列） | GGML `ne[]`           |
+| ----- | --------------- | --------------------- |
+| Wq    | `(H × Dh, D)`   | `{D, H × Dh, 1, 1}`   |
+| Wk    | `(Hkv × Dh, D)` | `{D, Hkv × Dh, 1, 1}` |
+| Wv    | `(Hkv × Dv, D)` | `{D, Hkv × Dv, 1, 1}` |
+| Wgate | `(F, D)`        | `{D, F, 1, 1}`        |
+| Wdown | `(D, F)`        | `{F, D, 1, 1}`        |
+
+这些规则与 llama.cpp 的 LLaMA 权重加载定义一致。
+
+[image](https://www.google.com/s2/favicons?domain=https://github.com\&sz=32)
+
+GitHub+1
+
+
+
+### 2. 举一个具体例子
+
+假设：
+
+```
+n_embd        = 4096;
+n_head        = 32;
+n_head_kv     = 8;
+n_embd_head_k = 128;
+n_embd_head_v = 128;
+n_ff          = 14336;
+```
+
+得到：
+
+| 权重    | 逻辑 Shape        | GGML `ne[]`           |
+| ----- | --------------- | --------------------- |
+| Wq    | `(4096, 4096)`  | `{4096, 4096, 1, 1}`  |
+| Wk    | `(1024, 4096)`  | `{4096, 1024, 1, 1}`  |
+| Wv    | `(1024, 4096)`  | `{4096, 1024, 1, 1}`  |
+| Wgate | `(14336, 4096)` | `{4096, 14336, 1, 1}` |
+| Wdown | `(4096, 14336)` | `{14336, 4096, 1, 1}` |
+
+### 3. 为什么 GGML 的 Shape 要这样写？
+
+假设一个 Token 的输入：
+
+\\[ x=[1,2,3] \\]
+
+逻辑权重：
+
+\\[ W_q=\begin{bmatrix} 1&0&1\\\ 0&1&-1 \end{bmatrix} \\]
+
+数学计算：
+
+\\[ q=xW_q^T \\]
+
+在 GGML 中，实际调用：
+
+```
+q = ggml_mul_mat(ctx, Wq, x);
+```
+
+对应：
+
+```
+Wq->ne = {3, 2, 1, 1};
+x->ne  = {3, 1, 1, 1};
+q->ne  = {2, 1, 1, 1};
+```
+
+因为 GGML 的 `ggml_mul_mat(A, B)` 在这种布局下计算的数学关系是：
+
+\\[ \text{Output}=BA^T \\]
+
+### 4. 简要介绍  Wq/Wk/Wv/Wgate/Wdown 是什么
+在 LLaMA 模型中，`Wq/Wk/Wv` 属于 Attention（注意力层），`Wgate/Wdown` 属于 FFN（前馈神经网络层）。
+
+| 权重矩阵  | 名称       | 作用                         |
+| ----- | -------- | -------------------------- |
+| Wq    | Query 权重 | 生成 Q，表示当前 Token 想查找什么信息    |
+| Wk    | Key 权重   | 生成 K，表示每个 Token 可供匹配的特征    |
+| Wv    | Value 权重 | 生成 V，表示每个 Token 提供的实际信息    |
+| Wgate | Gate 权重  | 生成门控特征，通过 SiLU 激活控制 FFN 信息 |
+| Wdown | Down 权重  | 将 FFN 中间维度映射回模型隐藏维度        |
+
+#### 1. Attention 层
+
+输入为 \\(X\\)：
+
+\\[ Q=XW_q^T,\quad K=XW_k^T,\quad V=XW_v^T \\]
+
+然后计算：
+
+\\[ \boxed{\operatorname{Attention}(Q,K,V)=\operatorname{softmax}\left(\frac{QK^T}{\sqrt{D_h}}+M\right)V} \\]
+
+其中 Q、K 决定关注哪些 Token，V 提供被加权汇总的信息。
+
+#### 2. FFN 层
+
+LLaMA 使用 SwiGLU，需要三个权重矩阵：`Wgate`、`Wup`、`Wdown`。
+
+\\[ G=\operatorname{SiLU}(XW\_{gate}^T) \\]
+
+\\[ U=XW\_{up}^T \\]
+
+\\[ \boxed{Y=(G\odot U)W\_{down}^T} \\]
+
+其中：
+
+- Wgate：生成门控值。
+- Wup：将隐藏维度扩展到 FFN 中间维度。
+- Wdown：将 FFN 中间维度压缩回隐藏维度。
+
+#### 3. 核心区别
+
+Attention 负责 Token 之间的信息交互，FFN 负责对每个 Token 的特征进行独立变换。
+
+在 llama.cpp 中，这些权重通常都会通过 `ggml_mul_mat()` 参与线性变换。

@@ -235,3 +235,208 @@ offset = i0*nb[0] + i1*nb[1] + i2*nb[2] + i3*nb[3]
 - [ggml.c](../../../../ggml/src/ggml.c): matmul、layout、softmax、GLU 和 `SET_ROWS` 的 `op/src/ne/nb` 设置。
 - [CPU matmul](../../../../ggml/src/ggml-cpu/ggml-cpu.c): `r2`、`i02` 对应的 head 分组映射。
 - [llama-model.cpp](../../../../src/llama-model.cpp)、[Llama graph](../../../../src/models/llama.cpp)、[Qwen2 graph](../../../../src/models/qwen2.cpp): RoPE 类型、factors 和 FFN 参数差别。
+
+## 习题5 闭卷从 Q/K/V 写到 attention output, 标出发生转置或换轴的位置
+下面以 llama.cpp 的 Dense LLaMA、单批次、支持 GQA 的 Self-Attention 为例，从 Q/K/V 一直推导到 Attention Output。
+
+重点区分三种操作：
+
+- `ggml_reshape_*`：改变 Tensor 的维度解释，不改变元素的线性顺序。
+- `ggml_permute()` / `ggml_transpose()`：交换维度或轴，通常先产生不同 stride 的视图。
+- `ggml_cont()`：将 Tensor 转为连续布局，必要时实际重排数据。
+
+### 1. 定义维度
+
+| 符号    | 含义                      |
+| ----- | ----------------------- |
+| `N`   | 当前 Query Token 数        |
+| `T`   | 可访问的 KV Token 数（包含历史缓存） |
+| `H`   | Query Head 数            |
+| `Hkv` | KV Head 数               |
+| `Dh`  | Q/K Head 维度             |
+| `Dv`  | V Head 维度               |
+| `D`   | 模型隐藏维度                  |
+
+对于常见的 LLaMA，`Dh = Dv`，但这里分开表示。
+
+投影完成后的逻辑形状：
+
+\\[ Q:[N,H D_h] \\]
+
+\\[ K:[T,H\_{kv}D_h],\qquad V:[T,H\_{kv}D_v] \\]
+
+其中，K/V 已包含 KV Cache 中的历史信息。
+
+### 2. 完整的逻辑计算流程
+
+Q / K / V
+
+[N, H·Dh] / [T, Hkv·Dh] / [T, Hkv·Dv]
+
+Reshape：拆分 Head
+
+Q: [N,H,Dh]　K/V: [T,Hkv,Dh/Dv]
+
+Permute：换轴&#x20;
+
+Q: [H,N,Dh]　K/V: [Hkv,T,Dh/Dv]
+
+Score = Q × Kᵀ / √Dh
+
+逻辑结果 [H,N,T]
+
+Causal Mask + Softmax
+
+[H,N,T]，沿 T 归一化
+
+Attention × V
+
+[H,N,Dv]
+
+Permute + Contiguous：换轴并合并 Heads
+
+[N,H·Dv]
+
+Wo 输出投影
+
+最终 Attention Output [N,D]
+
+这里的 GQA 意味着多个 Query Head 共享一个 KV Head。逻辑上可以把 K/V 看成按组广播到 H 个 Query Head，不一定实际复制数据。
+
+### 3. 对应 llama.cpp 的 GGML `ne[]`
+
+下面采用单条序列、普通 GQA 路径，暂不考虑特殊架构、KV Cache padding 和多 stream。
+
+| 操作                        | GGML `ne[]`       | 是否换轴            |
+| ------------------------- | ----------------- | --------------- |
+| Q 拆 Head 后                | `{Dh, H, N, 1}`   | 否，Reshape       |
+| K 拆 Head 后                | `{Dh, Hkv, T, 1}` | 否，Reshape       |
+| V 拆 Head 后                | `{Dv, Hkv, T, 1}` | 否，Reshape       |
+| Q `permute(0,2,1,3)`      | `{Dh, N, H, 1}`   | 是               |
+| K `permute(0,2,1,3)`      | `{Dh, T, Hkv, 1}` | 是               |
+| V `permute(0,2,1,3)`      | `{Dv, T, Hkv, 1}` | 是               |
+| `ggml_mul_mat(k,q)`       | `{T, N, H, 1}`    | K 被隐式转置参与乘法     |
+| Mask + Softmax            | `{T, N, H, 1}`    | 否               |
+| V `transpose`             | `{T, Dv, Hkv, 1}` | 是               |
+| `ggml_mul_mat(v,kq)`      | `{Dv, N, H, 1}`   | V 作为左操作数被隐式转置   |
+| Output `permute(0,2,1,3)` | `{Dv, H, N, 1}`   | 是               |
+| 合并 Heads                  | `{H×Dv, N, 1, 1}` | Contiguous + 合并 |
+| Wo 输出投影                   | `{D, N, 1, 1}`    | 否               |
+
+其中 GQA 的矩阵乘法按 Query Head 到 KV Head 的分组关系进行广播。
+
+### 4. llama.cpp 源码中的关键步骤
+
+在 `src/llama-graph.cpp` 的 `build_attn_mha()` 中，非 Flash Attention 分支的核心代码可以简化为：
+
+```
+// 1. Q/K/V 换轴
+q = ggml_permute(ctx0, q, 0, 2, 1, 3);
+k = ggml_permute(ctx0, k, 0, 2, 1, 3);
+v = ggml_permute(ctx0, v, 0, 2, 1, 3);
+
+// 2. Score：逻辑上 Q @ K^T
+ggml_tensor * kq = ggml_mul_mat(ctx0, k, q);
+
+// 3. Scale + Mask + Softmax
+kq = ggml_soft_max_ext(
+    ctx0, kq, kq_mask, kq_scale, 0.0f
+);
+
+// 4. V 转置并确保连续（按布局条件执行）
+v = ggml_cont(ctx0, ggml_transpose(ctx0, v));
+
+// 5. Attention 权重乘 V
+ggml_tensor * kqv = ggml_mul_mat(ctx0, v, kq);
+
+// 6. 换轴：把 Head 移回内层
+cur = ggml_permute(ctx0, kqv, 0, 2, 1, 3);
+
+// 7. 合并多个 Heads
+cur = ggml_cont_2d(
+    ctx0, cur,
+    cur->ne[0] * cur->ne[1],
+    cur->ne[2] * cur->ne[3]
+);
+```
+
+这是为便于理解而提炼的代码；实际源码会根据 V 的 stride 决定是否转置，并处理其他特殊情况。
+
+[image](https://www.google.com/s2/favicons?domain=https://raw.githubusercontent.com\&sz=32)
+
+GitHub+1
+
+
+
+### 为什么 `ggml_mul_mat(k, q)` 对应 \\(QK^T\\)？
+
+因为对于 GGML：
+
+\\[ \operatorname{ggml\\\_mul\\\_mat}(A,B) \quad\Longleftrightarrow\quad BA^T \\]
+
+这里 A、B 按 GGML 的二维矩阵解释。
+
+因此：
+
+\\[ \operatorname{ggml\\\_mul\\\_mat}(K,Q)=QK^T \\]
+
+注意：这是矩阵乘法的运算语义，不代表源码必须先调用一次 `ggml_transpose(k)`。
+
+### 5. Flash Attention 的区别
+
+启用 Flash Attention 后，Score、Mask、Softmax、乘 V 被融合：
+
+```
+cur = ggml_flash_attn_ext(
+    ctx0, q, k, v,
+    kq_mask,
+    kq_scale,
+    0.0f,
+    0.0f
+);
+```
+
+输出通常为：
+
+```
+cur->ne = {Dv, H, N, 1};
+```
+
+再合并 Head：
+
+```
+cur = ggml_reshape_2d(
+    ctx0, cur,
+    cur->ne[0] * cur->ne[1],
+    cur->ne[2] * cur->ne[3]
+);
+```
+
+得到：
+
+```
+cur->ne = {H * Dv, N, 1, 1};
+```
+
+然后通过 `Wo` 输出投影：
+
+```
+out = ggml_mul_mat(ctx0, Wo, cur);
+```
+
+最终：
+
+```
+out->ne = {D, N, 1, 1};
+```
+
+源码参考：[llama.cpp — llama-graph.cpp](https://github.com/ggml-org/llama.cpp/blob/master/src/llama-graph.cpp?utm_source=chatgpt.com)
+
+最重要的是区分以下三种转置：
+
+1. 显式换轴：`ggml_permute()`、`ggml_transpose()`，改变 Tensor 的轴或 stride。
+2. 隐式矩阵转置：`ggml_mul_mat(A,B)` 的数学语义为 \\(BA^T\\)，不需要显式创建 \\(A^T\\)。
+3. Head 重排：Attention 结束后，将 `{Dv,N,H}` 换成 `{Dv,H,N}`，再合并 Head，恢复每个 Token 的完整特征向量。
+
+这三点是理解 llama.cpp Attention 张量布局的关键。
+

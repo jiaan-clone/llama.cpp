@@ -295,3 +295,226 @@ nb = [4, 4*Dh*H, 4*Dh, 4*Dh*H*N]
 - [GGML tensor 与 API](../../../../ggml/include/ggml.h): `ggml_tensor` 的 `ne/nb/op/src` 和 `ggml_mul_mat()` 的矩阵约定。
 - [GGML 构图实现](../../../../ggml/src/ggml.c): `ggml_can_mul_mat()`、`ggml_mul_mat()`、`ggml_reshape_3d()`、`ggml_permute()` 的维度、stride 和依赖处理。
 - [CPU matmul 实现](../../../../ggml/src/ggml-cpu/ggml-cpu.c): 用 `r2 = ne12 / ne02`、`i02 = i12 / r2` 核对 Q head 到 KV head 的分组映射。
+
+## 习题2， 做二维投影小计算
+已知：
+
+\\[ X=\begin{bmatrix} 1&2&3\\\ 4&5&6 \end{bmatrix} \\]
+
+\\[ W=\begin{bmatrix} 1&0&1\\\ 0&1&-1 \end{bmatrix} \\]
+
+要求计算 \\(XW^T\\)。
+
+### 第一步：计算 W 的转置
+
+将 \\(W\\) 的行和列互换：
+
+\\[ W^T=\begin{bmatrix} 1&0\\\ 0&1\\\ 1&-1 \end{bmatrix} \\]
+
+### 第二步：矩阵乘法
+
+\\[ XW^T= \begin{bmatrix} 1&2&3\\\ 4&5&6 \end{bmatrix} \begin{bmatrix} 1&0\\\ 0&1\\\ 1&-1 \end{bmatrix} \\]
+
+矩阵乘法规则：左矩阵的每一行，与右矩阵的每一列对应元素相乘再求和。
+
+逐个计算：
+
+\\[ \begin{aligned} y\_{11}&=1\times1+2\times0+3\times1=4\\\ y\_{12}&=1\times0+2\times1+3\times(-1)=-1\\\ y\_{21}&=4\times1+5\times0+6\times1=10\\\ y\_{22}&=4\times0+5\times1+6\times(-1)=-1 \end{aligned} \\]
+
+### 第三步：最终结果
+
+\\[ \boxed{ XW^T= \begin{bmatrix} 4&-1\\\ 10&-1 \end{bmatrix} } \\]
+
+### 第四步：理解矩阵维度
+
+- \\(X\\) 的形状是 \\(2\times3\\)。
+- \\(W\\) 的形状是 \\(2\times3\\)。
+- \\(W^T\\) 的形状是 \\(3\times2\\)。
+- \\(XW^T\\) 的形状是 \\(2\times2\\)。
+
+因此：
+
+\\[ \underbrace{(2\times3)}\_X \cdot \underbrace{(3\times2)}\_{W^T} = \underbrace{(2\times2)}\_{\text{结果}} \\]
+
+补充： 在神经网络中，\\(XW^T\\) 是常见的线性层计算形式，其中 \\(X\\) 表示输入特征，\\(W\\) 表示权重矩阵。每一行输入与每一行权重进行点积，得到对应的输出值。
+
+###  写出 ne[]
+在 GGML 中，`ne[]` 表示 Tensor 各维度的元素数量，采用低维在前的存储方式。
+
+对于矩阵：
+
+\\[ X=\begin{bmatrix}1&2&3\\\4&5&6\end{bmatrix},\quad W=\begin{bmatrix}1&0&1\\\0&1&-1\end{bmatrix} \\]
+
+计算：
+
+\\[ Y=XW^T= \begin{bmatrix}4&-1\\\10&-1\end{bmatrix} \\]
+
+对应的 GGML 维度：
+
+| Tensor | 数学矩阵形状 | GGML `ne[]`    |
+| ------ | ------ | -------------- |
+| X      | 2 × 3  | `{3, 2, 1, 1}` |
+| W      | 2 × 3  | `{3, 2, 1, 1}` |
+| Y      | 2 × 2  | `{2, 2, 1, 1}` |
+
+其中：
+
+- `ne[0]`：矩阵列数
+- `ne[1]`：矩阵行数
+- `ne[2]`、`ne[3]`：额外维度，本例均为 1
+
+#### GGML 的 `ggml_mul_mat` 调用
+
+需要注意：GGML 的矩阵乘法参数顺序与数学表达式不同。
+
+```
+struct ggml_tensor * Y = ggml_mul_mat(ctx, W, X);
+```
+
+该调用对应数学表达式：
+
+\\[ Y=XW^T \\]
+
+其中：
+
+```
+// src0 = W
+W->ne = {3, 2, 1, 1};
+
+// src1 = X
+X->ne = {3, 2, 1, 1};
+
+// dst = Y
+Y->ne = {2, 2, 1, 1};
+```
+
+GGML 内部输出维度计算规则为：
+
+```
+ne[0] = src0->ne[1];
+ne[1] = src1->ne[1];
+ne[2] = src1->ne[2];
+ne[3] = src1->ne[3];
+```
+
+在机器学习中，通常约定：
+- 行 = 样本数量
+- 列 = 特征维度
+- 从 3 维投影到 2 维，就是将每个样本的特征数量从 3 个减少到 2 个。
+注意：“维”本身不等于“列”，只是这里采用了“每行一个样本”的数据组织方式。
+
+## 习题3 做 causal attention 小计算
+暂时跳过 norm、投影和 RoPE, 将下面的 Q/K 视为已经完成这些步骤的单个 head。设 `Dh=2`, 手算 score、mask、softmax 和输出。
+
+   ```text
+   Q = K = [[1,0], [0,1]]
+   Vcur  = [[1,2], [3,4]]
+   M     = [[0,-inf], [0,0]]
+   ```
+答：
+已知：
+
+\\[ Q=K=\begin{bmatrix}1&0\\\0&1\end{bmatrix},\quad V=\begin{bmatrix}1&2\\\3&4\end{bmatrix} \\]
+
+\\[ M=\begin{bmatrix}0&-\infty\\\0&0\end{bmatrix},\quad D_h=2 \\]
+
+Causal Attention 的计算公式：
+
+\\[ \boxed{O=\operatorname{softmax}\left(\frac{QK^T}{\sqrt{D_h}}+M\right)V} \\]
+
+### 1. 计算 Score
+
+\\[ S=\frac{QK^T}{\sqrt{2}} \\]
+
+由于 \\(Q=K\\) 都是单位矩阵：
+
+\\[ QK^T=\begin{bmatrix}1&0\\\0&1\end{bmatrix} \\]
+
+所以：
+
+\\[ \boxed{S=\begin{bmatrix}0.7071&0\\\0&0.7071\end{bmatrix}} \\]
+
+### 2. 添加 Causal Mask
+
+\\[ S\_{\text{masked}}=S+M \\]
+
+\\[ =\begin{bmatrix}0.7071&0\\\0&0.7071\end{bmatrix} +\begin{bmatrix}0&-\infty\\\0&0\end{bmatrix} \\]
+
+\\[ \boxed{S\_{\text{masked}}=\begin{bmatrix}0.7071&-\infty\\\0&0.7071\end{bmatrix}} \\]
+
+这里：
+
+- Token 0 只能关注 Token 0。
+- Token 1 可以关注 Token 0 和 Token 1。
+
+### 3. 计算 Softmax
+
+对每一行分别进行 Softmax：
+
+\\[ \operatorname{softmax}(x_i)=\frac{e^{x_i}}{\sum_j e^{x_j}} \\]
+
+第一行：
+
+\\[ \operatorname{softmax}([0.7071,-\infty])=[1,0] \\]
+
+第二行：
+
+\\[ \operatorname{softmax}([0,0.7071]) \\]
+
+因为：
+
+\\[ e^0=1,\qquad e^{0.7071}\approx2.0281 \\]
+
+所以：
+
+\\[ p_0=\frac{1}{1+2.0281}\approx0.3302 \\]
+
+\\[ p_1=\frac{2.0281}{1+2.0281}\approx0.6698 \\]
+
+得到 Attention 权重：
+
+\\[ \boxed{A=\begin{bmatrix}1&0\\\0.3302&0.6698\end{bmatrix}} \\]
+
+### 4. 计算最终输出
+
+\\[ O=AV \\]
+
+\\[ =\begin{bmatrix}1&0\\\0.3302&0.6698\end{bmatrix} \begin{bmatrix}1&2\\\3&4\end{bmatrix} \\]
+
+第一行：
+
+\\[ O_0=[1\times1+0\times3,\quad1\times2+0\times4] \\]
+
+\\[ O_0=[1,2] \\]
+
+第二行：
+
+\\[ O_1=[0.3302\times1+0.6698\times3,\quad 0.3302\times2+0.6698\times4] \\]
+
+\\[ O_1\approx[2.3395,3.3395] \\]
+
+最终：
+
+\\[ \boxed{O\approx\begin{bmatrix}1&2\\\2.3395&3.3395\end{bmatrix}} \\]
+
+### 5. 汇总
+
+| 步骤      | 结果                                                          |
+| ------- | ----------------------------------------------------------- |
+| Score   | \\(\begin{bmatrix}0.7071&0\\\0&0.7071\end{bmatrix}\\)       |
+| Mask 后  | \\(\begin{bmatrix}0.7071&-\infty\\\0&0.7071\end{bmatrix}\\) |
+| Softmax | \\(\begin{bmatrix}1&0\\\0.3302&0.6698\end{bmatrix}\\)       |
+| Output  | \\(\begin{bmatrix}1&2\\\2.3395&3.3395\end{bmatrix}\\)       |
+
+核心理解：
+
+- 第一个 Token 只能看到自己，因此输出就是 \\(V_0=[1,2]\\)。
+- 第二个 Token 能看到前两个 Token，因此输出是 \\(V_0\\) 和 \\(V_1\\) 的加权和。
+- Causal Mask 保证每个 Token 不能关注未来的 Token，这是自回归语言模型的重要机制。
+
+
+解释 softmax 为什么沿 key 位置做, 以及第 0 个 token 为什么不能使用第 1 个 V。
+核心原因：
+1. Softmax 沿 Key 位置计算：因为每个 Query 需要决定自己应该关注哪些 Key，以及分配多少注意力权重。
+2. 第 0 个 Token 不能使用第 1 个 V：因为 Causal Attention 不允许当前 Token 看到未来 Token 的信息。
+
